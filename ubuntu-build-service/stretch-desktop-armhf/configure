@@ -11,6 +11,7 @@ set -e
 echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg"
 lb config \
+ --mirror-bootstrap http://ftp.cn.debian.org/debian/ \
  --apt-indices false \
  --apt-recommends false \
  --apt-secure false \
