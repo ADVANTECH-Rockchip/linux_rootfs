@@ -23,10 +23,9 @@ apt-get install -y i2c-tools
 apt-get install -y mmc-utils
 #for 4G
 apt-get install -y libpcap0.8:armhf ppp
-ap-get install -y usb-modeswitch mobile-broadband-provider-info modemmanager
+apt-get install -y usb-modeswitch mobile-broadband-provider-info modemmanager
 #for browser
-#apt-get install -y chromium
-apt install -t sid firefox
+apt install -y -t sid firefox
 apt-get install -y chromium
 
 
