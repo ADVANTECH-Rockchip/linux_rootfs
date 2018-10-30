@@ -1,0 +1,32 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+# Normal rules
+#
+rootfs
+binary
+linaro-jessie-alip-*.tar.gz
+linaro-stretch-alip-*.tar.gz
+linaro-buster-alip-*.tar.gz
+linaro-rootfs.img
+release
+build
+.lock
+ubuntu-build-service/stretch-desktop-armhf/.build
+ubuntu-build-service/stretch-desktop-armhf/cache/
+ubuntu-build-service/stretch-desktop-armhf/chroot.packages.install
+ubuntu-build-service/stretch-desktop-armhf/chroot/
+ubuntu-build-service/stretch-desktop-armhf/config/
+ubuntu-build-service/stretch-desktop-armhf/linaro-stretch-alip-*.build-log.txt
+ubuntu-build-service/stretch-desktop-armhf/linaro-stretch-alip-*.config.tar.bz2
+ubuntu-build-service/stretch-desktop-armhf/linaro-stretch-alip-*.contents
+ubuntu-build-service/stretch-desktop-armhf/linaro-stretch-alip-*.md5sums.txt
+ubuntu-build-service/stretch-desktop-armhf/linaro-stretch-alip-*.packages
+ubuntu-build-service/stretch-desktop-armhf/linaro-stretch-alip-*.sha1sums.txt
+
