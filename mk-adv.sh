@@ -34,9 +34,10 @@ apt-get install -y chromium
 update-rc.d S50usbdevice defaults
 
 #for login
-#sed  -i 's/--autologin root//'  /lib/systemd/system/serial-getty@.service
-#echo "linaro:123456" | chpasswd
-#echo "root:123456" | chpasswd
+sed -ri 's/^(autologin-user=.*)/# \1/'  /etc/lightdm/lightdm.conf
+sed  -i 's/--autologin root//'  /lib/systemd/system/serial-getty@.service
+echo "linaro:123456" | chpasswd
+echo "root:123456" | chpasswd
 
 #adduser
 #adduser --gecos adv --disabled-login adv
@@ -48,7 +49,7 @@ update-rc.d S50usbdevice defaults
 #locale-gen
 
 #timezone
-#timedatectl set-timezone Asia/Shanghai
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #---------------Clean--------------
 rm -rf /var/lib/apt/lists/*
