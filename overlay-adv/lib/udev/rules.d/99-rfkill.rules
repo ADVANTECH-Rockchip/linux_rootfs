@@ -1,0 +1,7 @@
+#  Add hooks for rfkill state changed events.
+
+ACTION=="remove", GOTO="rfkill_end"
+
+SUBSYSTEM=="rfkill", RUN+="/usr/bin/rfkill_events.sh"
+
+LABEL="rfkill_end"

@@ -27,7 +27,8 @@ apt-get install -y usb-modeswitch mobile-broadband-provider-info modemmanager
 #for browser
 apt install -y -t sid firefox
 apt-get install -y chromium
-
+#for bt udev
+apt-get install -y at
 
 #---------------Adjust--------------
 #for usb otg
