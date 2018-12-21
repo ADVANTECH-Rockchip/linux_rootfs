@@ -1,4 +1,4 @@
-#!/bin/sh -x 
+#!/bin/sh 
 
 LIGHTDM_DIR=/var/run/lightdm/root/
 if [ -d $LIGHTDM_DIR ]; then
@@ -31,7 +31,7 @@ for monitor in $MONITORS;do
     grep -w $MODE $SYS/modes && continue
 
     # Ether disabled or wrongly configured
-    sudo -u $user xrandr --output $monitor --auto
+    sudo -u $user xrandr --output $monitor --mode $(head -1 $SYS/modes|grep -o "[0-9]*x[0-9]*")
 done
 
 exit 0
