@@ -12,7 +12,6 @@ echo "2.install/remove/adjust debian"
 cat <<EOF | sudo chroot $TARGET_ROOTFS_DIR
 
 #---------------Remove--------------
-apt-get --purge remove -y chromium
 apt-get --purge remove -y firefox
 
 #---------------Install--------------
@@ -26,7 +25,6 @@ apt-get install -y libpcap0.8:armhf ppp
 apt-get install -y usb-modeswitch mobile-broadband-provider-info modemmanager
 #for browser
 apt install -y -t sid firefox
-apt-get install -y chromium
 #for bt udev
 apt-get install -y at
 
