@@ -7,6 +7,8 @@ echo "in mk-adv.sh"
 echo "1.copy overlay"
 sudo cp -rf overlay-adv/* $TARGET_ROOTFS_DIR/
 
+sudo cp -rf adv-build/* $TARGET_ROOTFS_DIR/tmp/
+
 echo "2.install/remove/adjust debian"
 
 cat <<EOF | sudo chroot $TARGET_ROOTFS_DIR
@@ -27,6 +29,10 @@ apt-get install -y usb-modeswitch mobile-broadband-provider-info modemmanager
 apt install -y -t sid firefox
 #for bt udev
 apt-get install -y at
+#for sync time
+apt-get install -y cron
+/tmp/timesync.sh
+rm /tmp/timesync.sh
 
 #---------------Adjust--------------
 #for usb otg
