@@ -34,6 +34,8 @@ apt-get install -y cron
 /tmp/timesync.sh
 rm /tmp/timesync.sh
 
+apt-get update
+apt-get install -y blueman
 #---------------Adjust--------------
 #for usb otg
 update-rc.d S50usbdevice defaults
