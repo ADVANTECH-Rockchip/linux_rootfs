@@ -20,7 +20,7 @@ start)
 	echo 500 > /sys/kernel/config/usb_gadget/rockchip/configs/b.1/MaxPower
 
 	mkdir /sys/kernel/config/usb_gadget/rockchip/functions/mass_storage.0
-	echo /dev/disk/by-partlabel/userdata > /sys/kernel/config/usb_gadget/rockchip/functions/mass_storage.0/lun.0/file
+	#echo /dev/disk/by-partlabel/userdata > /sys/kernel/config/usb_gadget/rockchip/functions/mass_storage.0/lun.0/file
 	ln -s  /sys/kernel/config/usb_gadget/rockchip/functions/mass_storage.0 /sys/kernel/config/usb_gadget/rockchip/configs/b.1/f1
 	
 #	mkdir /sys/kernel/config/usb_gadget/rockchip/functions/ffs.adb

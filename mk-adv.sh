@@ -69,6 +69,14 @@ locale-gen
 #timezone
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
+#mount userdata to /userdata
+mkdir /userdata
+mkdir /oem
+chmod 0777 /userdata
+chmod 0777 /oem
+
+ln -s /dev/disk/by-partlabel/misc /misc
+
 #---------------Clean--------------
 rm -rf /var/lib/apt/lists/*
 
