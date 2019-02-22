@@ -14,10 +14,11 @@ echo "2.install/remove/adjust debian"
 cat <<EOF | sudo chroot $TARGET_ROOTFS_DIR
 
 #---------------Remove--------------
-apt-get --purge remove -y firefox
+#apt-get --purge remove -y firefox
 
 #---------------Install--------------
 apt-get update
+apt-get install -y gnome-screenshot
 apt-get install -y mtd-utils
 apt-get install -y i2c-tools
 #for rpmb
@@ -26,7 +27,7 @@ apt-get install -y mmc-utils
 apt-get install -y libpcap0.8:armhf ppp
 apt-get install -y usb-modeswitch mobile-broadband-provider-info modemmanager
 #for browser
-apt install -y -t sid firefox
+# apt install -y -t sid firefox
 #for bt udev
 apt-get install -y at
 #for sync time
@@ -40,9 +41,11 @@ apt-get install -y xfonts-intl-chinese xfonts-wqy ttf-wqy-microhei ttf-dejavu
 #for blueman
 apt-get update
 apt-get install -y blueman
+
 #---------------Adjust--------------
 #for usb otg
 update-rc.d S50usbdevice defaults
+update-rc.d advinit defaults
 
 #for login
 sed -ri 's/^(autologin-user=.*)/# \1/'  /etc/lightdm/lightdm.conf
@@ -70,6 +73,7 @@ locale-gen
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #mount userdata to /userdata
+rm /userdata /oem /misc -rf
 mkdir /userdata
 mkdir /oem
 chmod 0777 /userdata

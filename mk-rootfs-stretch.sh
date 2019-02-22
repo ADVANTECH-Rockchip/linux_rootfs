@@ -68,7 +68,11 @@ cat <<EOF | sudo chroot $TARGET_ROOTFS_DIR
 
 chmod o+x /usr/lib/dbus-1.0/dbus-daemon-launch-helper
 apt-get update
+#apt-get install -y blueman
+echo exit 101 > /usr/sbin/policy-rc.d
+chmod +x /usr/sbin/policy-rc.d
 apt-get install -y blueman
+rm -f /usr/sbin/policy-rc.d
 
 #---------------conflict workaround --------------
 apt-get remove -y xserver-xorg-input-evdev
@@ -131,6 +135,9 @@ ln -s /usr/lib/arm-linux-gnueabihf/libGLESv2.so /usr/lib/chromium/libGLESv2.so
 ln -s /usr/lib/arm-linux-gnueabihf/libEGL.so /usr/lib/chromium/libEGL.so
 
 #---------------Clean-------------- 
+rm /packages/others/ -rf
+rm /packages/video/ -rf
+rm /packages/xserver/ -rf
 rm -rf /var/lib/apt/lists/*
 
 EOF
