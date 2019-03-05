@@ -10,6 +10,9 @@ if [ ! $VERSION ]; then
 	VERSION="debug"
 fi
 
+rm linaro-stretch-alip-*.tar.gz
+cat debian-base/linaro-stretch-alip-*.tar.gz* > linaro-stretch-alip-whole.tar.gz
+
 if [ ! -e linaro-stretch-alip-*.tar.gz ]; then
 	echo "\033[36m Run mk-base-debian.sh first \033[0m"
 fi

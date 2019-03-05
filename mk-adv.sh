@@ -39,8 +39,8 @@ rm /tmp/timesync.sh
 apt-get install -y xfonts-intl-chinese xfonts-wqy ttf-wqy-microhei ttf-dejavu
 
 #for blueman
-apt-get update
-apt-get install -y blueman
+# apt-get update
+# apt-get install -y blueman
 
 #---------------Adjust--------------
 #for usb otg
