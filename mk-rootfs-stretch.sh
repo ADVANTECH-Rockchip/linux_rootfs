@@ -10,7 +10,10 @@ if [ ! $VERSION ]; then
 	VERSION="debug"
 fi
 
-rm linaro-stretch-alip-*.tar.gz
+if [ -e linaro-stretch-alip-*.tar.gz ]; then
+    rm linaro-stretch-alip-*.tar.gz
+fi
+
 cat debian-base/linaro-stretch-alip-*.tar.gz* > linaro-stretch-alip-whole.tar.gz
 
 if [ ! -e linaro-stretch-alip-*.tar.gz ]; then
