@@ -5,11 +5,17 @@
 
 case "$1" in
 start)
+    # Create /etc/serialID
     CPUINFO=`cat /proc/cpuinfo | grep "Serial"`
     echo ${CPUINFO##*:} > /etc/serialID
+
+    # Chmod of /userdata
     if [ -d "/userdata" ];then
         chmod 0777 /userdata 
     fi
+
+    # EETI eGTouch
+    /usr/bin/eGTouchD
     ;;
 stop)
     ;;
