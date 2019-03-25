@@ -7,6 +7,12 @@ echo "in mk-adv.sh"
 echo "1.copy overlay"
 sudo cp -rf overlay-adv/* $TARGET_ROOTFS_DIR/
 
+if [ "$VERSION" != "debug" ] || [ "$VERSION" != "jenkins" ]; then
+	echo -e "\033[36m Copy  overlay-debug \033[0m"
+	# adb, video, camera  test file
+	sudo cp -rf overlay-debug/* $TARGET_ROOTFS_DIR/
+fi
+
 sudo cp -rf adv-build/* $TARGET_ROOTFS_DIR/tmp/
 
 echo "2.install/remove/adjust debian"
