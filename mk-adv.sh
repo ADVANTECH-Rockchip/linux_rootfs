@@ -48,6 +48,9 @@ apt-get install -y xfonts-intl-chinese xfonts-wqy ttf-wqy-microhei ttf-dejavu
 # apt-get update
 # apt-get install -y blueman
 
+#for Modbus
+apt-get install mosquitto mosquitto-dev libmosquitto-dev -y
+
 #---------------Adjust--------------
 #for usb otg
 update-rc.d S50usbdevice defaults
