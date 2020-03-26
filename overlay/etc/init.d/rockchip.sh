@@ -14,7 +14,7 @@ function link_mali() {
 if [ "$1" == "rk3288" ];
 then
     GPU_VERSION=$(cat /sys/devices/platform/*gpu/gpuinfo)
-    if [[ $GPU_VERSION =~ "Mali-T76x MP4 r1p0 0x0750" ]];
+    if echo $GPU_VERSION|grep -q r1p0;
     then
         dpkg -i  /packages/libmali/libmali-rk-midgard-t76x-r14p0-r1p0_*.deb #3288w
     else
@@ -29,8 +29,17 @@ elif [[  "$1" == "rk3328"  ]]; then
 elif [[  "$1" == "rk3399"  ]]; then
     dpkg -i  /packages/libmali/libmali-rk-midgard-t86x-*.deb
     dpkg -i  /packages/libmali/libmali-rk-dev_*.deb
+elif [[  "$1" == "rk3399pro"  ]]; then
+    dpkg -i  /packages/libmali/libmali-rk-midgard-t86x-*.deb
+    dpkg -i  /packages/libmali/libmali-rk-dev_*.deb
 elif [[  "$1" == "rk3326"  ]]; then
     dpkg -i  /packages/libmali/libmali-rk-bifrost-g31-*.deb
+    dpkg -i  /packages/libmali/libmali-rk-dev_*.deb
+elif [[  "$1" == "px30"  ]]; then
+    dpkg -i  /packages/libmali/libmali-rk-bifrost-g31-*.deb
+    dpkg -i  /packages/libmali/libmali-rk-dev_*.deb
+elif [[  "$1" == "rk3128"  ]]; then
+    dpkg -i  /packages/libmali/libmali-rk-utgard-400-*.deb
     dpkg -i  /packages/libmali/libmali-rk-dev_*.deb
 elif [[  "$1" == "rk3036"  ]]; then
     dpkg -i  /packages/libmali/libmali-rk-utgard-400-*.deb
@@ -40,6 +49,55 @@ elif [[  "$1" == "rk3036"  ]]; then
     # sed -i -e 's:"SWcursor"              "false":"SWcursor"              "true":' \
     #     -i /etc/X11/xorg.conf.d/20-armsoc.conf
 fi
+if [ -e "/usr/lib/aarch64-linux-gnu" ]; then
+    cd /usr/lib/aarch64-linux-gnu/
+    if [ -e "libEGL.so.1.1.0" ]; then
+        rm libEGL.so.1.1.0
+    elif [ -e "libGLESv2.so.2.0.0" ]; then
+	rm libGLESv2.so.2.0.0
+    elif [ -e "libGLEW.so.2.0.0" ]; then
+	rm libGLEW.so.2.0.0
+    fi
+    ln -sf libMali.so libEGL.so.1.1.0
+    ln -sf libMali.so libEGL.so
+    ln -sf libMali.so libEGL.so.1.0.0
+    ln -sf libMali.so libEGL.so.1.4
+    ln -sf libMali.so libGLESv2.so
+    ln -sf libMali.so libGLESv2.so.2.0
+    ln -sf libMali.so libGLESv2.so.2.0.0
+    ln -sf libMali.so libGLESv1_CM.so
+    ln -sf libMali.so libGLESv1_CM.so.1
+    ln -sf libMali.so libGLESv1_CM.so.1.1
+
+fi
+if [ -e "/usr/lib/arm-linux-gnueabihf" ]; then
+    cd /usr/lib/arm-linux-gnueabihf/
+    if [ -e "libEGL.so.1.1.0" ]; then
+        rm libEGL.so.1.1.0
+    elif [ -e "libGLESv2.so.2.0.0" ]; then
+	rm libGLESv2.so.2.0.0
+    elif [ -e "libGLEW.so.2.0.0" ]; then
+	rm libGLEW.so.2.0.0
+    fi
+
+    ln -sf libMali.so libEGL.so.1.1.0
+    ln -sf libMali.so libEGL.so
+    ln -sf libMali.so libEGL.so.1.0.0
+    ln -sf libMali.so libEGL.so.1.4
+    ln -sf libMali.so libGLESv2.so
+    ln -sf libMali.so libGLESv2.so.2.0
+    ln -sf libMali.so libGLESv2.so.2.0.0
+    ln -sf libMali.so libGLESv1_CM.so
+    ln -sf libMali.so libGLESv1_CM.so.1
+    ln -sf libMali.so libGLESv1_CM.so.1.1
+fi
+
+}
+
+function update_npu_fw() {
+    /usr/bin/npu-image.sh
+    sleep 1
+    /usr/bin/npu_transfer_proxy&
 }
 
 COMPATIBLE=$(cat /proc/device-tree/compatible)
@@ -48,10 +106,17 @@ then
     CHIPNAME="rk3288"
 elif [[ $COMPATIBLE =~ "rk3328" ]]; then
     CHIPNAME="rk3328"
+elif [[ $COMPATIBLE =~ "rk3399" && $COMPATIBLE =~ "rk3399pro" ]]; then
+    CHIPNAME="rk3399pro"
+    update_npu_fw
 elif [[ $COMPATIBLE =~ "rk3399" ]]; then
     CHIPNAME="rk3399"
 elif [[ $COMPATIBLE =~ "rk3326" ]]; then
     CHIPNAME="rk3326"
+elif [[ $COMPATIBLE =~ "px30" ]]; then
+    CHIPNAME="px30"
+elif [[ $COMPATIBLE =~ "rk3128" ]]; then
+    CHIPNAME="rk3128"
 else
     CHIPNAME="rk3036"
 fi
@@ -64,16 +129,50 @@ then
     echo "It's the first time booting."
     echo "The rootfs will be configured."
 
+    # Force rootfs synced
+    mount -o remount,sync /
+
     link_mali ${CHIPNAME}
-    touch /usr/local/first_boot_flag
     setcap CAP_SYS_ADMIN+ep /usr/bin/gst-launch-1.0
     rm -rf /packages
 
-    # Add cache sync here, prevent the os missing
-    sync
-
     # The base target does not come with lightdm
     systemctl restart lightdm.service || true
+
+    touch /usr/local/first_boot_flag
+fi
+
+# enable adbd service
+if [ -e "/etc/init.d/adbd.sh" ] ;
+then
+    cd /etc/rcS.d
+    if [ ! -e "S01adbd.sh" ] ;
+    then
+        ln -s ../init.d/adbd.sh S01adbd.sh
+    fi
+    cd /etc/rc6.d
+    if [ ! -e "K01adbd.sh" ] ;
+    then
+        ln -s ../init.d/adbd.sh K01adbd.sh
+    fi
+
+    service adbd.sh start
+fi
+
+# support power management
+if [ -e "/usr/sbin/pm-suspend" ] ;
+then
+    mv /etc/Powermanager/power-key.sh /usr/bin/
+    mv /etc/Powermanager/power-key.conf /etc/triggerhappy/triggers.d/
+    if [[ "$CHIPNAME" == "rk3399pro" ]];
+    then
+        mv /etc/Powermanager/01npu /usr/lib/pm-utils/sleep.d/
+        mv /etc/Powermanager/02npu /lib/systemd/system-sleep/
+    fi
+    mv /etc/Powermanager/triggerhappy /etc/init.d/triggerhappy
+
+    rm /etc/Powermanager -rf
+    service triggerhappy restart
 fi
 
 # read mac-address from efuse
