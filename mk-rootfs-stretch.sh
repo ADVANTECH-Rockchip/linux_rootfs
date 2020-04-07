@@ -3,6 +3,9 @@
 # Directory contains the target rootfs
 TARGET_ROOTFS_DIR="binary"
 
+BUILD_IN_DOCKER=$1
+echo "BUILD_IN_DOCKER : $BUILD_IN_DOCKER"
+
 if [ -e $TARGET_ROOTFS_DIR ]; then
 	sudo rm -rf $TARGET_ROOTFS_DIR
 fi
@@ -41,6 +44,12 @@ sudo cp -rf overlay/* $TARGET_ROOTFS_DIR/
 sudo cp -rf overlay-firmware/* $TARGET_ROOTFS_DIR/
 if [ "$VERSION" == "debug" ] || [ "$VERSION" == "jenkins" ]; then
 	sudo cp -rf overlay-debug/* $TARGET_ROOTFS_DIR/
+fi
+
+if [ "$BUILD_IN_DOCKER" == "TRUE" ]; then
+	# network
+	sudo mv $TARGET_ROOTFS_DIR/etc/resolv.conf $TARGET_ROOTFS_DIR/etc/resolv.conf_back
+	sudo cp -b /etc/resolv.conf $TARGET_ROOTFS_DIR/etc/resolv.conf
 fi
 
 if [ "$VERSION" == "jenkins" ]; then
