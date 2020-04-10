@@ -3,7 +3,6 @@
 # Directory contains the target rootfs
 TARGET_ROOTFS_DIR="binary"
 
-BUILD_IN_DOCKER=$1
 echo "BUILD_IN_DOCKER : $BUILD_IN_DOCKER"
 
 if [ -e $TARGET_ROOTFS_DIR ]; then
