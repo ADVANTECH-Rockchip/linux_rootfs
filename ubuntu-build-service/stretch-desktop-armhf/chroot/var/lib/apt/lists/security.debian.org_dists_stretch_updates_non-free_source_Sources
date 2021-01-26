@@ -1,0 +1,57 @@
+Package: intel-microcode
+Binary: intel-microcode
+Version: 3.20191115.2~deb9u1
+Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Uploaders: Giacomo Catenazzi <cate@debian.org>
+Build-Depends: debhelper (>= 9), iucode-tool (>= 0.9)
+Architecture: i386 amd64 x32
+Standards-Version: 4.1.1
+Format: 3.0 (native)
+Files:
+ a84d73e1c9ab4928cda15dcbf995d3c1 1817 intel-microcode_3.20191115.2~deb9u1.dsc
+ 41b2c931ea783005a24e0ac1966d27d0 3127312 intel-microcode_3.20191115.2~deb9u1.tar.xz
+Vcs-Browser: https://salsa.debian.org/hmh/intel-microcode
+Vcs-Git: https://salsa.debian.org/hmh/intel-microcode.git
+Checksums-Sha1:
+ bdd831b31d6faf0f571e1f819f1b228f06ca23e3 1817 intel-microcode_3.20191115.2~deb9u1.dsc
+ 8265d552b6536e650940eddf387446fd44e11504 3127312 intel-microcode_3.20191115.2~deb9u1.tar.xz
+Checksums-Sha256:
+ 735df16eb9125b74d2a94ccc077ce924c0e4bd563ac0a4cffe3043de81b6fb6d 1817 intel-microcode_3.20191115.2~deb9u1.dsc
+ 178c5c4e66283d8cc0c9538d2b31f830476e1eca63a7e1b9b8de30a75eb2ccdb 3127312 intel-microcode_3.20191115.2~deb9u1.tar.xz
+Homepage: https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
+Autobuild: yes
+Package-List: 
+ intel-microcode deb non-free/admin standard arch=i386,amd64,x32
+Directory: pool/updates/non-free/i/intel-microcode
+Priority: source
+Section: non-free/admin
+
+Package: otrs2
+Binary: otrs2, otrs
+Version: 5.0.16-1+deb9u6
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Uploaders: Thomas Mueller <thomas@chaschperli.ch>
+Build-Depends: debhelper (>= 9), yui-compressor
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 74efa4609d0917946d561d34c6937aec 1838 otrs2_5.0.16-1+deb9u6.dsc
+ 9fe21e6993bcac71247fdcaf5e1f4e55 19417591 otrs2_5.0.16.orig.tar.bz2
+ 4c285c82641db3569e47241e69fcb8c4 54040 otrs2_5.0.16-1+deb9u6.debian.tar.xz
+Checksums-Sha1:
+ 0ef36873a6049034fbef5f8694a63072242dac8e 1838 otrs2_5.0.16-1+deb9u6.dsc
+ 5538c2b9138a0b6d5816ff034507dd5ce26abf8d 19417591 otrs2_5.0.16.orig.tar.bz2
+ 96eb8c5568d20ec68319226c8c1602a0c6d20858 54040 otrs2_5.0.16-1+deb9u6.debian.tar.xz
+Checksums-Sha256:
+ 2bd3cd3a0cbb9964b72362b2b0738e75e29225de0e143fe298055f76a7e6db96 1838 otrs2_5.0.16-1+deb9u6.dsc
+ ddec039990c1bdfc27299ab175eff3e1665aa99ba48050f7f2dde480b28f4029 19417591 otrs2_5.0.16.orig.tar.bz2
+ b185225b6a0cb7330346fab434f64552761c6961fcd0624b67051d494a3f82dc 54040 otrs2_5.0.16-1+deb9u6.debian.tar.xz
+Homepage: http://www.otrs.org
+Package-List: 
+ otrs deb non-free/web optional arch=all
+ otrs2 deb non-free/web optional arch=all
+Directory: pool/updates/non-free/o/otrs2
+Priority: source
+Section: non-free/misc
+

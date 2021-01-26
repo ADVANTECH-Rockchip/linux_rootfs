@@ -1,0 +1,812 @@
+Package: 96boards-artwork
+Format: 3.0 (native)
+Binary: 96boards-artwork, 96boards-icon-theme, 96boards-lxpanel-icons
+Architecture: all
+Version: 0.5
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Homepage: https://github.com/rsalveti/96boards-artwork
+Standards-Version: 3.9.6
+Vcs-Git: https://github.com/rsalveti/96boards-artwork.git
+Build-Depends: debhelper (>= 9), icon-naming-utils, intltool
+Package-List:
+ 96boards-artwork deb x11 optional arch=all
+ 96boards-icon-theme deb x11 optional arch=all
+ 96boards-lxpanel-icons deb x11 optional arch=all
+Priority: optional
+Section: x11
+Directory: pool/main/9/96boards-artwork
+Files: 
+ d5ae9553f05fd43878b0e6b272bd37f4 1716 96boards-artwork_0.5.dsc
+ 4d69afa25312bcd87d6f5f600c916a78 1681060 96boards-artwork_0.5.tar.xz
+Checksums-Sha1: 
+ d3f2748e9ebaf6de414696fb100b457ea75d6c07 1716 96boards-artwork_0.5.dsc
+ 5a9c135ed2c3399e76a82e9e2e3b4d419f450542 1681060 96boards-artwork_0.5.tar.xz
+Checksums-Sha256: 
+ 4c229141b9219dfe28582ed0949601f372c3c353751fcfddc79f27e35315d05b 1716 96boards-artwork_0.5.dsc
+ 20259fe16b2a23cb1c235cb0ae77417adcf8f7d680eee79d46680489054e167d 1681060 96boards-artwork_0.5.tar.xz
+
+Package: 96boards-installer
+Format: 3.0 (native)
+Binary: 96boards-installer, 96boards-installer-session
+Architecture: any all
+Version: 1.0~6linarostretch1
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Homepage: https://github.com/96boards/96boards-installer
+Standards-Version: 3.9.3
+Vcs-Browser: https://github.com/96boards/96boards-installer
+Vcs-Git: https://github.com/96boards/96boards-installer
+Build-Depends: cdbs, debhelper (>= 7), qtbase5-dev, qttools5-dev-tools, qt5-default
+Package-List:
+ 96boards-installer deb utils optional arch=any
+ 96boards-installer-session deb utils optional arch=all
+Priority: optional
+Section: utils
+Directory: pool/main/9/96boards-installer
+Files: 
+ 2232c4ab244c3923debfd32fab052bd6 1473 96boards-installer_1.0~6linarostretch1.dsc
+ 115d064619d63f771ad733675c671d91 62664 96boards-installer_1.0~6linarostretch1.tar.xz
+Checksums-Sha1: 
+ ef59c4c08544900a4d81aa9311a571f2ed717c12 1473 96boards-installer_1.0~6linarostretch1.dsc
+ 00f5204a0d58f36947b5b8fdf6bd63abbc706ee7 62664 96boards-installer_1.0~6linarostretch1.tar.xz
+Checksums-Sha256: 
+ ceb120bd9d40374e7b684fb8cfc16c35ed9920ee4e73ce010eec751f82b524a6 1473 96boards-installer_1.0~6linarostretch1.dsc
+ ab6ebcb1784cca00a8f79d55c657b0cd41ba3c264d03bde3013b3c7dc2156d8e 62664 96boards-installer_1.0~6linarostretch1.tar.xz
+
+Package: 96boards-tools
+Format: 3.0 (native)
+Binary: 96boards-tools-common
+Architecture: all
+Version: 0.9
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Uploaders: Fathi Boudra <fathi.boudra@linaro.org>
+Homepage: https://github.com/96boards/96boards-tools
+Standards-Version: 3.9.6
+Vcs-Git: https://github.com/96boards/96boards-tools.git
+Build-Depends: debhelper (>= 9), dh-systemd
+Package-List:
+ 96boards-tools-common deb utils optional arch=all
+Priority: optional
+Section: utils
+Directory: pool/main/9/96boards-tools
+Files: 
+ d66051b7d17856f44543aa92fa37bd4e 1252 96boards-tools_0.9.dsc
+ 58419141caf9790ccf8d340942853f54 7428 96boards-tools_0.9.tar.xz
+Checksums-Sha1: 
+ f4dfdbf00aef70d60f887d7e12096d1bc7f67d8d 1252 96boards-tools_0.9.dsc
+ 705dd93ca9ee5beaf1cb6f33899a61dd641db986 7428 96boards-tools_0.9.tar.xz
+Checksums-Sha256: 
+ 47a780203809befd2b31d16c5836521edab8aeb0e0e60021bfc08cd0c9080e22 1252 96boards-tools_0.9.dsc
+ 5b9d983618e80acf50421819a5b8fbcf18a8390757f458d6b8a016f4dcf61a34 7428 96boards-tools_0.9.tar.xz
+
+Package: alsa-lib
+Format: 3.0 (quilt)
+Binary: libasound2, libasound2-dev, libasound2-data, libasound2-udeb, libasound2-doc
+Architecture: linux-any all
+Version: 1.1.2-1linaro1linarostretch1
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Uploaders: Jordi Mallach <jordi@debian.org>, Elimar Riesebieter <riesebie@lxtec.de>, Luke Yelavich <themuso@ubuntu.com>
+Homepage: http://www.alsa-project.org/
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-alsa/trunk/alsa-lib/
+Vcs-Svn: svn://anonscm.debian.org/pkg-alsa/trunk/alsa-lib
+Testsuite: autopkgtest
+Testsuite-Triggers: build-essential
+Build-Depends: autotools-dev, debhelper (>= 9), dh-autoreconf, dpkg-dev (>= 1.16.1)
+Build-Depends-Indep: doxygen, graphviz
+Package-List:
+ libasound2 deb libs optional arch=linux-any
+ libasound2-data deb libs optional arch=all
+ libasound2-dev deb libdevel optional arch=linux-any
+ libasound2-doc deb doc optional arch=all
+ libasound2-udeb udeb debian-installer optional arch=linux-any
+Priority: optional
+Section: libs
+Directory: pool/main/a/alsa-lib
+Files: 
+ 4cb380791004814af1b29707c3a286da 2150 alsa-lib_1.1.2-1linaro1linarostretch1.dsc
+ 1946e6438b8262a7b8fdadacd0e06ba7 947423 alsa-lib_1.1.2.orig.tar.bz2
+ 12dd128a03dc6f135665a7ea61b4d4bb 165880 alsa-lib_1.1.2-1linaro1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ b1d50e1d1fd427b28693b8570cb6d6a2776fb9dd 2150 alsa-lib_1.1.2-1linaro1linarostretch1.dsc
+ 574a0ebd4d218c81f73a0abae79f0e3cc9a6e402 947423 alsa-lib_1.1.2.orig.tar.bz2
+ fd7406e1caf8f6acf8f248350ca486e434e6f8c3 165880 alsa-lib_1.1.2-1linaro1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 30e8d975217ee6a3740a4928b4da04a0c49dadf9566427544f56913b38791a81 2150 alsa-lib_1.1.2-1linaro1linarostretch1.dsc
+ d38dacd9892b06b8bff04923c380b38fb2e379ee5538935ff37e45b395d861d6 947423 alsa-lib_1.1.2.orig.tar.bz2
+ 8d106380781e0e08763fe0085ce69ad508230e0af92836333ec1a5d0e8579bce 165880 alsa-lib_1.1.2-1linaro1linarostretch1.debian.tar.xz
+
+Package: android-tools
+Format: 3.0 (quilt)
+Binary: android-tools-adb, android-tools-fastboot, android-tools-fsutils, android-tools-adbd, android-tools-mkbootimg
+Architecture: linux-any
+Version: 5.1.1.r29-3.linarojessie.1
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Uploaders: Laszlo Boszormenyi (GCS) <gcs@debian.org>, Hans-Christoph Steiner <hans@eds.org>, Loïc Minier <lool@debian.org>, Ximin Luo <infinity0@debian.org>, Fathi Boudra <fabo@debian.org>
+Homepage: https://developer.android.com/tools/help/adb.html
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-tools.git
+Vcs-Git: https://anonscm.debian.org/git/android-tools/android-tools.git
+Build-Depends: debhelper (>= 9), dh-python, android-system-dev, libcap-dev, libselinux1-dev, libssl-dev, python, zlib1g-dev, bash-completion
+Package-List:
+ android-tools-adb deb devel extra arch=linux-any
+ android-tools-adbd deb devel extra arch=armhf,arm64,i386,amd64
+ android-tools-fastboot deb devel extra arch=linux-any
+ android-tools-fsutils deb devel extra arch=linux-any
+ android-tools-mkbootimg deb devel extra arch=linux-any
+Priority: extra
+Section: devel
+Directory: pool/main/a/android-tools
+Files: 
+ ebea5af5074f8d502fed8343bfe99605 2320 android-tools_5.1.1.r29-3.linarojessie.1.dsc
+ 4da3ce5befdc17ec922184fe5f4731dc 435324 android-tools_5.1.1.r29.orig.tar.xz
+ 198e372e4ad2e9d483d84e94f085f24b 22372 android-tools_5.1.1.r29-3.linarojessie.1.debian.tar.xz
+Checksums-Sha1: 
+ 4ebf733b05a803451bb9bb8431fb3d45646954b4 2320 android-tools_5.1.1.r29-3.linarojessie.1.dsc
+ 32a086c9e8c0693d276be05ef5e38a2b29a3b615 435324 android-tools_5.1.1.r29.orig.tar.xz
+ 0e46266c83b9865f658c1c814366171f669c0cd7 22372 android-tools_5.1.1.r29-3.linarojessie.1.debian.tar.xz
+Checksums-Sha256: 
+ 7e248c296fd58fbe8241053c7e3e4d700debaca6d9095e5e9b072b2305cdffd6 2320 android-tools_5.1.1.r29-3.linarojessie.1.dsc
+ 8435560dc74062e79b2e6d817f9dbefc354a6563bf5c737006fa85fe7be874ca 435324 android-tools_5.1.1.r29.orig.tar.xz
+ 52cc0b1024a5de40f6da22b3d2b9c002c8471b07c51975e4d2cc9c2467ead7ba 22372 android-tools_5.1.1.r29-3.linarojessie.1.debian.tar.xz
+
+Package: chromium-browser
+Format: 3.0 (quilt)
+Binary: chromium, chromium-l10n, chromedriver
+Architecture: i386 amd64 armhf arm64 all
+Version: 53.0.2785.143-1.1linarostretch1
+Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
+Uploaders:  Michael Gilbert <mgilbert@debian.org>,
+Homepage: http://www.chromium.org/Home
+Standards-Version: 3.9.8
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-chromium/pkg-chromium.git
+Vcs-Git: git://anonscm.debian.org/pkg-chromium/pkg-chromium.git
+Build-Depends: debhelper (>= 9), gyp, python3, pkg-config, ninja-build, python-jinja2, ca-certificates, wget, flex, yasm, xvfb, wdiff, gperf, bison, valgrind, xz-utils, x11-apps, xfonts-base, libglewmx-dev, libgl1-mesa-dev, libglu1-mesa-dev, libegl1-mesa-dev, libgles2-mesa-dev, mesa-common-dev, libxt-dev, libre2-dev, libgbm-dev, libpng-dev, libxss-dev, libelf-dev, libvpx-dev, libpci-dev, libcap-dev, libdrm-dev, libicu-dev, libffi-dev, libkrb5-dev, libexif-dev, libudev-dev, libopus-dev, libwebp-dev, libxtst-dev, libsrtp-dev, libjpeg-dev, libxml2-dev, libgtk-3-dev, libxslt1-dev, libpulse-dev, libpam0g-dev, libsnappy-dev, libgconf2-dev, libavutil-dev, libavcodec-dev (>= 7:3.0), libavformat-dev, libglib2.0-dev, libasound2-dev, libsqlite3-dev, libjsoncpp-dev, libspeechd-dev (>= 0.8.4), libminizip-dev, libhunspell-dev, libharfbuzz-dev (>= 1.2.7), libusb-1.0-0-dev, libmodpbase64-dev, libgnome-keyring-dev, libnss3-dev (>= 3.12.3), libnspr4-dev (>= 2:4.9), libcups2-dev (>= 1.5.0), libevent-dev (>= 1.4.13), libjs-jquery, libjs-excanvas, libjs-jquery-flot, libgcrypt20-dev, fonts-ipafont-gothic, fonts-ipafont-mincho
+Package-List:
+ chromedriver deb web optional arch=i386,amd64,armhf,arm64
+ chromium deb web optional arch=i386,amd64,armhf,arm64
+ chromium-l10n deb localization optional arch=all
+Priority: optional
+Section: web
+Directory: pool/main/c/chromium-browser
+Files: 
+ 061c9f7a8a10edce085fc2d5790a7675 3031 chromium-browser_53.0.2785.143-1.1linarostretch1.dsc
+ 35d3846d64dcfc5a4bd167267e604c61 471856052 chromium-browser_53.0.2785.143.orig.tar.xz
+ 0a32bf8544b5ad386934eecd95e37d28 118264 chromium-browser_53.0.2785.143-1.1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ df94fe0a5d7663b4176c15757934d532a6b6a428 3031 chromium-browser_53.0.2785.143-1.1linarostretch1.dsc
+ 9f320759053b911373098e56e2bbfdd622addca4 471856052 chromium-browser_53.0.2785.143.orig.tar.xz
+ 5a4e80defef5d2958b3e0091f969e1f9fe25a84c 118264 chromium-browser_53.0.2785.143-1.1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 90fb5d8e0a53fbb6a1e2360ff1c7cf11e340b39acece903c7e00105a889cb180 3031 chromium-browser_53.0.2785.143-1.1linarostretch1.dsc
+ e3cd751c90b607de719d053ce8a4c145147dae44e16c36a767b372a51865d514 471856052 chromium-browser_53.0.2785.143.orig.tar.xz
+ 2d26e6fa4f141407d023f884e2d7bc1873dd0904882d07ed411d322c08974f11 118264 chromium-browser_53.0.2785.143-1.1linarostretch1.debian.tar.xz
+
+Package: glshim
+Format: 3.0 (quilt)
+Binary: glshim
+Architecture: any
+Version: 0.42-0linarostretch1
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Homepage: https://github.com/lunixbochs/glshim
+Standards-Version: 3.9.6
+Vcs-Browser: https://github.com/rsalveti/glshim
+Vcs-Git: https://github.com/rsalveti/glshim
+Build-Depends: debhelper (>= 9), cmake, libx11-dev
+Package-List:
+ glshim deb libs extra arch=any
+Priority: extra
+Section: libs
+Directory: pool/main/g/glshim
+Files: 
+ 7e6ed997ae4461dfbf398ed7959fb513 1499 glshim_0.42-0linarostretch1.dsc
+ f6740601b3b5dfe8da10a9c3d046e603 1499943 glshim_0.42.orig.tar.gz
+ 4986aecbefc19c1cabceffe2b85378e4 1716 glshim_0.42-0linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ c8f6c929ce1cabdee4d2eaf472ee4d408ba7b7b1 1499 glshim_0.42-0linarostretch1.dsc
+ e340e411f1342a0af491ef99a70812a9ccdfd5c1 1499943 glshim_0.42.orig.tar.gz
+ 82be3d69e9bfa67dca1e6c8a67ebc03ea321ccee 1716 glshim_0.42-0linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ f07c37df39d54a54f6b8ce83d6b720799687efb1869152026fc9c97fb82bdf1d 1499 glshim_0.42-0linarostretch1.dsc
+ e2a386b06b0d0b4833edf5089ddc8891ff5a348bfa8bca4910ea95b32b097fe9 1499943 glshim_0.42.orig.tar.gz
+ 35fd8de5162fb270e93c68f6940b5534e7b5054ea3e31c64b5320b0e5ba7fd7c 1716 glshim_0.42-0linarostretch1.debian.tar.xz
+
+Package: jffi
+Format: 3.0 (quilt)
+Binary: libjffi-java, libjffi-jni
+Architecture: any all
+Version: 1.2.7-9.2linarostretch1
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Jakub Adam <jakub.adam@ktknet.cz>, Tim Potter <tpot@hp.com>
+Homepage: http://github.com/jnr/jffi
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-java/jffi.git
+Vcs-Git: git://anonscm.debian.org/pkg-java/jffi.git
+Build-Depends: debhelper (>= 9), javahelper, maven-debian-helper, libmaven-antrun-plugin-java, libmaven-assembly-plugin-java, maven-repo-helper, libffi-dev, pkg-config, ant, ant-optional, default-jdk, junit4, bnd (>= 2.1.0), libltdl-dev
+Package-List:
+ libjffi-java deb java optional arch=all
+ libjffi-jni deb java optional arch=any
+Priority: optional
+Section: java
+Directory: pool/main/j/jffi
+Files: 
+ 5e1b9fa7b6d1b0c584e38fbd9936af7b 1865 jffi_1.2.7-9.2linarostretch1.dsc
+ 4d501eb6749f2be3f475308a9a2b77fb 124976 jffi_1.2.7.orig.tar.gz
+ 532312d3eb33b784c68042d17d578760 9564 jffi_1.2.7-9.2linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ b3e3a932f3368eb0a184a2e65e9408a1b70814cc 1865 jffi_1.2.7-9.2linarostretch1.dsc
+ 4313f50802e875f3fb9305027758cba1bc4a1c63 124976 jffi_1.2.7.orig.tar.gz
+ 841a2da7b2d0178068d1a1dae4d1b6e8c8a3143b 9564 jffi_1.2.7-9.2linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ db69f89c2820446112afbe792a0e4e08d100c5e0020e0168c88e7242e6f8b495 1865 jffi_1.2.7-9.2linarostretch1.dsc
+ bcf8879a82b71540b664cd4c4d7a438a4e46fc419d25f743f7c79f06931cf080 124976 jffi_1.2.7.orig.tar.gz
+ 2a0c95ad503b63f2431c802789169c63fd571782c631c09ce6b4b0e8d940fe01 9564 jffi_1.2.7-9.2linarostretch1.debian.tar.xz
+
+Package: jnr-ffi
+Format: 3.0 (quilt)
+Binary: libjnr-ffi-java, libjnr-ffi-java-doc
+Architecture: all
+Version: 1.0.10-4.1linarostretch1
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Tim Potter <tpot@hp.com>, Jakub Adam <jakub.adam@ktknet.cz>
+Homepage: https://github.com/jnr/jnr-ffi
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-java/jnr-ffi.git
+Vcs-Git: git://anonscm.debian.org/pkg-java/jnr-ffi.git
+Build-Depends: debhelper (>= 9), default-jdk, javahelper, junit4, libasm4-java, libjffi-java (>= 1.2.7), libjnr-x86asm-java (>= 1.0.2), libmaven-antrun-plugin-java, libmaven-javadoc-plugin-java, libmaven-source-plugin-java, maven-debian-helper, bnd (>= 2.1.0)
+Package-List:
+ libjnr-ffi-java deb java optional arch=all
+ libjnr-ffi-java-doc deb doc optional arch=all
+Priority: optional
+Section: java
+Directory: pool/main/j/jnr-ffi
+Files: 
+ 96f3876b966b8a0cd66ebd61034f9411 1943 jnr-ffi_1.0.10-4.1linarostretch1.dsc
+ 858061d4524de79f8170dfe4b526cb86 169196 jnr-ffi_1.0.10.orig.tar.gz
+ 0aafbee38d7dce98623a56222394a92b 4928 jnr-ffi_1.0.10-4.1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ 40218f9a14ebe7102fa171aa01514e3b37f69af0 1943 jnr-ffi_1.0.10-4.1linarostretch1.dsc
+ 66b70cff81b987800e90c9dee50dd56cbd5fe90e 169196 jnr-ffi_1.0.10.orig.tar.gz
+ 255bdb4d4d492ee85db30b96d0dbb671ca31cab4 4928 jnr-ffi_1.0.10-4.1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 838b2ed407e0ea72e411b6d65290412dbdeb83a2858f5d4ba42ab00f05553a8b 1943 jnr-ffi_1.0.10-4.1linarostretch1.dsc
+ 8d37e264705551a0f6b0283046dcc1264b311925874d7f674a6abc1f1f85775b 169196 jnr-ffi_1.0.10.orig.tar.gz
+ 90350f90cff8c960dac84bb15f25235446488d2170e9d840e09667635750dcda 4928 jnr-ffi_1.0.10-4.1linarostretch1.debian.tar.xz
+
+Package: libsoc
+Format: 3.0 (quilt)
+Binary: libsoc-dev, libsoc2, python-libsoc
+Architecture: arm64 armhf
+Version: 0.8.2-0linaro1linarostretch1
+Maintainer: Fathi Boudra <fabo@debian.org>
+Homepage: https://github.com/jackmitch/libsoc
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9), dh-autoreconf, dh-python, pkg-config, python-dev
+Package-List:
+ libsoc-dev deb libdevel optional arch=arm64,armhf
+ libsoc2 deb libs optional arch=arm64,armhf
+ python-libsoc deb python optional arch=arm64,armhf
+Priority: optional
+Section: libs
+Directory: pool/main/libs/libsoc
+Files: 
+ 312b1150e8a0189cd2e88917e5402be8 1603 libsoc_0.8.2-0linaro1linarostretch1.dsc
+ bef73ce0c78a18521abfb232f4b876b5 42638 libsoc_0.8.2.orig.tar.gz
+ 18692161be90f01479b99745245312a7 2740 libsoc_0.8.2-0linaro1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ 8740202323277e75159f7cfdd5b4e7e62e8980c5 1603 libsoc_0.8.2-0linaro1linarostretch1.dsc
+ 7ed0ac5cd422af68443f0db9abf5194ccfe14f54 42638 libsoc_0.8.2.orig.tar.gz
+ f131dfcf502bb819d07618abdf9e3144833f846b 2740 libsoc_0.8.2-0linaro1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ c73167a4a8e150a3f9643ed2d08812b5a46c5cf53596740c6920b8f338b4d8e1 1603 libsoc_0.8.2-0linaro1linarostretch1.dsc
+ 8df626bde365b94a805e1c323104c63a7429ec64c9df815cd1d9b9c4b317e066 42638 libsoc_0.8.2.orig.tar.gz
+ 6bafbe38e2332505da888f80affdc0c1777ae20b2eed8d26d04eee4e8b5fb885 2740 libsoc_0.8.2-0linaro1linarostretch1.debian.tar.xz
+
+Package: linaro-overlay
+Format: 1.0
+Binary: linaro-overlay-minimal
+Architecture: all
+Version: 1112.10
+Maintainer: Linaro Developers <linaro-dev@lists.linaro.org>
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7)
+Package-List:
+ linaro-overlay-minimal deb utils optional arch=all
+Priority: optional
+Section: utils
+Directory: pool/main/l/linaro-overlay
+Files: 
+ aa8958157ca246ae8c4efef7edc0b1c2 1441 linaro-overlay_1112.10.dsc
+ c417a6f5d068bfdcac9b82e063365a15 4744 linaro-overlay_1112.10.tar.gz
+Checksums-Sha1: 
+ 9485ae740e32f035a7666182e4bfbb6cd826be82 1441 linaro-overlay_1112.10.dsc
+ 77ec531cb4c0a9e59532ebdac98e3da6a4ea97f0 4744 linaro-overlay_1112.10.tar.gz
+Checksums-Sha256: 
+ 22348e8ef9a04d11a893ae743be3665437ee0146eaed8c07710e668e5254040d 1441 linaro-overlay_1112.10.dsc
+ d2c0cec278100b709f8d4652c83ecde6966a822a840c004bb37bc9a6cf4dfe66 4744 linaro-overlay_1112.10.tar.gz
+
+Package: mesa
+Format: 1.0
+Binary: libxatracker2, libxatracker-dev, libgbm1, libgbm-dev, libegl1-mesa, libegl1-mesa-dev, libegl1-mesa-drivers, libwayland-egl1-mesa, libgles1-mesa, libgles1-mesa-dev, libgles2-mesa, libgles2-mesa-dev, libglapi-mesa, libgl1-mesa-glx, libgl1-mesa-dri, libgl1-mesa-dev, mesa-common-dev, libosmesa6, libosmesa6-dev, mesa-va-drivers, mesa-vdpau-drivers, mesa-vulkan-drivers, mesa-opencl-icd
+Architecture: any
+Version: 13.0.3-1+linaro1linarostretch1
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Uploaders: Andreas Boll <andreas.boll.dev@gmail.com>
+Homepage: http://mesa3d.org/
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-xorg/lib/mesa.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-xorg/lib/mesa.git
+Build-Depends: debhelper (>= 10), quilt (>= 0.40), pkg-config, libdrm-dev (>= 2.4.69) [!hurd-any], libx11-dev, x11proto-gl-dev (>= 1.4.14), libxxf86vm-dev, libexpat1-dev, libgcrypt20-dev [amd64 i386 arm64 armhf ppc64el x32], libsensors4-dev [!hurd-any], libxfixes-dev, libxdamage-dev, libxext-dev, libva-dev (>= 1.6.0) [linux-any kfreebsd-any], libvdpau-dev (>= 1.1.1) [linux-any kfreebsd-any], libvulkan-dev [amd64 i386 arm64 armhf ppc64el x32], autoconf, automake, libtool, x11proto-dri2-dev (>= 2.6), x11proto-dri3-dev (>= 1.0), x11proto-present-dev (>= 1.0), linux-libc-dev (>= 2.6.31) [linux-any], libx11-xcb-dev, libxcb-dri2-0-dev (>= 1.8), libxcb-glx0-dev (>= 1.8.1), libxcb-xfixes0-dev, libxcb-dri3-dev, libxcb-present-dev, libxcb-randr0-dev, libxcb-sync-dev, libxshmfence-dev (>= 1.1), python, python-mako, flex, bison, llvm-3.9-dev (>= 1:3.9.1) [amd64 i386 kfreebsd-amd64 kfreebsd-i386 arm64 armhf ppc64el], libelf-dev [amd64 i386 kfreebsd-amd64 kfreebsd-i386 arm64 armhf ppc64el], libwayland-dev (>= 1.2.0) [linux-any], libclang-3.9-dev (>= 1:3.9.1) [amd64 i386 kfreebsd-amd64 kfreebsd-i386 arm64 armhf], libclc-dev (>= 0.2.0+git20160907) [amd64 i386 kfreebsd-amd64 kfreebsd-i386 arm64 armhf]
+Package-List:
+ libegl1-mesa deb libs optional arch=any
+ libegl1-mesa-dev deb libdevel optional arch=any
+ libegl1-mesa-drivers deb libs optional arch=linux-any,kfreebsd-any
+ libgbm-dev deb libdevel optional arch=linux-any,kfreebsd-any
+ libgbm1 deb libs optional arch=linux-any,kfreebsd-any
+ libgl1-mesa-dev deb libdevel optional arch=any
+ libgl1-mesa-dri deb libs optional arch=any
+ libgl1-mesa-glx deb libs optional arch=any
+ libglapi-mesa deb libs optional arch=any
+ libgles1-mesa deb libs optional arch=any
+ libgles1-mesa-dev deb libdevel optional arch=any
+ libgles2-mesa deb libs optional arch=any
+ libgles2-mesa-dev deb libdevel optional arch=any
+ libosmesa6 deb libs optional arch=any
+ libosmesa6-dev deb libdevel optional arch=any
+ libwayland-egl1-mesa deb libs optional arch=linux-any
+ libxatracker-dev deb libdevel optional arch=linux-any
+ libxatracker2 deb libs optional arch=linux-any
+ mesa-common-dev deb libdevel optional arch=any
+ mesa-opencl-icd deb libs optional arch=amd64,i386,kfreebsd-amd64,kfreebsd-i386,arm64,armhf
+ mesa-va-drivers deb libs optional arch=linux-any,kfreebsd-any
+ mesa-vdpau-drivers deb libs optional arch=linux-any,kfreebsd-any
+ mesa-vulkan-drivers deb libs optional arch=amd64,i386,arm64,armhf,ppc64el,x32
+Priority: optional
+Section: graphics
+Directory: pool/main/m/mesa
+Files: 
+ 9b3eefd6f1a9a0a511955954d196c816 4314 mesa_13.0.3-1+linaro1linarostretch1.dsc
+ e8861c911c338df52d219814d924f4df 15458494 mesa_13.0.3.orig.tar.gz
+ 87dee43859970135f121305644fd2e24 93525 mesa_13.0.3-1+linaro1linarostretch1.diff.gz
+Checksums-Sha1: 
+ 7d46dba40f45a827f6704cacab952f015a135131 4314 mesa_13.0.3-1+linaro1linarostretch1.dsc
+ 38a6a47f3465ed24e3d77bbeca0eb3deec0b1205 15458494 mesa_13.0.3.orig.tar.gz
+ fbcca9d2e1de962abf9eab2ddbaaaf84c1029f6c 93525 mesa_13.0.3-1+linaro1linarostretch1.diff.gz
+Checksums-Sha256: 
+ 2d6abfde11a7482a8c624d8c4ac9fe94f9280359492b837efe4370efd79e94c2 4314 mesa_13.0.3-1+linaro1linarostretch1.dsc
+ 55b07d056f9b855ba9d7c8b2ddc7d3b220a61c6ab1bdc73cbfc2f607721094c2 15458494 mesa_13.0.3.orig.tar.gz
+ eb790b302b4f503f857770a705fb0b954c95a34a420006a47fc8754585d4814c 93525 mesa_13.0.3-1+linaro1linarostretch1.diff.gz
+
+Package: mraa
+Format: 3.0 (quilt)
+Binary: libmraa-dev, libmraa1, libmraa1-dbg, mraa-doc, mraa-examples, mraa-gpio, mraa-gpio-dbg, python-mraa, python-mraa-dbg, python-mraa-doc
+Architecture: amd64 arm64 armhf all
+Version: 1.4.0-1linarostretch1
+Maintainer: Fathi Boudra <fabo@debian.org>
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Standards-Version: 3.9.6
+Build-Depends: chrpath, cmake, debhelper (>= 9), dh-python, doxygen, graphviz, libjs-jquery, libjs-underscore, libjson-c-dev, pkg-config, python-dev, python-sphinx, swig
+Package-List:
+ libmraa-dev deb libdevel optional arch=amd64,arm64,armhf
+ libmraa1 deb libs optional arch=amd64,arm64,armhf
+ libmraa1-dbg deb debug extra arch=amd64,arm64,armhf
+ mraa-doc deb doc optional arch=all
+ mraa-examples deb doc optional arch=all
+ mraa-gpio deb utils optional arch=amd64,arm64,armhf
+ mraa-gpio-dbg deb debug extra arch=amd64,arm64,armhf
+ python-mraa deb python optional arch=amd64,arm64,armhf
+ python-mraa-dbg deb debug extra arch=amd64,arm64,armhf
+ python-mraa-doc deb doc optional arch=all
+Priority: optional
+Section: libs
+Directory: pool/main/m/mraa
+Files: 
+ f013d2b8b61a2b10c35c0438e7f71461 2120 mraa_1.4.0-1linarostretch1.dsc
+ f05ab2bc32e8e1e3fa86dd7dc6b00840 320134 mraa_1.4.0.orig.tar.gz
+ 120435917073debf9a592c4351557ace 4528 mraa_1.4.0-1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ f976913e0cedff066ce410d847ee9f3a1914ce49 2120 mraa_1.4.0-1linarostretch1.dsc
+ 948a4c3aa328aa9e3b1d66dc5d48589811605c53 320134 mraa_1.4.0.orig.tar.gz
+ 016a44365be38dd61e3f8d50a03d1b3e753d0652 4528 mraa_1.4.0-1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 29d597419518c43e9fd58b618e340b3a8cfbcf8062f08829945bed933c339c9f 2120 mraa_1.4.0-1linarostretch1.dsc
+ 69c381020a1ee0a738d1147d3754fd84f5bc863848314805ee2187b9d33a8395 320134 mraa_1.4.0.orig.tar.gz
+ 9f1da0dcb92ac89788e3e676697b8a1a7b3a5bd3bcc2f69196db535b2a49c06c 4528 mraa_1.4.0-1linarostretch1.debian.tar.xz
+
+Package: optee-client
+Format: 3.0 (quilt)
+Binary: libteec-dev, libteec1.0, tee-supplicant
+Architecture: arm64 armhf
+Version: 2.2.0-1linarostretch1
+Maintainer: Fathi Boudra <fabo@debian.org>
+Homepage: https://github.com/OP-TEE/optee_client
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9), dh-systemd
+Package-List:
+ libteec-dev deb libdevel optional arch=arm64,armhf
+ libteec1.0 deb libs optional arch=arm64,armhf
+ tee-supplicant deb utils optional arch=arm64,armhf
+Priority: optional
+Section: libs
+Directory: pool/main/o/optee-client
+Files: 
+ 1f977c3334af903a5acae641459625cc 1597 optee-client_2.2.0-1linarostretch1.dsc
+ 82c53a6ff5d9b0fd18fb2892a92672d3 1896724 optee-client_2.2.0.orig.tar.gz
+ 99f61950df8f1902434e410690992143 2392 optee-client_2.2.0-1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ 29f545cce88480dd0149df59fb2986ace90fda64 1597 optee-client_2.2.0-1linarostretch1.dsc
+ 431e8e5214239a9d0322f270d406c2897daf842b 1896724 optee-client_2.2.0.orig.tar.gz
+ 4290e76af67792ba62116d2940f81c7c67e4d7d7 2392 optee-client_2.2.0-1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 2eafae13c76d33b3eb47d2c105296f1b0096a375d031dd97f108604e4525abea 1597 optee-client_2.2.0-1linarostretch1.dsc
+ 8a77501ea3cc7c2fd17df4aaf7deea757873cbd959bbb3a298a4f905aa4fd0a5 1896724 optee-client_2.2.0.orig.tar.gz
+ 1a5a98579453d2e47ae15283677a698594736a672871a353b78b847755c5d0ca 2392 optee-client_2.2.0-1linarostretch1.debian.tar.xz
+
+Package: optee-os
+Format: 3.0 (quilt)
+Binary: optee-os
+Architecture: arm64
+Version: 2.2.0-2linarostretch1
+Maintainer: Daniel Díaz <daniel.diaz@linaro.org>
+Homepage: https://github.com/OP-TEE/optee_os
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 9), python-crypto, python-wand
+Package-List:
+ optee-os deb utils optional arch=arm64
+Priority: optional
+Section: utils
+Directory: pool/main/o/optee-os
+Files: 
+ 8efbb960f97288ba36408f784da8e990 1440 optee-os_2.2.0-2linarostretch1.dsc
+ 76f3c9f974d40717f51638ca6c1a8d5a 2539706 optee-os_2.2.0.orig.tar.gz
+ 1dd0f7790e0da087fa0baeb63d6925f9 2256 optee-os_2.2.0-2linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ a765ad3204190dcf3ccef2d9d63d32ddb2c94863 1440 optee-os_2.2.0-2linarostretch1.dsc
+ b58d642123e5c898b005f3454d99affd38863a7d 2539706 optee-os_2.2.0.orig.tar.gz
+ 65fd1980e2baa7804bf75b0f8913ea6cece76b40 2256 optee-os_2.2.0-2linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ b3ec287ae11714b03beff7957c22f987c512c95c7d791ff26c7400e9e543285a 1440 optee-os_2.2.0-2linarostretch1.dsc
+ 6cadac0a3f86bb6b77c3e9018fe7a409b756116b8747791c1d11a6a3379ac50e 2539706 optee-os_2.2.0.orig.tar.gz
+ 7be7b3dded5180522b230ff97a9aed2e9d246f8db63dada5023c524c73d5d180 2256 optee-os_2.2.0-2linarostretch1.debian.tar.xz
+
+Package: optee-test
+Format: 3.0 (quilt)
+Binary: optee-xtest
+Architecture: arm64
+Version: 2.2.0-2linarostretch1
+Maintainer: Daniel Díaz <daniel.diaz@linaro.org>
+Homepage: https://github.com/OP-TEE/optee_test
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 9), python-crypto, python-wand, optee-os, libteec-dev
+Package-List:
+ optee-xtest deb utils optional arch=arm64
+Priority: optional
+Section: utils
+Directory: pool/main/o/optee-test
+Files: 
+ 37450f137174305ffcca76f0ba7fc7a5 1485 optee-test_2.2.0-2linarostretch1.dsc
+ bc354c794649c5ecf1ca2868f67a4664 2970606 optee-test_2.2.0.orig.tar.gz
+ 1fd9af25e5a6bd7ca01c683f44584b3a 2684 optee-test_2.2.0-2linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ a2100080f6859c4d7d2bea2826c81ad7f75a1c7b 1485 optee-test_2.2.0-2linarostretch1.dsc
+ 70e0d2918806842e14ab2140405644200988b6a8 2970606 optee-test_2.2.0.orig.tar.gz
+ da9623ff110d58fb2b302ca302cf7384649e67a6 2684 optee-test_2.2.0-2linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ df6dd1457c912b9ed3f4bf70ec07fd2f499a7e5a738f99bb6a674dc229905f81 1485 optee-test_2.2.0-2linarostretch1.dsc
+ 3a9fb110ca62fadd146336a21bcfc41d1b907c007772eaaca72d6bc83909f30c 2970606 optee-test_2.2.0.orig.tar.gz
+ c572ff923c1686f4f97f830211a619603d0cee94f33217a99b7e49c9d9b98c3f 2684 optee-test_2.2.0-2linarostretch1.debian.tar.xz
+
+Package: qdsp-config
+Format: 3.0 (native)
+Binary: qdsp-start
+Architecture: all
+Version: 1.1linarostretch1
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qdsp-config.git
+Standards-Version: 3.9.3
+Vcs-Browser: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qdsp-config.git
+Vcs-Git: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qdsp-config.git
+Build-Depends: cdbs, debhelper (>= 7)
+Package-List:
+ qdsp-start deb utils optional arch=all
+Priority: optional
+Section: utils
+Directory: pool/main/q/qdsp-config
+Files: 
+ f3473f63cb00d2448da25abbb6b3f875 1365 qdsp-config_1.1linarostretch1.dsc
+ f4f73dd078499d5612303479ad009e8c 2440 qdsp-config_1.1linarostretch1.tar.xz
+Checksums-Sha1: 
+ f43afb3852e09fe532583fb728321ad72c121f89 1365 qdsp-config_1.1linarostretch1.dsc
+ 2e29a3ab9c4498fafe06c95e8426c574a8a8eb4e 2440 qdsp-config_1.1linarostretch1.tar.xz
+Checksums-Sha256: 
+ a814703fcb3c3fe0816d572aeae3da53918b570b699990cd18d255f20d1c2bec 1365 qdsp-config_1.1linarostretch1.dsc
+ 4c1a067dd2e69aea66badcc17ffa90e78553161b6891350cb8ad43c0f11eaa54 2440 qdsp-config_1.1linarostretch1.tar.xz
+
+Package: qmi-gps-proxy
+Format: 3.0 (quilt)
+Binary: qmi-gps-proxy, gnss-gpsd
+Architecture: any all
+Version: 0.0+0+df3b976-5linarostretch1
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qmi_loc2.git
+Standards-Version: 3.9.3
+Vcs-Browser: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qmi_loc2.git
+Vcs-Git: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qmi_loc2.git
+Build-Depends: cdbs, debhelper (>= 7), qmic, libqrtr-dev, quilt
+Package-List:
+ gnss-gpsd deb utils optional arch=all
+ qmi-gps-proxy deb utils optional arch=any
+Priority: optional
+Section: utils
+Directory: pool/main/q/qmi-gps-proxy
+Files: 
+ 502a48f583e8a6d259f863b31274464e 1795 qmi-gps-proxy_0.0+0+df3b976-5linarostretch1.dsc
+ 39a4c4952107a8d6bff0f759aafc75d8 7513 qmi-gps-proxy_0.0+0+df3b976.orig.tar.gz
+ 4daf8c14191c2c21389fb1cf949f34a5 3688 qmi-gps-proxy_0.0+0+df3b976-5linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ 01187b40e3fffe822a188e4249e7405aceb22525 1795 qmi-gps-proxy_0.0+0+df3b976-5linarostretch1.dsc
+ 3c6efacee521d1203e94fae3577a9dd8ee25cef0 7513 qmi-gps-proxy_0.0+0+df3b976.orig.tar.gz
+ 0b298800870614eaa491fc9c45daf7907d44facb 3688 qmi-gps-proxy_0.0+0+df3b976-5linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 6b72fb1bf2425aff97fa51555501ef4f4801d6ab10edb5ef86ae45eb59efa61d 1795 qmi-gps-proxy_0.0+0+df3b976-5linarostretch1.dsc
+ 3301edc59c6a568efbd3a989f64190ec7d3f6f20ec3362cc3d0a639b31dda3e2 7513 qmi-gps-proxy_0.0+0+df3b976.orig.tar.gz
+ 0c2468178d9d66d83e7fc473ea745f4b9c3d73774095026068e6157eb0c9ef82 3688 qmi-gps-proxy_0.0+0+df3b976-5linarostretch1.debian.tar.xz
+
+Package: qmic
+Format: 3.0 (quilt)
+Binary: qmic
+Architecture: any
+Version: 0.0+0+1c036374-1linarostretch1
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Homepage: https://github.com/andersson/qmic.git
+Standards-Version: 3.9.3
+Vcs-Browser: https://github.com/andersson/qmic.git
+Vcs-Git: https://github.com/andersson/qmic.git
+Build-Depends: cdbs, debhelper (>= 7)
+Package-List:
+ qmic deb utils optional arch=any
+Priority: optional
+Section: utils
+Directory: pool/main/q/qmic
+Files: 
+ 038d305b2f1dffd2d7973373b78997b5 1542 qmic_0.0+0+1c036374-1linarostretch1.dsc
+ 2e18736505397e78e00e098274229f3b 6390 qmic_0.0+0+1c036374.orig.tar.gz
+ dedcde018da7a34c7f8a21e3dff6de89 1672 qmic_0.0+0+1c036374-1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ 7d633d8f7618e6979f4c97b6e321c1c446971b0a 1542 qmic_0.0+0+1c036374-1linarostretch1.dsc
+ 7f8962ddb58315e406285a0c1f39c80ffb9fb533 6390 qmic_0.0+0+1c036374.orig.tar.gz
+ a9892194a07ab5a8561a4dd91b14e4144b0e2f12 1672 qmic_0.0+0+1c036374-1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 82adbd1e7099b3d9a34a540b820589ce727b16fc2a3029a021e6b14f51ffa9e1 1542 qmic_0.0+0+1c036374-1linarostretch1.dsc
+ c4b8d798ffb697a3945feff2fc6482d6f1554eb5f3da92a84e133ac6ffb13289 6390 qmic_0.0+0+1c036374.orig.tar.gz
+ 9e6a693df680c12cdd048d3bd110f5c772a7b387a348a4fe2e79bb0c380e7174 1672 qmic_0.0+0+1c036374-1linarostretch1.debian.tar.xz
+
+Package: qrtr
+Format: 3.0 (quilt)
+Binary: qrtr, libqrtr1, libqrtr-dev
+Architecture: any
+Version: 0.0+0+9c85f35a-1linarostretch1
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Homepage: https://github.com/andersson/qrtr.git
+Standards-Version: 3.9.3
+Vcs-Browser: https://github.com/andersson/qrtr.git
+Vcs-Git: https://github.com/andersson/qrtr.git
+Build-Depends: cdbs (>= 0.4.93~), debhelper (>= 8.1.3)
+Package-List:
+ libqrtr-dev deb libdevel optional arch=any
+ libqrtr1 deb libs optional arch=any
+ qrtr deb utils optional arch=any
+Priority: optional
+Section: utils
+Directory: pool/main/q/qrtr
+Files: 
+ 477836fb76e5b8f53485d629a2642a4f 1666 qrtr_0.0+0+9c85f35a-1linarostretch1.dsc
+ 1a3df386b34ad0b88246a567e3db65a2 12843 qrtr_0.0+0+9c85f35a.orig.tar.gz
+ ab91c127b9c8f95eb4dfc95534403278 2112 qrtr_0.0+0+9c85f35a-1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ b9568dfebd9c067e3261ab22560d012c62a00039 1666 qrtr_0.0+0+9c85f35a-1linarostretch1.dsc
+ 1763707d7a7be46e18ef34d2b41e331143517bb9 12843 qrtr_0.0+0+9c85f35a.orig.tar.gz
+ f62bb52cf52edc47a376d1ea6c1606cc78c00902 2112 qrtr_0.0+0+9c85f35a-1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 4588fa67cad1186517b789d44ac4bde3e477b34243ba1694ca68555f27b02d28 1666 qrtr_0.0+0+9c85f35a-1linarostretch1.dsc
+ ba6e706ac7e5ae464b94a3f49bd3f384931ac7c7186da451292f6fe77d2f0c61 12843 qrtr_0.0+0+9c85f35a.orig.tar.gz
+ f6a0b54422ab26c8c8505ca4cd71d626cdde8a99a46e64bbf4bbece305990a5a 2112 qrtr_0.0+0+9c85f35a-1linarostretch1.debian.tar.xz
+
+Package: rmtfs
+Format: 3.0 (quilt)
+Binary: rmtfs
+Architecture: any
+Version: 0.0+1+8c799599-1linarostretch1
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Homepage: https://github.com/andersson/rmtfs.git
+Standards-Version: 3.9.3
+Vcs-Browser: https://github.com/andersson/rmtfs.git
+Vcs-Git: https://github.com/andersson/rmtfs.git
+Build-Depends: cdbs, debhelper (>= 7), qmic, libqrtr-dev
+Package-List:
+ rmtfs deb utils optional arch=any
+Priority: optional
+Section: utils
+Directory: pool/main/r/rmtfs
+Files: 
+ 30871c08912db3f3ec52054e604cc828 1573 rmtfs_0.0+1+8c799599-1linarostretch1.dsc
+ a7d5817b0bc3e2ec0d8ba63a7c1a2260 9232 rmtfs_0.0+1+8c799599.orig.tar.gz
+ cef4d56b3d80baacfe837ef584d1194b 2144 rmtfs_0.0+1+8c799599-1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ 5d34fe3614d9b2f815a89446ee14a594dc27ac55 1573 rmtfs_0.0+1+8c799599-1linarostretch1.dsc
+ 2382a52de8efcf43ca9b0b6c1e5966924a84cbe5 9232 rmtfs_0.0+1+8c799599.orig.tar.gz
+ 8f8fbef9b644342770a3e7f7934ad520e47c454d 2144 rmtfs_0.0+1+8c799599-1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ a4e2f4a37ce500afcec571b09d3db3ad8caf42e26286284593dc9e7c23b1bea2 1573 rmtfs_0.0+1+8c799599-1linarostretch1.dsc
+ 20b8b4edfc6f991c251859ae2a5bfb96247384d9a6b15cae3aca5204c5fe7ba6 9232 rmtfs_0.0+1+8c799599.orig.tar.gz
+ b41328fd24c6eeacd10e33beebb58c0b29d74781cd9966627d3c6b65d899a0df 2144 rmtfs_0.0+1+8c799599-1linarostretch1.debian.tar.xz
+
+Package: sysbench
+Format: 3.0 (quilt)
+Binary: sysbench
+Architecture: any
+Version: 0.4.12-1.2
+Maintainer: Hendrik Frenzel <hfrenzel@scunc.net>
+Homepage: http://sourceforge.net/projects/sysbench
+Standards-Version: 3.9.5
+Vcs-Browser: http://svn.debian.org/wsvn/collab-maint/ext-maint/sysbench/trunk/
+Vcs-Svn: svn://svn.debian.org/svn/collab-maint/ext-maint/sysbench/trunk/
+Build-Depends: autoconf, automake, cdbs, debhelper (>= 9), default-libmysqlclient-dev, dh-autoreconf, docbook-xml, docbook-xsl, libtool, xsltproc
+Package-List:
+ sysbench deb misc extra arch=any
+Priority: extra
+Section: misc
+Directory: pool/main/s/sysbench
+Files: 
+ eac29dc1a779b8c3d60df9291ddbf35d 1634 sysbench_0.4.12-1.2.dsc
+ 3a6d54fdd3fe002328e4458206392b9d 421932 sysbench_0.4.12.orig.tar.gz
+ 5ce3e5c2b7eacdd62b2b70d4c7d2e896 11116 sysbench_0.4.12-1.2.debian.tar.xz
+Checksums-Sha1: 
+ d16da3bc049943aa1a8f0c8d4ea2c766b0ab220f 1634 sysbench_0.4.12-1.2.dsc
+ 3f346e8b29b738711546970b027bbb7359d4672a 421932 sysbench_0.4.12.orig.tar.gz
+ 6f9c88eadbfb09ddd2e5d7d3497976c62a6b4ede 11116 sysbench_0.4.12-1.2.debian.tar.xz
+Checksums-Sha256: 
+ c340a9e016f99ce604388956f0d43bcc1f0dd801e4aec1f91e6d1ccf7760ed1b 1634 sysbench_0.4.12-1.2.dsc
+ 83fa7464193e012c91254e595a89894d8e35b4a38324b52a5974777e3823ea9e 421932 sysbench_0.4.12.orig.tar.gz
+ d8c6949c3dd96ffcd69dc1f954dc597237c22af155501be64eb1f47a7638c022 11116 sysbench_0.4.12-1.2.debian.tar.xz
+
+Package: ti-uim
+Format: 3.0 (quilt)
+Binary: ti-uim
+Architecture: any
+Version: 0.0+git20110201+c738944-1linaro10linarostretch1
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Uploaders: Fathi Boudra <fathi.boudra@linaro.org>
+Homepage: http://gitorious.org/uim/uim
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ ti-uim deb misc optional arch=any
+Priority: optional
+Section: misc
+Directory: pool/main/t/ti-uim
+Files: 
+ 4234d42dea9f893839f5b8550cb35e4c 1598 ti-uim_0.0+git20110201+c738944-1linaro10linarostretch1.dsc
+ 10083e6b1f9f6835cfe828d6cd1d3628 6094 ti-uim_0.0+git20110201+c738944.orig.tar.gz
+ 52af82ebb6642d47d609312f844e5e5a 5208 ti-uim_0.0+git20110201+c738944-1linaro10linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ 44fa3a5141d21df2cd1074a015c701e9fe370b1c 1598 ti-uim_0.0+git20110201+c738944-1linaro10linarostretch1.dsc
+ c8e09200167f375f6bb9bdf4170fbbcb0f449670 6094 ti-uim_0.0+git20110201+c738944.orig.tar.gz
+ 06a5634011fb43e1488dd86b5799b529a873db09 5208 ti-uim_0.0+git20110201+c738944-1linaro10linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 6bb1019dee2b6c8a60b5c7830783fe8e5143eae77b74fbd382b4fc2451d2978c 1598 ti-uim_0.0+git20110201+c738944-1linaro10linarostretch1.dsc
+ c0f7c01d74f03066d0c79fdd11b492b1e2795b4a94b691a2676f40d43d727dc9 6094 ti-uim_0.0+git20110201+c738944.orig.tar.gz
+ 6895f4df81041689697df31f7eab7e0ebcd1b4f8b24281b3b603fef24bb02fba 5208 ti-uim_0.0+git20110201+c738944-1linaro10linarostretch1.debian.tar.xz
+
+Package: ti-utils
+Format: 3.0 (quilt)
+Binary: ti-calibrator, ti-wlconf
+Architecture: any
+Version: 0.80+git8.5.4+d1def45-2linarostretch1
+Maintainer: Fathi Boudra <fabo@debian.org>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), libnl-genl-3-dev
+Package-List:
+ ti-calibrator deb utils optional arch=any
+ ti-wlconf deb utils optional arch=any
+Priority: optional
+Section: utils
+Directory: pool/main/t/ti-utils
+Files: 
+ a238c315a7e2e46fadcf55247697254e 1549 ti-utils_0.80+git8.5.4+d1def45-2linarostretch1.dsc
+ 43d0a9c8acca394e90111a39633e8f24 1500735 ti-utils_0.80+git8.5.4+d1def45.orig.tar.bz2
+ efefbe2a81b759c7bf68c4e61f030b59 3512 ti-utils_0.80+git8.5.4+d1def45-2linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ bdb1e9087a784a3497fefbadc2d326aeda23e258 1549 ti-utils_0.80+git8.5.4+d1def45-2linarostretch1.dsc
+ a80deeb4a4c4df8095718b6e4ffacd0ce77facd2 1500735 ti-utils_0.80+git8.5.4+d1def45.orig.tar.bz2
+ 550b882aad927059c55a13209fd1560ba392e209 3512 ti-utils_0.80+git8.5.4+d1def45-2linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ 6cc6f6e6dba95356d6644807ae85b2f3bf779aa5529924ad3c94e4c5fb99eaf3 1549 ti-utils_0.80+git8.5.4+d1def45-2linarostretch1.dsc
+ 99da53fa02cb38e16c34325de985079e5870640df9141769aabae49e4c0b7b3e 1500735 ti-utils_0.80+git8.5.4+d1def45.orig.tar.bz2
+ 2cca4e5af0c134c773b3e8ad0e0393c173092303a8621048930c5f0ca6d25578 3512 ti-utils_0.80+git8.5.4+d1def45-2linarostretch1.debian.tar.xz
+
+Package: upm
+Format: 3.0 (quilt)
+Binary: libupm-dev, libupm0, libupm0-dbg, upm-doc, upm-examples, python-upm, python-upm-dbg
+Architecture: amd64 arm64 armhf all
+Version: 0.8.0-1linarostretch1
+Maintainer: Fathi Boudra <fabo@debian.org>
+Homepage: http://iotdk.intel.com/docs/master/upm/
+Standards-Version: 3.9.4
+Build-Depends: cmake, debhelper (>= 9), dh-python, doxygen, graphviz, libjpeg-dev, libjs-jquery, libjs-underscore, libmraa-dev (>= 1.1.1), pkg-config, python-dev, python-sphinx, swig
+Package-List:
+ libupm-dev deb libdevel optional arch=amd64,arm64,armhf
+ libupm0 deb libs optional arch=amd64,arm64,armhf
+ libupm0-dbg deb debug extra arch=amd64,arm64,armhf
+ python-upm deb python optional arch=amd64,arm64,armhf
+ python-upm-dbg deb debug extra arch=amd64,arm64,armhf
+ upm-doc deb doc optional arch=all
+ upm-examples deb doc optional arch=all
+Priority: optional
+Section: libs
+Directory: pool/main/u/upm
+Files: 
+ 665a90f25b38d65631bc7ffc21b36d9a 1924 upm_0.8.0-1linarostretch1.dsc
+ 9de4b3b101460f3aef57e701588d6e8d 10649563 upm_0.8.0.orig.tar.gz
+ 62a9aaf11e8aee42a3a9d34611f171ec 3184 upm_0.8.0-1linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ def133e412a0f6606adcc33508702c10cc849645 1924 upm_0.8.0-1linarostretch1.dsc
+ f5896a34b8eb6829f9d770af9c38afc2f183cc00 10649563 upm_0.8.0.orig.tar.gz
+ 3649a38b81c94735601964274b8ad897ebadec82 3184 upm_0.8.0-1linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ c408b9c620df258796e42fc0464d338cc69b4e12aa94b5bb83a24c45758bcb36 1924 upm_0.8.0-1linarostretch1.dsc
+ 3263ce094723b35d26f0e807296924febcafa25b80e05fabc31cbde4a04bdcb0 10649563 upm_0.8.0.orig.tar.gz
+ f6579f56eef2da4946fee65e1707d11f34b80062c17b9fa63338d8415dcaa9f2 3184 upm_0.8.0-1linarostretch1.debian.tar.xz
+
+Package: wcnss-config
+Format: 3.0 (native)
+Binary: wcnss-start
+Architecture: all
+Version: 1.13linarostretch1
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/wcnss-config.git
+Standards-Version: 3.9.3
+Vcs-Browser: https://git.linaro.org/landing-teams/working/qualcomm/wcnss-config.git
+Vcs-Git: https://git.linaro.org/landing-teams/working/qualcomm/wcnss-config.git
+Build-Depends: cdbs, debhelper (>= 7), dh-systemd (>= 1.5)
+Package-List:
+ wcnss-start deb utils optional arch=all
+Priority: optional
+Section: utils
+Directory: pool/main/w/wcnss-config
+Files: 
+ 91de766bb28c0476d12c4ab51db0d74b 1387 wcnss-config_1.13linarostretch1.dsc
+ 613613be841c6a4aad34150a62d463fe 3160 wcnss-config_1.13linarostretch1.tar.xz
+Checksums-Sha1: 
+ c3b9b7937909aea386880bfecdf9abf04e49f032 1387 wcnss-config_1.13linarostretch1.dsc
+ 6666a80ec93a6042382246407bdae0d5d0655af6 3160 wcnss-config_1.13linarostretch1.tar.xz
+Checksums-Sha256: 
+ 886595703afb23ecf3fa3f7785b0caa8cfd99e8c2ea541f1c56e5d8721107c17 1387 wcnss-config_1.13linarostretch1.dsc
+ c4dffab231e514683a04036ee0ac74afb2678809fffba01740f2f2532d5ffc9d 3160 wcnss-config_1.13linarostretch1.tar.xz
+
+Package: xf86-video-armsoc
+Format: 3.0 (quilt)
+Binary: xserver-xorg-video-armsoc, xserver-xorg-video-armsoc-dbg
+Architecture: arm64 armel armhf
+Version: 1.4.0-0linaro2linarostretch1
+Maintainer: Fathi Boudra <fathi.boudra@linaro.org>
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 8), dh-autoreconf, libdrm-dev (>= 2.4.55), libudev-dev [linux-any], pkg-config, quilt, xserver-xorg-dev (>= 2:1.15.99), xutils-dev
+Package-List:
+ xserver-xorg-video-armsoc deb x11 optional arch=arm64,armel,armhf
+ xserver-xorg-video-armsoc-dbg deb debug extra arch=arm64,armel,armhf
+Priority: optional
+Section: x11
+Directory: pool/main/x/xf86-video-armsoc
+Files: 
+ 7f6691705bc26ff340e6711cd4dbaf0b 1738 xf86-video-armsoc_1.4.0-0linaro2linarostretch1.dsc
+ 5fc73e090f064d1012e76cc7fcd07117 44988 xf86-video-armsoc_1.4.0.orig.tar.xz
+ 41c50df45d1bb5720224e85007205f0a 5448 xf86-video-armsoc_1.4.0-0linaro2linarostretch1.debian.tar.xz
+Checksums-Sha1: 
+ 0f0816c1fd814f189f8fa2971cbff2e456431f45 1738 xf86-video-armsoc_1.4.0-0linaro2linarostretch1.dsc
+ 1aa1d12e7b8d8a56c4d16785476799ff32179e96 44988 xf86-video-armsoc_1.4.0.orig.tar.xz
+ 2d7b6edbf944d438896e96e423d6b42ac43035f6 5448 xf86-video-armsoc_1.4.0-0linaro2linarostretch1.debian.tar.xz
+Checksums-Sha256: 
+ b1100a158addccee0571fa5460738d851af51db0698a9860a0d1e928f886b3b5 1738 xf86-video-armsoc_1.4.0-0linaro2linarostretch1.dsc
+ fc227c319b6cf5f6f7ec0528d2a09743e9ce4f8b33e39e02b767e1dc2f199407 44988 xf86-video-armsoc_1.4.0.orig.tar.xz
+ cb86e12e136b7cadd4d60c9900e5543c7ded9bf442576340aab9994897801be8 5448 xf86-video-armsoc_1.4.0-0linaro2linarostretch1.debian.tar.xz
+
