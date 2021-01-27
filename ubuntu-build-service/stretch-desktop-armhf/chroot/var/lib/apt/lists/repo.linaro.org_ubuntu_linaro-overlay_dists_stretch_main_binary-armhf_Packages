@@ -1,0 +1,2685 @@
+Package: 96boards-artwork
+Version: 0.6-0linaro1
+Architecture: all
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 125
+Depends: linaro-artwork
+Homepage: https://github.com/rsalveti/96boards-artwork
+Priority: optional
+Section: x11
+Filename: pool/main/9/96boards-artwork/96boards-artwork_0.6-0linaro1_all.deb
+Size: 105166
+SHA256: 59e501c14f7a9d3f15bc7fc0a6cb0746130b1b3abde7365bbbeef48ed613d3ad
+SHA1: 00d5241c6295d4dfcdbaab8ad0c5965c40522c98
+MD5sum: 37c43924b8ef3a7645195e69e787423b
+Description: artwork for 96Boards
+ Artwork for 96Boards, contained the wallpaper and others specific images
+ and logos.
+ .
+ This package contains theme of 96Boards.
+
+Package: 96boards-icon-theme
+Source: 96boards-artwork
+Version: 0.5
+Architecture: all
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 21927
+Depends: hicolor-icon-theme, gnome-icon-theme, gnome-icon-theme-symbolic
+Homepage: https://github.com/rsalveti/96boards-artwork
+Priority: optional
+Section: x11
+Filename: pool/main/9/96boards-artwork/96boards-icon-theme_0.5_all.deb
+Size: 1006326
+SHA256: cdbe8451267e6ae090d5ad53985261647a1357dd93774c5d622abd4716e02d53
+SHA1: ea735accdc73479bd9cdc4d03648a11e73c98e89
+MD5sum: ca624172ec471c76bfdd1ef1c6f19965
+Description: icon theme for 96Boards
+ This package contains a specific icon theme for 96Boards.
+
+Package: 96boards-installer-session
+Source: 96boards-installer
+Version: 1.0~6linarostretch1
+Architecture: all
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 17
+Depends: 96boards-installer, x11-xserver-utils
+Homepage: https://github.com/96boards/96boards-installer
+Priority: optional
+Section: utils
+Filename: pool/main/9/96boards-installer/96boards-installer-session_1.0~6linarostretch1_all.deb
+Size: 3048
+SHA256: dc0d5af2f001c6de4d019ba257a799a2bd643e9469bde61e0df64d8f4975c5ca
+SHA1: 9c61944c219545fdcf3d4e949df76bc26cd88127
+MD5sum: c47dfb043a077e8c07cb889dd611a534
+Description: Default session settings for 96boards installer
+ Settings for the 96boards graphical installer
+
+Package: 96boards-lxpanel-icons
+Source: 96boards-artwork
+Version: 0.5
+Architecture: all
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 130
+Homepage: https://github.com/rsalveti/96boards-artwork
+Priority: optional
+Section: x11
+Filename: pool/main/9/96boards-artwork/96boards-lxpanel-icons_0.5_all.deb
+Size: 52762
+SHA256: 708c61b82b56fb0a91f8db9f90122721106cd3786887f9d16709e51aeff2282c
+SHA1: 4aa9a7556fc45bb7ab649b51ba21dfc5f7d7c66c
+MD5sum: ceed0874d013d506f488336c00059ab6
+Description: panel specific icons for 96Boards artwork
+ This package contain specific lxpanel icons for 96Boards theme.
+
+Package: 96boards-tools-common
+Source: 96boards-tools
+Version: 0.9
+Architecture: all
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 50
+Depends: gdisk, parted, init-system-helpers (>= 1.18~)
+Homepage: https://github.com/96boards/96boards-tools
+Priority: optional
+Section: utils
+Filename: pool/main/9/96boards-tools/96boards-tools-common_0.9_all.deb
+Size: 8228
+SHA256: 55348c1e70c9dd00225d42bf0201c5ae1d4c302e45e2bad0be5347aabe13d562
+SHA1: f6e0aae5de9187dd9c852d3422b3fe94d5a9e62a
+MD5sum: cd489ae27fb2101c24d4d4106c8efddb
+Description: common files used by 96boards
+ This package provides configuration and tools used to help
+ bringing a common user experience across different 96Boards.
+
+Package: android-tools-adb
+Source: android-tools
+Version: 5.1.1.r29-3.linarojessie.1
+Architecture: armhf
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Installed-Size: 205
+Depends: libc6 (>= 2.15), libssl1.0.0 (>= 1.0.0)
+Homepage: https://developer.android.com/tools/help/adb.html
+Priority: extra
+Section: devel
+Filename: pool/main/a/android-tools/android-tools-adb_5.1.1.r29-3.linarojessie.1_armhf.deb
+Size: 66052
+SHA256: a691b6f3534b6dc896ca3298b37b1b04caa8ac066da4c53b61c0e26f534d616a
+SHA1: 498ef8842b380ee85faafdc9992be97b92106ee2
+MD5sum: 48197dcc8cc4db27b88086feb3f9b1a2
+Description: Android Debug Bridge CLI tool
+ Android Debug Bridge (adb) is a versatile tool that lets you manage the state
+ of an emulator instance or Android-powered device. It is a client-server
+ program that includes three components:
+ .
+ A client, which runs on your development machine. You can invoke a
+ client from a shell by issuing an adb command. Other Android tools such
+ as the ADT plugin and DDMS also create adb clients.
+ .
+ A server, which runs as a background process on your development
+ machine.  The server manages communication between the client and the
+ adb daemon running on an emulator or device.
+ .
+ A daemon, which runs as a background process on each emulator or device
+ instance.
+
+Package: android-tools-adbd
+Source: android-tools
+Version: 5.1.1.r29-3.linarojessie.1
+Architecture: armhf
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Installed-Size: 115
+Depends: libbsd0 (>= 0.0), libc6 (>= 2.17), libselinux1 (>= 1.32), libssl1.0.0 (>= 1.0.0)
+Homepage: https://developer.android.com/tools/help/adb.html
+Priority: extra
+Section: devel
+Filename: pool/main/a/android-tools/android-tools-adbd_5.1.1.r29-3.linarojessie.1_armhf.deb
+Size: 45794
+SHA256: 61e7858ea1766dcf59a38004148292e3c7e8a17659b62d8a3b4b0c1b149a4a35
+SHA1: e4a2bdebd0a52a547713f66c863da99c366a1bac
+MD5sum: 6dca81c787f9fb78948b18a36be34d3f
+Description: Android Debug Bridge daemon
+ Android Debug Bridge (adb) is a versatile tool that lets you manage the state
+ of an emulator instance or Android-powered device. It is a client-server
+ program that includes three components:
+ .
+ A client, which runs on your development machine. You can invoke a
+ client from a shell by issuing an adb command. Other Android tools such
+ as the ADT plugin and DDMS also create adb clients.
+ .
+ A server, which runs as a background process on your development
+ machine.  The server manages communication between the client and the
+ adb daemon running on an emulator or device.
+ .
+ A daemon, which runs as a background process on each emulator or device
+ instance.
+ .
+ This package provides the daemon component.
+
+Package: android-tools-fastboot
+Source: android-tools
+Version: 5.1.1.r29-3.linarojessie.1
+Architecture: armhf
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Installed-Size: 159
+Depends: libc6 (>= 2.11), libselinux1 (>= 2.0.65), zlib1g (>= 1:1.2.3.4)
+Homepage: https://developer.android.com/tools/help/adb.html
+Priority: extra
+Section: devel
+Filename: pool/main/a/android-tools/android-tools-fastboot_5.1.1.r29-3.linarojessie.1_armhf.deb
+Size: 52290
+SHA256: 0595c8129ed773560a7ded23f48d9655fd8be8cfd914cf82be67ca3a0691ebf9
+SHA1: 999762b6be303d60e6afcc5957816e5ed29c745c
+MD5sum: e443c70457a18bf16878c610521974c7
+Description: Android Fastboot protocol CLI tool
+ Fastboot is a diagnostic protocol primarily used to update the flash
+ filesystem of Android devices over USB.
+ .
+ This package provides the fastboot command-line tool.
+
+Package: android-tools-fsutils
+Source: android-tools
+Version: 5.1.1.r29-3.linarojessie.1
+Architecture: armhf
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Installed-Size: 395
+Depends: python, libc6 (>= 2.11), libselinux1 (>= 2.0.65), zlib1g (>= 1:1.2.3.4)
+Homepage: https://developer.android.com/tools/help/adb.html
+Priority: extra
+Section: devel
+Filename: pool/main/a/android-tools/android-tools-fsutils_5.1.1.r29-3.linarojessie.1_armhf.deb
+Size: 60506
+SHA256: e446ec613c7dcd1720cd5cc2c6b85d4a98d1d84a63baba68dd1c37563391f535
+SHA1: da2116d444dfaf1230d3b3c8141bd27ffd0874d6
+MD5sum: 608354b940143f0be3b06c53caed466d
+Description: Android ext4 utilities with sparse support
+ Android images (.img) are typically ext4 filesystems in a special
+ sparse file format.  These are tools to help make that format.
+ .
+ This package provides the utilities to deal with Android sparse ext4
+ images.
+
+Package: android-tools-mkbootimg
+Source: android-tools
+Version: 5.1.1.r29-3.linarojessie.1
+Architecture: armhf
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Installed-Size: 50
+Depends: libc6 (>= 2.4)
+Homepage: https://developer.android.com/tools/help/adb.html
+Priority: extra
+Section: devel
+Filename: pool/main/a/android-tools/android-tools-mkbootimg_5.1.1.r29-3.linarojessie.1_armhf.deb
+Size: 12098
+SHA256: 6cd11c115029d2273bf54bfe63e48a1eac24e672b380f9aea94c7514c17df0ac
+SHA1: 0d0e41d7d5561dc9a0ae922fbf3190ab32d86e9d
+MD5sum: c2e2a0a9be24ed45097fca7a8acb04eb
+Description: Android tool to create Android boot images
+ Creates Android boot images that includes kernel image and ramdisk, in a
+ special format which can be used with fastboot.
+ .
+ This package provides the mkbootimg command-line tool.
+
+Package: chromedriver
+Source: chromium-browser
+Version: 53.0.2785.143-1.1linarostretch1
+Architecture: armhf
+Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
+Installed-Size: 5092
+Depends: libc6 (>= 2.16), libgcc1 (>= 1:3.5), libglib2.0-0 (>= 2.16.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~), libstdc++6 (>= 5.2), libx11-6, chromium (= 53.0.2785.143-1.1linarostretch1)
+Homepage: http://www.chromium.org/Home
+Priority: optional
+Section: web
+Filename: pool/main/c/chromium-browser/chromedriver_53.0.2785.143-1.1linarostretch1_armhf.deb
+Size: 2296330
+SHA256: 4185dc3295fa19df56aec496dc6c0e4e660ad172a8e7444275df62cf4feb005b
+SHA1: f2c5c5a01b98ebfbe75a9b313d637e01b8d95db4
+MD5sum: f06f6d4cdf74cc4f73fadbecddf836c9
+Description: web browser - WebDriver support
+ Web browser that aims to build a safer, faster, and more stable internet
+ browsing experience.
+ .
+ This package provides a bridge between the browser component and the selenium
+ automatic webdriver.
+
+Package: chromedriver-dbgsym
+Source: chromium-browser
+Version: 53.0.2785.143-1.1linarostretch1
+Architecture: armhf
+Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
+Installed-Size: 2858
+Depends: chromedriver (= 53.0.2785.143-1.1linarostretch1)
+Breaks: chromium-dbg (<< 47.0.2526.80-4~)
+Replaces: chromium-dbg (<< 47.0.2526.80-4~)
+Homepage: http://www.chromium.org/Home
+Priority: extra
+Section: debug
+Filename: pool/main/c/chromium-browser/chromedriver-dbgsym_53.0.2785.143-1.1linarostretch1_armhf.deb
+Size: 448792
+SHA256: 5c3b884db180eaf49f6f1f23c016d805dccab2079e75e41ce203e789c76d79fc
+SHA1: 2fa5099c94e30baacd4aca67dcd5d8bd0999be68
+MD5sum: cc04be7abb7e00bd6f08f249f99daa0d
+Description: Debug symbols for chromedriver
+Auto-Built-Package: debug-symbols
+Build-Ids: 8f745c4526c0a4f186a93c1537b0c0a3b2b70f8d
+
+Package: chromium
+Source: chromium-browser
+Version: 53.0.2785.143-1.1linarostretch1
+Architecture: armhf
+Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
+Installed-Size: 109581
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libavcodec57 (>= 7:3.1.3) | libavcodec-extra57 (>= 7:3.1.3), libavformat57 (>= 7:3.1.3), libavutil55 (>= 7:3.1.3), libc6 (>= 2.16), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.9.14), libexpat1 (>= 2.0.1), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgnome-keyring0 (>= 3.2.2-2~), libgtk-3-0 (>= 3.9.10), libharfbuzz0b (>= 1.2.7), libjpeg62-turbo (>= 1.3.1), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpci3 (>= 1:3.3.1-1), libpulse0 (>= 0.99.1), libspeechd2 (>= 0.7.1), libstdc++6 (>= 5.2), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxml2 (>= 2.7.4), libxrandr2 (>= 2:1.2.99.3), libxrender1, libxslt1.1 (>= 1.1.25), libxss1, libxtst6, x11-utils, xdg-utils, libnettle6
+Recommends: fonts-liberation
+Suggests: chromium-l10n
+Conflicts: libgl1-mesa-swx11
+Provides: gnome-www-browser, www-browser
+Built-Using: flot (= 0.8.3+dfsg-1), jquery (= 1.12.4-1)
+Homepage: http://www.chromium.org/Home
+Priority: optional
+Section: web
+Filename: pool/main/c/chromium-browser/chromium_53.0.2785.143-1.1linarostretch1_armhf.deb
+Size: 40212306
+SHA256: 9b701f253f7f7fdcdf9c0eba0c2d14aec5698185a5602c25ed58b8b5d4155c85
+SHA1: 2322b1c0e905c1f87148868ea05454d93b3710e5
+MD5sum: 40acd13fb5d1759be12c57704320ca03
+Description: web browser
+ Web browser that aims to build a safer, faster, and more stable internet
+ browsing experience.
+ .
+ This package contains the web browser component.
+
+Package: chromium-dbgsym
+Source: chromium-browser
+Version: 53.0.2785.143-1.1linarostretch1
+Architecture: armhf
+Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
+Installed-Size: 64690
+Depends: chromium (= 53.0.2785.143-1.1linarostretch1)
+Breaks: chromium-dbg (<< 47.0.2526.80-4~)
+Replaces: chromium-dbg (<< 47.0.2526.80-4~)
+Built-Using: flot (= 0.8.3+dfsg-1), jquery (= 1.12.4-1)
+Homepage: http://www.chromium.org/Home
+Priority: extra
+Section: debug
+Filename: pool/main/c/chromium-browser/chromium-dbgsym_53.0.2785.143-1.1linarostretch1_armhf.deb
+Size: 10838306
+SHA256: d86f889d867a0b8e7a1f75e5a177477984288c0cee38312c5e54578dc6b256b1
+SHA1: aa9fe01e8f18d6e51d55375309b93095ff9aeedf
+MD5sum: 111d3918a11692774b93f44a7b082312
+Description: Debug symbols for chromium
+Auto-Built-Package: debug-symbols
+Build-Ids: 353a58515ae6cb23f9aab228e56aa02a4d7f173e 6672dda80210ca244fa2353c1afff096416793ef
+
+Package: chromium-l10n
+Source: chromium-browser
+Version: 53.0.2785.143-1.1linarostretch1
+Architecture: all
+Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
+Installed-Size: 16830
+Depends: chromium (>= 53.0.2785.143-1.1linarostretch1), chromium (<< 53.0.2785.143-1.1linarostretch1.1~)
+Homepage: http://www.chromium.org/Home
+Priority: optional
+Section: localization
+Filename: pool/main/c/chromium-browser/chromium-l10n_53.0.2785.143-1.1linarostretch1_all.deb
+Size: 3092026
+SHA256: f91789946569c5ef32377655bc53c5ff99929074c76d6a470c8579ff50c51e16
+SHA1: 7b82ed434adcec16547bcec8bc1c38e59e70a92d
+MD5sum: 8412e7e3076627fe167a61c35da825e8
+Description: web browser - language packs
+ Web browser that aims to build a safer, faster, and more stable internet
+ browsing experience.
+ .
+ This package contains language packages for:
+ am, ar, bg, bn, ca, cs, da, de, el, en-GB, es-419, es, et, fi, fil, fr, gu, he,
+ hi, hr, hu, id, it, ja, kn, ko, lt, lv, ml, mr, nb, nl, pl, pt-BR, pt-PT,
+ ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW
+
+Package: glshim
+Version: 0.42-0linarostretch1
+Architecture: armhf
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 1321
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libx11-6
+Homepage: https://github.com/lunixbochs/glshim
+Priority: extra
+Section: libs
+Filename: pool/main/g/glshim/glshim_0.42-0linarostretch1_armhf.deb
+Size: 292880
+SHA256: 545b27faa6ccb8f0b4a94f3166e3f3379d199d0b3867f737be01702dac1c3198
+SHA1: 27d96793d997a10833ae88790683b7a74e4421a5
+MD5sum: da778c23800214cd7aa0249fb19ee295
+Description: Shim that translates OpenGL 1.x into OpenGL ES.
+ This is a shim providing OpenGL 1.x functionality to OpenGL ES accelerated
+ cards.
+
+Package: glshim-dbgsym
+Source: glshim
+Version: 0.42-0linarostretch1
+Architecture: armhf
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 1720
+Depends: glshim (= 0.42-0linarostretch1)
+Homepage: https://github.com/lunixbochs/glshim
+Priority: extra
+Section: debug
+Filename: pool/main/g/glshim/glshim-dbgsym_0.42-0linarostretch1_armhf.deb
+Size: 1334712
+SHA256: 3db1c975a43c461b38e9a469f257b42c21509bf099b837409c3fcef2564f4767
+SHA1: 49574d536d160b3447ff846f70424bc9ac133f92
+MD5sum: 5dd411bb03ae7055402f3bb4498a85a1
+Description: Debug symbols for glshim
+Auto-Built-Package: debug-symbols
+Build-Ids: 837fe7dbaddcdf12ffa3c3d452da98efd49d8ff5
+
+Package: gnss-gpsd
+Source: qmi-gps-proxy
+Version: 0.0+0+df3b976-5linarostretch1
+Architecture: all
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 21
+Depends: gpsd, qmi-gps-proxy (= 0.0+0+df3b976-5linarostretch1)
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qmi_loc2.git
+Priority: optional
+Section: utils
+Filename: pool/main/q/qmi-gps-proxy/gnss-gpsd_0.0+0+df3b976-5linarostretch1_all.deb
+Size: 3354
+SHA256: c735f351d6b533b61343a2063f5fd451deb5eebde5e7f5636742e2a2fb39d77e
+SHA1: 4e532507de56c90c6fe0e093b7313f0af7e7f8b2
+MD5sum: 3aa5f1ee2dce784c363352cad9414223
+Description: QCOM GPS integration to GPSD
+
+Package: libasound2
+Source: alsa-lib
+Version: 1.1.2-1linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 938
+Depends: libc6 (>= 2.16), libasound2-data (>= 1.1.2-1linaro1linarostretch1)
+Suggests: libasound2-plugins (>= 1.0.24)
+Breaks: bluez-alsa (<= 4.94-2), libasound2-plugin-equal (<= 0.6-1), libasound2-plugins (<< 1.0.24)
+Multi-Arch: same
+Homepage: http://www.alsa-project.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/alsa-lib/libasound2_1.1.2-1linaro1linarostretch1_armhf.deb
+Size: 484194
+SHA256: bbb20b057beffce27ac80e41cc8a2cb76f4cb831a430b9e1fd7cf3b22267d11e
+SHA1: b4fb9ae9335875d15613c6aaf7e8b37e87342d53
+MD5sum: 449175590e8759c21cd5f3619887af9d
+Description: shared library for ALSA applications
+ This package contains the ALSA library and its standard plugins, as well
+ as the required configuration files.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libasound2-data
+Source: alsa-lib
+Version: 1.1.2-1linaro1linarostretch1
+Architecture: all
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 617
+Suggests: alsa-utils
+Breaks: libasound2 (<< 1.1.2-1linaro1linarostretch1)
+Replaces: libasound2 (<< 1.1.2-1linaro1linarostretch1)
+Multi-Arch: foreign
+Homepage: http://www.alsa-project.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/alsa-lib/libasound2-data_1.1.2-1linaro1linarostretch1_all.deb
+Size: 207914
+SHA256: 55ea61e532d309020e200419cf3d983ff34e2b3b3863e80e547a01dae688216d
+SHA1: a167d4ec6510b435ca2c70cf78156da3dca9c289
+MD5sum: b29f1b69139d94a3f704765f35a7c3e0
+Description: Configuration files and profiles for ALSA drivers
+ This package contains configuration files for ALSA drivers and UCM
+ profiles for use with alsaucm.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libasound2-dbgsym
+Source: alsa-lib
+Version: 1.1.2-1linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 1405
+Depends: libasound2 (= 1.1.2-1linaro1linarostretch1)
+Breaks: libasound2-dbg (<< 1.1.1-1~)
+Replaces: libasound2-dbg (<< 1.1.1-1~)
+Multi-Arch: same
+Homepage: http://www.alsa-project.org/
+Priority: extra
+Section: debug
+Filename: pool/main/a/alsa-lib/libasound2-dbgsym_1.1.2-1linaro1linarostretch1_armhf.deb
+Size: 1167900
+SHA256: 0c518257caa0ebe71974f6e546031335f19fab22cb957de696e9c7c4843fce66
+SHA1: 65b55874e4b059499f9d903a989cc10dbeb55ccc
+MD5sum: 00aa7406d7782a6ec8cc9ddab07816b4
+Description: Debug symbols for libasound2
+Auto-Built-Package: debug-symbols
+Build-Ids: 1f8a23937746598f7cdbb2c278a9efe9c43bba62 327b4ffe6e66db2a7b3b7bed9fd188bb1dc5a78a a488d6285daf09768570be58186b0697c0b2e73c fa5e0d954afbb9e05f6635be286b0cc60e0285e7
+
+Package: libasound2-dev
+Source: alsa-lib
+Version: 1.1.2-1linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 669
+Depends: libasound2 (= 1.1.2-1linaro1linarostretch1)
+Suggests: libasound2-doc
+Provides: libasound-dev
+Multi-Arch: same
+Homepage: http://www.alsa-project.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/a/alsa-lib/libasound2-dev_1.1.2-1linaro1linarostretch1_armhf.deb
+Size: 297168
+SHA256: ed3ea05aee52a71a49a5e6ee2b0bfefa438a5fb242c3b0cda0d531838e5f086d
+SHA1: 66e72d3532803296ace788c8f6ef2da4faccd48b
+MD5sum: 90e7eb378b1b490f448f753f4aeb32c3
+Description: shared library for ALSA applications -- development files
+ This package contains files required for developing software
+ that makes use of libasound2, the ALSA library.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libasound2-doc
+Source: alsa-lib
+Version: 1.1.2-1linaro1linarostretch1
+Architecture: all
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 15488
+Depends: libjs-jquery
+Suggests: libasound2-dev
+Homepage: http://www.alsa-project.org/
+Priority: optional
+Section: doc
+Filename: pool/main/a/alsa-lib/libasound2-doc_1.1.2-1linaro1linarostretch1_all.deb
+Size: 2400946
+SHA256: 5d17b103c200a70486f336e0ce84d60ac53d7facaf7342c3558037b53c90e944
+SHA1: 1b9ea0efbf4ef2b86e9e0eaa99d292cdc85ad77f
+MD5sum: 0205b5423d4e1f3fcb70af331e341eeb
+Description: documentation for user-space ALSA application programming
+ This package contains the HTML documentation for the ALSA library, which
+ describes the development API for user-space applications that want to
+ use ALSA.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libegl1-mesa
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 188
+Depends: libc6 (>= 2.17), libdrm2 (>= 2.4.66), libexpat1 (>= 2.0.1), libgbm1 (= 13.0.3-1+linaro1linarostretch1), libwayland-client0 (>= 1.9.91), libwayland-server0 (>= 1.2.0), libx11-6, libx11-xcb1, libxcb-dri2-0 (>= 1.8), libxcb-dri3-0, libxcb-present0, libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.9.2), libxshmfence1
+Conflicts: libegl1-x11
+Replaces: libegl1-x11
+Provides: libegl1-x11
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libegl1-mesa_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 98602
+SHA256: a38dbcdbba9f00ad111bf1f1fda4d227d02cef143c37919141368a31fd7316a1
+SHA1: 99e21e22596a7406352041d97c3bafa3435295a1
+MD5sum: 0aaff3d65fb52d757060e8303cdb7e12
+Description: free implementation of the EGL API -- runtime
+ This package contains the EGL native platform graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains modules to interface with the existing system GLX or
+ DRI2 drivers to provide OpenGL via EGL.
+
+Package: libegl1-mesa-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 311
+Depends: libegl1-mesa (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libegl1-mesa-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 272690
+SHA256: ab0db1d93850f8f2ac06986ebe7c704ac7e299e46ffc1b37b5489a786b470e12
+SHA1: 5f0f721db69fe23c08b4d6f11ec9acf9d71b307a
+MD5sum: c77ac38ecd20fe4b843c205bb52cd8d7
+Description: Debug symbols for libegl1-mesa
+Auto-Built-Package: debug-symbols
+Build-Ids: 3720eec6774c4f38f1b284d51dfe62c8e45028a4
+
+Package: libegl1-mesa-dev
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 150
+Depends: libegl1-mesa (= 13.0.3-1+linaro1linarostretch1), libwayland-egl1-mesa (= 13.0.3-1+linaro1linarostretch1), libdrm-dev (>= 2.4.69), x11proto-dri2-dev (>= 2.6), x11proto-gl-dev (>= 1.4.14), libx11-dev, libxext-dev, libxxf86vm-dev, libxdamage-dev, libxfixes-dev, libxcb-glx0-dev, libxcb-dri2-0-dev, libxcb-dri3-dev, libxcb-present-dev, libxcb-sync-dev, libxshmfence-dev, libx11-xcb-dev, libwayland-dev (>= 1.2.0)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mesa/libegl1-mesa-dev_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 55152
+SHA256: 42eef4dd865b195c5ca4e37f5818bf2566f54e67a6bbbc24c227a1b6d82b4edc
+SHA1: 92f4a80c7a80d067f0b46c15093a6b53663844d0
+MD5sum: 95ca1721c16b59fafcc22a3ee4ab0a10
+Description: free implementation of the EGL API -- development files
+ This package contains the development environment required for compiling
+ programs against EGL native platform graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package provides the development environment for compiling programs
+ against the EGL library.
+
+Package: libegl1-mesa-drivers
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 54
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libegl1-mesa-drivers_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 40542
+SHA256: e71bb62ff880d51f13abde7bfce7d719d08a2167771e11a464aca72f372cfc9b
+SHA1: 8d51a215aeb312d7845503cee15b2d7835f1be10
+MD5sum: 6bdfdea556e2b599a4e93774392bd50a
+Description: transitional dummy package
+ This is a transitional dummy package, it can be safely removed.
+
+Package: libgbm-dev
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 74
+Depends: libgbm1 (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mesa/libgbm-dev_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 43666
+SHA256: 79ced51e394a263531cb19e03ba5cce248c315f1cda51d0abcc47129b07c072c
+SHA1: 09f0ef5100b0b721ddac60424db574496bdde9ee
+MD5sum: 4607bb76fbea199c2031194e8240e223
+Description: generic buffer management API -- development files
+ This package contains the GBM buffer management library.  It provides a
+ mechanism for allocating buffers for graphics rendering tied to Mesa.
+ .
+ GBM is intended to be used as a native platform for EGL on drm or openwfd.
+ .
+ This package provides the development environment for compiling programs
+ against the GBM library.
+
+Package: libgbm1
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 98
+Depends: libc6 (>= 2.8), libdrm2 (>= 2.4.66), libexpat1 (>= 2.0.1), libwayland-client0 (>= 1.2.0), libwayland-server0 (>= 1.2.0)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libgbm1_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 55936
+SHA256: d1ae2e2b59a9bcc9191d925a3512377dda9c980035c3837a705dafd55f427883
+SHA1: 6497c3764fefc7cebb0c7e810789e309233f0afd
+MD5sum: c1b3843cc9368d02628bdf73a3aa5e70
+Description: generic buffer management API -- runtime
+ This package contains the GBM buffer management library.  It provides a
+ mechanism for allocating buffers for graphics rendering tied to Mesa.
+ .
+ GBM is intended to be used as a native platform for EGL on drm or openwfd.
+
+Package: libgbm1-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 79
+Depends: libgbm1 (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libgbm1-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 62348
+SHA256: ab2d6d83373c3187d0e23750c394da7de63b95c4db54061f31ba5477b779ab2a
+SHA1: deb7166749243072a11b6944fd6e28bf6cef6fd2
+MD5sum: 4929c20ead9ed84528ee9c4a67ae4f1e
+Description: Debug symbols for libgbm1
+Auto-Built-Package: debug-symbols
+Build-Ids: 50f0b353da4c9711b29bfba91a576cd1bfb1c27e
+
+Package: libgl1-mesa-dev
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 59
+Depends: mesa-common-dev (= 13.0.3-1+linaro1linarostretch1), libgl1-mesa-glx (= 13.0.3-1+linaro1linarostretch1), libdrm-dev (>= 2.4.69), libx11-dev, libx11-xcb-dev, libxcb-dri3-dev, libxcb-present-dev, libxcb-sync-dev, libxshmfence-dev, libxcb-dri2-0-dev, libxcb-glx0-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxxf86vm-dev, x11proto-dri2-dev (>= 2.6), x11proto-gl-dev (>= 1.4.14)
+Conflicts: libgl-dev
+Replaces: libgl-dev
+Provides: libgl-dev
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mesa/libgl1-mesa-dev_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 41282
+SHA256: 7a186f6bea0135ae7e506b43b556369daa0fc65b17bdca35f1319b82ae36b649
+SHA1: cfdfe5b6302003f28f900c527de62c2ee3d613f9
+MD5sum: 01cdcae34fcd0fcf368455c9af1f1d3c
+Description: free implementation of the OpenGL API -- GLX development files
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.  For direct rendering, it can use DRI
+ modules from the libgl1-mesa-dri package to accelerate drawing.
+ .
+ This package includes headers and static libraries for compiling
+ programs with Mesa.
+ .
+ For a complete description of Mesa, please look at the libgl1-mesa-glx
+ package.
+
+Package: libgl1-mesa-dri
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 82537
+Depends: libc6 (>= 2.22), libdrm-amdgpu1 (>= 2.4.63), libdrm-freedreno1 (>= 2.4.70), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.66), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc1 (>= 1:3.5), libgcrypt20 (>= 1.7.0), libllvm3.9, libsensors4 (>= 1:3.0.0), libstdc++6 (>= 5.2)
+Recommends: libtxc-dxtn-s2tc | libtxc-dxtn-s2tc0 | libtxc-dxtn0
+Breaks: xserver-xorg-core (<< 2:1.14.3-5)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libgl1-mesa-dri_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 3384770
+SHA256: 5c0f1b968940c570a4b473d0b4e805647d3f046e83b139790ad244ad3c755e0d
+SHA1: 4ba8191a414c17dcd97622ca602da4181588ae21
+MD5sum: dc54f519fd54080a60114663e725382b
+Description: free implementation of the OpenGL API -- DRI modules
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.  For direct rendering, it can use DRI
+ modules from the libgl1-mesa-dri package to accelerate drawing.
+ .
+ This package does not include the OpenGL library itself, only the DRI
+ modules for accelerating direct rendering.
+ .
+ For a complete description of Mesa, please look at the
+ libgl1-mesa-glx package.
+
+Package: libgl1-mesa-dri-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 41293
+Depends: libgl1-mesa-dri (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libgl1-mesa-dri-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 39533536
+SHA256: 842ebb9e14fd688f39951d78cb68c543c231a1e9e0f26c965c4e4eebc8f52fdb
+SHA1: df5540d84e7234d6cffc430163cf8800fe3cb65d
+MD5sum: 4dbca3a79c9badbfa00febfc875de41f
+Description: Debug symbols for libgl1-mesa-dri
+Auto-Built-Package: debug-symbols
+Build-Ids: 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 2e330ebe959e61b0fd846d2f2aee6974a9032d15 7afcf5d92b31cce059da3edd8ac89331b083b3e1 7afcf5d92b31cce059da3edd8ac89331b083b3e1 7afcf5d92b31cce059da3edd8ac89331b083b3e1
+
+Package: libgl1-mesa-glx
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 392
+Depends: libc6 (>= 2.8), libdrm2 (>= 2.4.66), libexpat1 (>= 2.0.1), libglapi-mesa (= 13.0.3-1+linaro1linarostretch1), libx11-6 (>= 2:1.4.99.1), libx11-xcb1, libxcb-dri2-0 (>= 1.8), libxcb-dri3-0, libxcb-glx0 (>= 1.8), libxcb-present0, libxcb-sync1, libxcb1 (>= 1.9.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxshmfence1, libxxf86vm1
+Recommends: libgl1-mesa-dri
+Conflicts: libgl1
+Breaks: glx-diversions (<< 0.4), libopengl-perl (<< 0.6704+dfsg-2)
+Replaces: libgl1
+Provides: libgl1
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libgl1-mesa-glx_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 152038
+SHA256: 10f8633979900c54acdbc5c6c727bb60880e7a539546ce6d8aba77f04628ae18
+SHA1: 88371a94149f4cbe4557db69461e8b18db816f02
+MD5sum: 3c5a4d5024c356fe2dffdea74c973173
+Description: free implementation of the OpenGL API -- GLX runtime
+ Mesa is a 3-D graphics library with an API which is very similar to
+ that of OpenGL.  To the extent that Mesa utilizes the OpenGL command
+ syntax or state machine, it is being used with authorization from
+ Silicon Graphics, Inc.  However, the authors make no claim that Mesa
+ is in any way a compatible replacement for OpenGL or associated with
+ Silicon Graphics, Inc.
+ .
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.  For direct rendering, it can use DRI
+ modules from the libgl1-mesa-dri package to accelerate drawing.
+ .
+ This package does not include the modules themselves: these can be found
+ in the libgl1-mesa-dri package.
+
+Package: libgl1-mesa-glx-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 1041
+Depends: libgl1-mesa-glx (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libgl1-mesa-glx-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 871202
+SHA256: 92b1a65cdd492f087e0c7449c9e44cbdc6742870722eaf8bf7563be07ef47c00
+SHA1: f7fe20862b1ca3fc909a4062d122e19a0d676b40
+MD5sum: b2646e8317e3658ecb95be9cbf8e0a31
+Description: Debug symbols for libgl1-mesa-glx
+Auto-Built-Package: debug-symbols
+Build-Ids: e51b60511ebac250e8074677feb6201c321ee934
+
+Package: libglapi-mesa
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 200
+Depends: libc6 (>= 2.4)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libglapi-mesa_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 63170
+SHA256: aee44339ba4e0a119619f95e15c10377d968a7747415399eacb751a0cf168e52
+SHA1: 59be9d63ba5606579f36cb91c2898e0790b8baa8
+MD5sum: 1eebe671dd20ebc532d3cde86a31af8b
+Description: free implementation of the GL API -- shared library
+ The Mesa GL API module is responsible for dispatching all the gl*
+ functions. It is intended to be mainly used by both the libgles1-mesa
+ and libgles2-mesa packages.
+
+Package: libglapi-mesa-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 214
+Depends: libglapi-mesa (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libglapi-mesa-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 111378
+SHA256: 8823e0d4237560377f7deb8f57a842576538f42a339e0060193194a279573bda
+SHA1: 7c325c8bb3f3c5d72bb458197100dff65025ce69
+MD5sum: b60563722fe86353e3475ff2795d5220
+Description: Debug symbols for libglapi-mesa
+Auto-Built-Package: debug-symbols
+Build-Ids: 93291f4e925697187df88518dbd3e28a63613ea2
+
+Package: libgles1-mesa
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 80
+Depends: libglapi-mesa (= 13.0.3-1+linaro1linarostretch1), libc6 (>= 2.4), libdrm2 (>= 2.3.1)
+Conflicts: libgles1
+Replaces: libgles1
+Provides: libgles1
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libgles1-mesa_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 46342
+SHA256: 13b112564a1f1d8483396c5ce37c87c91996773db2ef7825ff6ade1186351873
+SHA1: bf7550d0e90a1db74e8d3f813ea130408346ced0
+MD5sum: 9e137f5e8ea2176b7917a7c3ca275951
+Description: free implementation of the OpenGL|ES 1.x API -- runtime
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+
+Package: libgles1-mesa-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 35
+Depends: libgles1-mesa (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libgles1-mesa-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 15332
+SHA256: 46b1ef1b6d2351096080126b6dafcfc9560b34f33276fbe380fdf7decd0f8f30
+SHA1: a6874302e2289d768d58660364bbbb3b70387d87
+MD5sum: 4356c6ba8ec8b9f9b47c6aaf76807400
+Description: Debug symbols for libgles1-mesa
+Auto-Built-Package: debug-symbols
+Build-Ids: 518aa1f9b8a35b3775bba4aeffc118bfef573e81
+
+Package: libgles1-mesa-dev
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 160
+Depends: libgles1-mesa (= 13.0.3-1+linaro1linarostretch1), libegl1-mesa-dev
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mesa/libgles1-mesa-dev_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 53978
+SHA256: daa168bce6222c9b58715b285558e042a3f84301b17ddcffe0fdfde8fca55793
+SHA1: 7cb8ff47f5ccd8b71465c3fccdbe314b5d2a3e73
+MD5sum: f48c83da6a4632690f0a3d104b97bb96
+Description: free implementation of the OpenGL|ES 1.x API -- development files
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ This package provides a development environment for building programs using
+ the OpenGL|ES 1.x APIs.
+
+Package: libgles2-mesa
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 108
+Depends: libglapi-mesa (= 13.0.3-1+linaro1linarostretch1), libc6 (>= 2.4), libdrm2 (>= 2.3.1)
+Conflicts: libgles2
+Replaces: libgles2
+Provides: libgles2
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libgles2-mesa_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 51976
+SHA256: 559a650b3e15a55f09bfe2b772d2591486ea377e08eb591df226898c43861a20
+SHA1: bccc930af1a4c9a2542cb780857fe96b51fd44ec
+MD5sum: 228b659584e2017be9cb3d64072c3e2a
+Description: free implementation of the OpenGL|ES 2.x API -- runtime
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+
+Package: libgles2-mesa-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 68
+Depends: libgles2-mesa (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libgles2-mesa-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 34858
+SHA256: aa6774d040edcf62de962e20930b6b1684470a2d4626dc906a3925805dcd6b21
+SHA1: a6a678fe037ae73a7c799520407e961606645234
+MD5sum: 6b3337175ffe9b97bc590878b8d9a1d0
+Description: Debug symbols for libgles2-mesa
+Auto-Built-Package: debug-symbols
+Build-Ids: 2cd51c72fe6acdfa8ca27e78090a95d5075a374b
+
+Package: libgles2-mesa-dev
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 606
+Depends: libgles2-mesa (= 13.0.3-1+linaro1linarostretch1), libegl1-mesa-dev
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mesa/libgles2-mesa-dev_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 75284
+SHA256: 7ac8027ed76d49780ff7d0762023aba03cbe1b7c125e52a84443ae0f94873fd0
+SHA1: d99d4086ee31f34b1bc35033edfeef3b5521bab1
+MD5sum: bcba3554d89a6c8e21251d064fcdf82d
+Description: free implementation of the OpenGL|ES 2.x API -- development files
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ This package provides a development environment for building applications
+ using the OpenGL|ES 2.x APIs.
+
+Package: libjffi-java
+Source: jffi
+Version: 1.2.7-9.2linarostretch1
+Architecture: all
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 320
+Depends: libjffi-jni (>= 1.2.7-9.2linarostretch1)
+Multi-Arch: foreign
+Homepage: http://github.com/jnr/jffi
+Priority: optional
+Section: java
+Filename: pool/main/j/jffi/libjffi-java_1.2.7-9.2linarostretch1_all.deb
+Size: 138944
+SHA256: 33182bb1ec7a53c8da8b5767c57d843fd9eca2a9e3e1c7d1bb7f6b027a14e8b3
+SHA1: 3764292b55c96b6311c66d716b72fd9c1fe8c002
+MD5sum: 7c14194ca1611eae1c2d09b548e37468
+Description: Java Foreign Function Interface
+ JFFI is a wrapper for libffi, the foreign function interface library. A foreign
+ function interface is the popular name for the interface that allows code
+ written in one language to call code written in another language.
+ Java-based codings helper classes for Joni and JRuby
+
+Package: libjffi-jni
+Source: jffi
+Version: 1.2.7-9.2linarostretch1
+Architecture: armhf
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 71
+Depends: libc6 (>= 2.4), libffi6 (>= 3.0.4)
+Recommends: libjffi-java
+Multi-Arch: same
+Homepage: http://github.com/jnr/jffi
+Priority: optional
+Section: java
+Filename: pool/main/j/jffi/libjffi-jni_1.2.7-9.2linarostretch1_armhf.deb
+Size: 24768
+SHA256: c8e3c44ad315c9de221929c4ba64051b57b0a25e4d0849f20b4a23f014cc9a0c
+SHA1: e45e803ccd7354309e075e2d209c7e4205810973
+MD5sum: 96ffcb3d4e2d5cd72978344fec23466c
+Description: Java Foreign Function Interface (JNI library)
+ JFFI is a wrapper for libffi, the foreign function interface library. A foreign
+ function interface is the popular name for the interface that allows code
+ written in one language to call code written in another language.
+ Java-based codings helper classes for Joni and JRuby
+ .
+ This package ships the Java native interface library.
+
+Package: libjffi-jni-dbgsym
+Source: jffi
+Version: 1.2.7-9.2linarostretch1
+Architecture: armhf
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 34
+Depends: libjffi-jni (= 1.2.7-9.2linarostretch1)
+Multi-Arch: same
+Homepage: http://github.com/jnr/jffi
+Priority: extra
+Section: debug
+Filename: pool/main/j/jffi/libjffi-jni-dbgsym_1.2.7-9.2linarostretch1_armhf.deb
+Size: 6116
+SHA256: e13430e437277a25089fe11976edc42e4f6b848b1505c8d01ae65a5f812c74fd
+SHA1: febd7b313a7239297cf91c11c8b8d9ebd680899e
+MD5sum: 1f8a1239911541c0395237507b4d2764
+Description: Debug symbols for libjffi-jni
+Auto-Built-Package: debug-symbols
+Build-Ids: 0d8228b540bd90106797348890d3ca36ec7e4367
+
+Package: libjnr-ffi-java
+Source: jnr-ffi
+Version: 1.0.10-4.1linarostretch1
+Architecture: all
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 673
+Depends: libasm4-java, libjffi-java, libjnr-x86asm-java
+Suggests: libjnr-ffi-java-doc
+Homepage: https://github.com/jnr/jnr-ffi
+Priority: optional
+Section: java
+Filename: pool/main/j/jnr-ffi/libjnr-ffi-java_1.0.10-4.1linarostretch1_all.deb
+Size: 550882
+SHA256: 288042069e12393f125e0b1e8aa2ccdee3644150f815f11d8d965f2cf4451fa4
+SHA1: 5c47c115430fa9800ea54e6ac0288600812354b7
+MD5sum: 0742a14a237d7fef36571db7fae7cf44
+Description: Java library for loading native libraries without writing JNI code
+ Java Native Runtime (JNR) is a collection of Java libraries to make
+ interfacing with OS-level features easier. JNR uses an alternate
+ method to JNI or JNA to achieve programming simplicity while still
+ retaining performance.
+ .
+ The jnr-ffi package is a set of abstractions that build on the lower-level
+ libraries implemented by the jffi package. jnr-ffi allows one to load
+ native libraries without writing JNI code by hand, or using tools
+ such as SWIG.
+
+Package: libjnr-ffi-java-doc
+Source: jnr-ffi
+Version: 1.0.10-4.1linarostretch1
+Architecture: all
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 12292
+Depends: default-jdk-doc
+Suggests: libjnr-ffi-java
+Homepage: https://github.com/jnr/jnr-ffi
+Priority: optional
+Section: doc
+Filename: pool/main/j/jnr-ffi/libjnr-ffi-java-doc_1.0.10-4.1linarostretch1_all.deb
+Size: 301256
+SHA256: fede6ba3da642a7799b1e3de7093d809e2cdde7294f4b60f2eb69c2ded02d2de
+SHA1: 1a2305524620bd67bff02e68474e3090db468f93
+MD5sum: 2d29a21bab2920e46fd24fac70127781
+Description: Documentation for libjnr-ffi-java
+ Java Native Runtime (JNR) is a collection of Java libraries to make
+ interfacing with OS-level features easier. JNR uses an alternate
+ method to JNI or JNA to achieve programming simplicity while still
+ retaining performance.
+ .
+ The jnr-ffi package is a set of abstractions that build on the lower-level
+ libraries implemented by the jffi package. jnr-ffi allows one to load
+ native libraries without writing JNI code by hand, or using tools
+ such as SWIG.
+ .
+ This package contains the API documentation of jnr-ffi library.
+
+Package: libmraa-dev
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 174
+Depends: libmraa1 (= 1.4.0-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mraa/libmraa-dev_1.4.0-1linarostretch1_armhf.deb
+Size: 28320
+SHA256: 002b3aa8d0eef1fcb612a3a703c0de40ad708c4cdb155efa6bf9e9cc03d1d4bf
+SHA1: 99334b08cca478b0ceffeaf1bbbfa7e6365b1c70
+MD5sum: 8657e09cf193a6d96b080c3e9893c19f
+Description: userspace I/O library (development)
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains the library development files.
+
+Package: libmraa0
+Source: mraa
+Version: 0.10.1-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 100
+Depends: libc6 (>= 2.15)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mraa/libmraa0_0.10.1-1linarostretch1_armhf.deb
+Size: 39952
+SHA256: 186864de629964b33ef6a737572f233e908935ecb34605557dfb8c3190d757a3
+SHA1: dbd972cec6de39699ce8a71a6b6e658464c036fe
+MD5sum: c33c1e29d635f0cdf1257af643b1b5e1
+Description: userspace I/O library (runtime)
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains the library used at runtime.
+
+Package: libmraa0-dbg
+Source: mraa
+Version: 0.10.1-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 157
+Depends: libmraa0 (= 0.10.1-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mraa/libmraa0-dbg_0.10.1-1linarostretch1_armhf.deb
+Size: 128936
+SHA256: eb4061d012896f90823171aed8aa466362b4f97ee96132b46f2d4bf1420433c0
+SHA1: 73fb36f854a004b806dc99f69c661d82bf3d1998
+MD5sum: 7c60d7e140652ad157173c778e7c2f14
+Description: debugging symbols for mraa
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains mraa debugging symbols.
+Build-Ids: 15805409305b8c536b478ebc027824972f52106d
+
+Package: libmraa1
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 124
+Depends: libc6 (>= 2.15), libjson-c3 (>= 0.10)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mraa/libmraa1_1.4.0-1linarostretch1_armhf.deb
+Size: 48404
+SHA256: 0b5ec5ca8bf47f3bf8ea3380798546cfc84f2fcebc7c9726708fa82d72b359a6
+SHA1: da3a0f6ffbc28186cc35d37df4add0fe041bd3ef
+MD5sum: c21468bfb1ff1f4feba9dce0ddeea876
+Description: userspace I/O library (runtime)
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains the library used at runtime.
+
+Package: libmraa1-dbg
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 189
+Depends: libmraa1 (= 1.4.0-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mraa/libmraa1-dbg_1.4.0-1linarostretch1_armhf.deb
+Size: 159060
+SHA256: 8c34b8cf1860c614aecaaf66fd38635a979d9cb4e4f1364d8481445e078b96a4
+SHA1: 73d1af7e07aecd82d702014eb218f0bfd6f1017f
+MD5sum: 0b9b37c6be72ba35bc1bb1bc11324737
+Description: debugging symbols for mraa
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains mraa debugging symbols.
+Build-Ids: e61592e036d5f73f00861ae06a4c2b4849d4059d
+
+Package: libosmesa6
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2653
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libgcrypt20 (>= 1.7.0), libglapi-mesa (= 13.0.3-1+linaro1linarostretch1), libstdc++6 (>= 5)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libosmesa6_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 1073452
+SHA256: 1efd25208a725b4abeee23174e4a46d619fe7341e03ee8e2bc6ff4d86409141e
+SHA1: 4adc3a2077b1d33dbfb5fff3f77446821644b925
+MD5sum: d47ce4231b360d7cc3d82963ee25ee0f
+Description: Mesa Off-screen rendering extension
+ OSmesa is a Mesa extension that allows programs to render to an
+ off-screen buffer using the OpenGL API without having to create a
+ rendering context on an X Server.  It uses a pure software renderer.
+ .
+ This package provides both 16-bit and 32-bit versions of the off-screen
+ renderer which do not require external libraries to work.
+
+Package: libosmesa6-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 9937
+Depends: libosmesa6 (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libosmesa6-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 9488896
+SHA256: 17e77a142b056c07be812bbc70dc1b6c0a38e698555c058038e6c4ac377c1b7d
+SHA1: 92c982e144af6ceac17cb7e11a5bff19d3f22c7b
+MD5sum: a63f1fab70b6b50d406e1c0b67084312
+Description: Debug symbols for libosmesa6
+Auto-Built-Package: debug-symbols
+Build-Ids: 97de75cefc28c9b1018d5a4f79a1213483bb4fad
+
+Package: libosmesa6-dev
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 72
+Depends: libosmesa6 (= 13.0.3-1+linaro1linarostretch1), mesa-common-dev (= 13.0.3-1+linaro1linarostretch1) | libgl-dev
+Conflicts: libosmesa-dev
+Replaces: libosmesa-dev
+Provides: libosmesa-dev
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mesa/libosmesa6-dev_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 43904
+SHA256: 342b6992743a071c3744d99f4c8dd58c07f23fd59bc5377dfb0d4025dc59ce2e
+SHA1: 175190b10fd59d27d318d67180b1b793584060c3
+MD5sum: 6e14058d6075bf0389596c4c43e85b1e
+Description: Mesa Off-screen rendering extension -- development files
+ This package provides the required environment for developing programs
+ that use the off-screen rendering extension of Mesa.
+ .
+ For more information on OSmesa see the libosmesa6 package.
+
+Package: libqrtr-dev
+Source: qrtr
+Version: 0.0+0+9c85f35a-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 14
+Depends: libqrtr1 (= 0.0+0+9c85f35a-1linarostretch1)
+Homepage: https://github.com/andersson/qrtr.git
+Priority: optional
+Section: libdevel
+Filename: pool/main/q/qrtr/libqrtr-dev_0.0+0+9c85f35a-1linarostretch1_armhf.deb
+Size: 2656
+SHA256: 3ae6aa9310e8746d3af52614557073cb3fb6ef947559ea6a2004a54a455f6342
+SHA1: c80894b5cab14557c9b9aa460490664381996d99
+MD5sum: 15675b5636ae237f36a9721d8b2b6d4a
+Description: QRTR development files
+ QRTR development files.
+
+Package: libqrtr1
+Source: qrtr
+Version: 0.0+0+9c85f35a-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 24
+Depends: libc6 (>= 2.4)
+Homepage: https://github.com/andersson/qrtr.git
+Priority: optional
+Section: libs
+Filename: pool/main/q/qrtr/libqrtr1_0.0+0+9c85f35a-1linarostretch1_armhf.deb
+Size: 4916
+SHA256: ea6f6c445490d2ff7ef2245dfed50f35c618db14a46a93dd9fa268a2e6765cd0
+SHA1: 7ed97e73c6f710316f939f7b31dea1cba9eb2cec
+MD5sum: cc45e0692a6a69c0b104ea72daba704d
+Description: QRTR library
+ QRTR library.
+
+Package: libqrtr1-dbgsym
+Source: qrtr
+Version: 0.0+0+9c85f35a-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 19
+Depends: libqrtr1 (= 0.0+0+9c85f35a-1linarostretch1)
+Homepage: https://github.com/andersson/qrtr.git
+Priority: extra
+Section: debug
+Filename: pool/main/q/qrtr/libqrtr1-dbgsym_0.0+0+9c85f35a-1linarostretch1_armhf.deb
+Size: 5812
+SHA256: 658ae593398ed50114a6f22e7bb1a415d134a2435fa1687398bc7529dcde3f0e
+SHA1: 68b0aea6e6189ef3caf0bd953c5fcbe1940ba0b1
+MD5sum: 2d1c3131aa17e020ab731b5ba8d113ba
+Description: Debug symbols for libqrtr1
+Auto-Built-Package: debug-symbols
+Build-Ids: 40dd2559248a090124c4f97713d3c10411248fad
+
+Package: libsoc-dev
+Source: libsoc
+Version: 0.8.2-0linaro1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 90
+Depends: libsoc2 (= 0.8.2-0linaro1linarostretch1)
+Homepage: https://github.com/jackmitch/libsoc
+Priority: optional
+Section: libdevel
+Filename: pool/main/libs/libsoc/libsoc-dev_0.8.2-0linaro1linarostretch1_armhf.deb
+Size: 20264
+SHA256: 0931f827473eceb94e17538281c8a8838456b9f27dbce5f514498ffc26f0e6d3
+SHA1: 7bd173e307efc4b246f6a89dc545e44ddc8ee229
+MD5sum: a2c0029ec73e13f4ffae75785e7c9806
+Description: C library to interface with common peripherals (development)
+ libsoc is a C library to interface with common peripherals (gpio, i2c, spi,
+ pwm) found in System on Chips (SoC)through generic Linux Kernel interfaces.
+ .
+ This package contains the library development files.
+
+Package: libsoc2
+Source: libsoc
+Version: 0.8.2-0linaro1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 53
+Depends: libc6 (>= 2.7)
+Homepage: https://github.com/jackmitch/libsoc
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsoc/libsoc2_0.8.2-0linaro1linarostretch1_armhf.deb
+Size: 16562
+SHA256: eebafb232ef78c8eadc6d5e7c952b6080c0b4f9da5526c4974b401e40a29e21f
+SHA1: c0c1e78c83d8e2125c9decc03e2f3adefd68957b
+MD5sum: 42020c566134c95f66268c995d3c7456
+Description: C library to interface with common peripherals (runtime)
+ libsoc is a C library to interface with common peripherals (gpio, i2c, spi,
+ pwm) found in System on Chips (SoC)through generic Linux Kernel interfaces.
+ .
+ This package contains the library used at runtime.
+
+Package: libsoc2-dbgsym
+Source: libsoc
+Version: 0.8.2-0linaro1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 48
+Depends: libsoc2 (= 0.8.2-0linaro1linarostretch1)
+Homepage: https://github.com/jackmitch/libsoc
+Priority: extra
+Section: debug
+Filename: pool/main/libs/libsoc/libsoc2-dbgsym_0.8.2-0linaro1linarostretch1_armhf.deb
+Size: 30682
+SHA256: 3021d16206df62214f434bfc244b08ebfd11cb35e246e43055a424f8c83eafae
+SHA1: dcb1e2f339fa82e700a9a3153bfe29c28a07a973
+MD5sum: e492e47d933937c137277ed2353e6096
+Description: Debug symbols for libsoc2
+Auto-Built-Package: debug-symbols
+Build-Ids: e8462f4df9b4242cf3f8811c7fc53f8905eef591
+
+Package: libteec-dev
+Source: optee-client
+Version: 2.2.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 43
+Depends: libteec1.0 (= 2.2.0-1linarostretch1)
+Homepage: https://github.com/OP-TEE/optee_client
+Priority: optional
+Section: libdevel
+Filename: pool/main/o/optee-client/libteec-dev_2.2.0-1linarostretch1_armhf.deb
+Size: 9528
+SHA256: 48d38cdd7b1ebbe2869ac63ab967b34fff77dc89b72bd7e560671ecc44737d5b
+SHA1: 56e5ecf29169d10a89e9f77d52aa11310546a0a8
+MD5sum: f52883bdb5f236432445dd8ee66e99b2
+Description: OP-TEE client library (development)
+ This package contains the OP-TEE client library development files.
+
+Package: libteec1.0
+Source: optee-client
+Version: 2.2.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 24
+Depends: libc6 (>= 2.4)
+Homepage: https://github.com/OP-TEE/optee_client
+Priority: optional
+Section: libs
+Filename: pool/main/o/optee-client/libteec1.0_2.2.0-1linarostretch1_armhf.deb
+Size: 6454
+SHA256: 6f55eaca0f85ba7774ab6d8981ae3e79c769c161866ca800c481903eec8130bf
+SHA1: 9be80c9d7626f8efb07bb1313fff52a18feed3bc
+MD5sum: 241ddf814ad0e4b966a7882e903dabd8
+Description: OP-TEE client library (runtime)
+ This package contains the library that contains the API for communication
+ with the Trusted OS.
+
+Package: libteec1.0-dbgsym
+Source: optee-client
+Version: 2.2.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 16
+Depends: libteec1.0 (= 2.2.0-1linarostretch1)
+Homepage: https://github.com/OP-TEE/optee_client
+Priority: extra
+Section: debug
+Filename: pool/main/o/optee-client/libteec1.0-dbgsym_2.2.0-1linarostretch1_armhf.deb
+Size: 2904
+SHA256: 76b8b34b857afbeca5b9ad5f28e824d691beccced54f028743c9d540ca4631df
+SHA1: 25de1279a3484950e26c32596aa536ba1de67b0f
+MD5sum: 7ce935b91380dff95cf615e6032c50e2
+Description: Debug symbols for libteec1.0
+Auto-Built-Package: debug-symbols
+Build-Ids: 165345d243e3ea29907f33a101e98d9e83b656d5
+
+Package: libupm-dev
+Source: upm
+Version: 0.8.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 1702
+Depends: libmraa-dev, libupm0 (= 0.8.0-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/upm/
+Priority: optional
+Section: libdevel
+Filename: pool/main/u/upm/libupm-dev_0.8.0-1linarostretch1_armhf.deb
+Size: 194202
+SHA256: 4d93508454a98ff15013bfe4d8e7f0944166eab80f14008dceccebb5a8de7781
+SHA1: 39eb053985f0d51aea74a1d5aa568b6259bc9d01
+MD5sum: 73bb32d5c22f4774a46548421da0b943
+Description: Sensor/Actuator repository for MRAA (development)
+ UPM is a high level repository for sensors that use MRAA. Each sensor
+ links to MRAA and are not meant to be interlinked although some
+ groups of sensors may be.
+ .
+ This package contains the library development files.
+
+Package: libupm0
+Source: upm
+Version: 0.8.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 2012
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.5), libjpeg62-turbo (>= 1.3.1), libmraa1 (>= 1.4.0-1linarostretch1), libstdc++6 (>= 5.2)
+Homepage: http://iotdk.intel.com/docs/master/upm/
+Priority: optional
+Section: libs
+Filename: pool/main/u/upm/libupm0_0.8.0-1linarostretch1_armhf.deb
+Size: 363586
+SHA256: e94a5e9cc55e999f6f29c7cc6c84fbcca51ddc769431acce4d51d55efa61d18e
+SHA1: 78b906ebdea9b50a2cffa9c1b27e37694b876c97
+MD5sum: 1001f10248cb96635afd546c5b097c15
+Description: Sensor/Actuator repository for MRAA (runtime)
+ UPM is a high level repository for sensors that use MRAA. Each sensor
+ links to MRAA and are not meant to be interlinked although some
+ groups of sensors may be.
+ .
+ This package contains the library used at runtime.
+
+Package: libupm0-dbg
+Source: upm
+Version: 0.8.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 5768
+Depends: libupm0 (= 0.8.0-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/upm/
+Priority: extra
+Section: debug
+Filename: pool/main/u/upm/libupm0-dbg_0.8.0-1linarostretch1_armhf.deb
+Size: 4648970
+SHA256: 19c8422cd1912302a80d6eacfadb43fe2cfd09da3225b1694a60aa7fdcf74ed6
+SHA1: 78dcf40f17cf9ab062ccbd42d19c8ddb6f5c4449
+MD5sum: 83f765fba5e94e72f65ec5d05b2c0d16
+Description: debugging symbols for UPM
+ UPM is a high level repository for sensors that use MRAA. Each sensor
+ links to MRAA and are not meant to be interlinked although some
+ groups of sensors may be.
+ .
+ This package contains UPM debugging symbols.
+Build-Ids: 004fa3a133fa563828722926542ffba203bc3a67 0104abcf800418f2dc1902f1ddd67f41ec768150 02b62ac803194e9b3eb42f1e2c1fbcee487e3ea3 073d14d627d720dbb69527f57d5c8368aa67b6af 09cf56c01da42773e969012450255420f1f64635 0be7333db45cddfc20736a9fde7f261df9e24cc7 0ce3580ca47c4bd53904f90f1dc9ac4aba4b0965 0f043effbf13f48ff82510f4b0f7185532c63dc1 158dd2a49b2ccd9a4a8b9ece6ab2f26929a6f166 18a938b60d2ecf98774185f974cad2e30cd42534 18d5addaeb6f1789ba1aed10631b1efafe4275e2 1931fd618f4c53455216c6b52424ad65593fca76 1997f1e39a143de183e5e60c5005758a63605dae 19f74df5e64802a611f3837c6ca33c23d06880a5 1f93ee5205cde9c8aba35728eb2af9b3f57bd2e3 1f9a2e295067f7b78eec3428930a7c26b672f6ba 212725e56f65a0f733adc4607ba2fa4acd94aec0 227d5b178148988017d2202d83e0c2e17ecc7e73 245e76b2cc49d0d0cb3e039a60152920b8116218 25d8076747962b3ffbac09d9cee583c1a0434328 27338aca367fe83b61cdd361b99d94fb74e0685e 27db1c7f9b694b1f7d458b3c764d60404035f47a 2826f3d0ca7844a0ad6ca43d9f5ad527b71c913e 2835ff630d677c99dd8be692e21e0f63620b34de 288b996b5b8c8d58dd4f0cba53ffb45ed482f1ee 2a3d1870e0fe5d0eee8281fa9fa26f830edc109e 2d2b5203b92250b6ac6b7d8e85fb154371dcbdb2 2e19c51649b6448d4df67792bd3786d4f9500c03 309958bd88d2c8f32d1e3aabc0f7489b1ee4314c 36d5df95bc47c051811eee256aeb2517d525deaa 36f57f3518cbd7dcda396724020fe5674083183c 3a7a7e5cc8510e08de764300e34714ffcd9d75dd 3b8a93fb6916d5f6d7304524faed49761bf3b170 40b56ca2e710f6712f5490c630f271634740accf 4248a38c2a8dce47cfd5d3e4f4771527e39eff58 483ba7e8bcb95ad37a64880ffe48caeee5c568e3 49d8212d5501aa9752c650c4d780832994da38ae 4b1400bd26631ece1b43acade809f6f8f528f18f 4be55cc9a0ff1530edc06e12302671c2d4fdddce 4f66454b8b474874f0a0650328ae1757f27fe007 518bfcd227e1a7e5e720d0e4e830ffe43b7c8a21 51b46baeccc88734ec3888a26b29f1edc25018b8 51cee56cddf6531b81f958e103acba187ae4bd57 525a2018e9305eb59bb2c12c0176dc5e2d6bb46a 52cf4102dd602341b0f30d1bf798caa788a11b30 53ee6583f4cd353744e43d51c3b8f343a2ffd96f 5612052dee730189776b72e7fe5af894eff40973 5c921f9392cdb1b3f5cb27ce5b963957d5e7ce08 5ca40d298cc1ab21e685533d14792a7288bec822 5ced77ff359896880f04aa85f4f132900a46d0d2 633310ba80d6f62bee346d796495836d38248c26 6420c1f0745fdc3f447098123bc89948a4f148d0 66ba2be6f6d054922d23b194a4db1d81d729f943 68ca31820f835123e316d14bf94fbe8842adb113 6a29e8cb803c55a20fdc728f6f508f9b9529c9d1 6d67af33408eab1fff0e010b498b18018637e04d 6d7166caced843e7fbd48b373659b65df8100dc6 709c82f35449ff39589feea1454e05638057d16e 7311106b30220c3da880296b9db1fa6183ff79be 7424192af0e3d7eac988dda51fe34433346c2411 7453935996fb3e7dd89ea2621906f4a626c1a130 746a411ee3482da10d2a1cc45bd3b58cd3b8500c 76bd0d67a52107746943bebf329def3d21464363 771844096e665a103adc66a258d450700f530954 7773cd79637a7a108ef2d267e45d28adde5e21cb 77b863072580bcca621482ed7ac6be2289436d6e 780fc4519937fe0a237c70ab3ea0b41415edc05a 7b1455e814c8a98672648f22440b0943e028fc43 7fa728a5a791519730c9d27ff4df85bdeca28117 8098f7d42b1d561def410a20f61961fe0a325af1 82f5f7d7de3ad5c3cbf445ad99135943aba59e40 845cfdc5fd4f013ba8b2d81b7e9e3f7b8cb43406 84b434c65e275521d515084c427149c7942fe9c6 8711a3772f86667eb70b89707372346344845e22 876371c111dcba6fa6fa5ddb8cdc5ada8ba1654a 879876c3c2689934ba4219a1d5cb3a6a306e1490 87d9f1140441572d241b4cf288b7152b6175849f 89677aac42a56efb896d8a685a55f9b1437fee94 8c2f481457ff2d23d7a657441fea0bf0f370a75b 8c4faca9cf60dd9ea17174802fb38e69dd2fbaf5 8f26d8770ced62d00a717ec1949d76d469b14999 90e5ac8d1a4f25a0d20c15ab878f0a86c4ce8bba 94cbac4c74f035e1e59ce2aa65f2f7176dd980da 960599036bbd2588eb7e4f2cf2845abc3e7bef10 9636b8212bfc7dadcc21c916322437eb4f902541 98593e41983cd970cdf7bfe340d235ef74dfd618 a274c9ba99320f3be817e68e6bebfaf99dc1b510 a4ba4e0837533639ce7feab28d54184e6b2dc4a3 a6657604a4e821bb0b5ec5f2c7bce29d6db90321 aa50e840cecb8bf862f68727854e1c75fec09b8b abd8ff41e0c5decc14350a3395c57439c8713ab6 ac05f1634b9b4a6b00add910e73e4b055957715a ad2548d2d5f4ef7f9ba844385c542ecb50da22ad ad9afbdd9948cdb8b3d4ecda4856d111bb012a7f adf108bd6faf6b105f9e9c745bda6e1629e7e88f b1a7ae2d0c8c8f2adad718154586074a1b37fe8a b3c258186364f6495a911d0af5ed4b6acef87eaa b45147254d891aad132918734948b6ae98252780 b62a548885c8bf81facaf4fb06ef34fd53574062 b84f399a6aed0ed68eff47145624bb9ea4f488b9 ba28c16ef25b1c12d6710556a5bdfe8ac5bcd30c bc621d3a2f8e50f99f801659b4890a08d2e175fc bcc84164590726815cd776aafdebdfa038503d5e bef8ef5536f65bb0108ac69d8bf1861c5a818ad4 c1289c5a99e5369c779791cc748a08def12d47f5 c1b1b37636e52f1a45500f86c443ccfc5da0668c c1f2491bf7285bb44d46fcdd5e598c936df4afff c303764c3c209490bcb4dce5fc3f2723ebeef894 c4a51841335d2e0d9ea6f4afb6503c82db99cf63 c561d618cc5b4f9d941e1908d39540f207a84623 c70eb5060392d6fa2a770647692a649de1fad6af c87c9c587c17fb71ef4abbbe6c844c1c163a49f6 ca3fe691d634fb8c7c3e5fb96663fbce824bfd00 ce0a6e9b33065185b5a8d60155e662324cb13278 cffbedb39f2e346f37417c266066b83c10862881 d22ff6fcda7504e399293802e0747bd3c095c579 d5613b1c13269c030066aa96a8d2708fc2892166 d7396c0c81050f2f7a097f76de4200356ef52d86 d93c59326d1ea1d16f13c90b431e7c3782ea93e4 dcdd716d80e671c828fee9186780f2321baa9304 dd45e9a64887dd0c843aab80e9443dd929e48e3a dd91ef3faee73767674edef731bc772844dafd53 e338522b6642b244f39b6ada7938179729953e4e e34c3d00f5ef36a8beb7db772c50b03e7befa56c e69dce92da39298d7b26a89f40c6370e5e5b5b07 e8853b38768f411a4db7e452a361f4d38035347a e928a04ce4aa58988cfaaca234d83a39c2e1d5d8 e97f0214dc0d53662a34b8233826e8086a9e2296 e99f621218934a4b67d37586b41d7ee72c84a80d ebe534fb63a5e2c698f1c65e20f5f5ab8b418eda ed27b283a81ee947c8f702265c8e6d26781dae88 ef331006cbdd0746e792e4ad925da2bbe5503614 ef4ee6bc98afffb2c6388680d9350fec8a19163c f09cbe47e0e2e2f20935f512a29772363b595329 f117140510cabddb8ae4ae79390d6a6f13178817 f1fb7b1e888becb54bed7eb1f14a0f8798c35f27 f208447a95f31a55ec7d871fe226df2c8bec215c f28b7b3b79644015bd6acb1aa16eec1fcc7aa60d f2b53687b775c2dbdd7a3a9cc9a67ec228e10655 f3d82330a2f9e92cf599f2ac2a04f9e4430d5d8c f6a2cba932c658e3067b5a24a5916251fae69b7b f81cb863d083bd793163a97f36e59fae88c084d8 fa8eccdc4e5015184986a8f5093241db96b065ac fbc24b6273dc3e7ae61cdbf840afb3d6c67b74be fd437f83cf78a4c5f949071bd88eecc5a92d2521 fdc23266190299a61970225ccacb8ff02c4e9442 fe2e62fc65248f7f60ff9d9bb0f2ca63881fda0c ffccfad2e24d9ad472ae7f2ef9de0d3890438210
+
+Package: libwayland-egl1-mesa
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 69
+Depends: libc6 (>= 2.4), libegl1-mesa (= 13.0.3-1+linaro1linarostretch1)
+Conflicts: libwayland-egl1
+Breaks: libegl1-mesa-drivers (<< 10.1.0-2)
+Replaces: libegl1-mesa-drivers (<< 10.1.0-2), libwayland-egl1
+Provides: libwayland-egl1
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libwayland-egl1-mesa_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 42562
+SHA256: fa1ff6c1f5beb7b431c1ff120966597a217444751f40ebd53b406d91cddf7aa2
+SHA1: f654da1b52d80177513cb47e48fa7ff24e227208
+MD5sum: 527826fc0faff1b1d0de462c79168eea
+Description: implementation of the Wayland EGL platform -- runtime
+ This package contains the mesa implementation of the Wayland EGL platform
+
+Package: libwayland-egl1-mesa-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 17
+Depends: libwayland-egl1-mesa (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libwayland-egl1-mesa-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 4572
+SHA256: 00ccd27ba4867ad7e9e7d4436fe3b5dd416a979f5cf61f944ae52a92edc24799
+SHA1: e2bc20cddfbbbf1af5e1626049efe794bf849428
+MD5sum: aa8a852361432113a0f30df22d83047f
+Description: Debug symbols for libwayland-egl1-mesa
+Auto-Built-Package: debug-symbols
+Build-Ids: 876f5624c7ed010f090a2a800d58ca724e0ad953
+
+Package: libxatracker-dev
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 75
+Depends: libxatracker2 (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mesa/libxatracker-dev_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 43874
+SHA256: 08ca5469ea04be51c9cb3af373dbaee8e1e7efa2beb3e38b4af10f67872494ea
+SHA1: 7bd1e5d987405980052f949feeeefacec93eae13
+MD5sum: 611b2bd3b2d8668640a439657e9ac86f
+Description: X acceleration library -- development files
+ This package contains the XA (X acceleration) library.  It is used exclusively
+ by the X server to do render, copy and video acceleration.
+ .
+ XA is intended to be used by the vmware driver for virtualized X acceleration.
+ .
+ This package provides the development environment for compiling programs
+ against the xatracker library.
+
+Package: libxatracker2
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2442
+Depends: libc6 (>= 2.17), libdrm-freedreno1 (>= 2.4.70), libdrm-nouveau2 (>= 2.4.66), libdrm2 (>= 2.4.66), libexpat1 (>= 2.0.1), libgcc1 (>= 1:3.5), libgcrypt20 (>= 1.7.0), libllvm3.9, libsensors4 (>= 1:3.0.0), libstdc++6 (>= 5.2)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/libxatracker2_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 1131562
+SHA256: 4a6ff62319d1ecee30b570c44b96b5b19b3bca53df0aed07663bc23845bcb4a3
+SHA1: 6677cca1e1d9b9d130b9aec4f5530145e3d0db20
+MD5sum: 6abec654800c05a44113aba96008a8eb
+Description: X acceleration library -- runtime
+ This package contains the XA (X acceleration) library.  It is used exclusively
+ by the X server to do render, copy and video acceleration.
+ .
+ XA is intended to be used by the vmware driver for virtualized X acceleration.
+
+Package: libxatracker2-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 9757
+Depends: libxatracker2 (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/libxatracker2-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 9081790
+SHA256: 9757e4fc0775655adcba225c76b25df975e534914e2c319e23853d29e735e397
+SHA1: f7e4073bfbbe41035a2683f18522e3c200763f91
+MD5sum: 35f2cda356e428d621d81e5ef0a1dc3b
+Description: Debug symbols for libxatracker2
+Auto-Built-Package: debug-symbols
+Build-Ids: 043fa5056958e73a31f5154ece1b64765a82ec60
+
+Package: linaro-artwork
+Version: 0.6-0linaro1
+Architecture: all
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 1615
+Depends: gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine, libnewt0.52 (>= 0.52.11), linaro-lxpanel-icons, linaro-icon-theme, dmz-cursor-theme
+Breaks: 96boards-artwork (<= 0.5)
+Replaces: 96boards-artwork (<= 0.5)
+Homepage: https://github.com/96boards/linaro-artwork
+Priority: optional
+Section: x11
+Filename: pool/main/l/linaro-artwork/linaro-artwork_0.6-0linaro1_all.deb
+Size: 689526
+SHA256: fce67eab7b5248990a0f0faa5759e274be82edeedf35e2d1c1df418818f7aff9
+SHA1: 538b89e04dad9e134ae0981ab0054e499fbfddb0
+MD5sum: 75960b6bac4873b41c860580b45d5b7e
+Description: artwork for Linaro
+ Artwork for Linaro, contained the wallpaper and others specific images
+ and logos.
+ .
+ This package contains theme of Linaro.
+
+Package: linaro-default-settings
+Version: 0.3-0linaro1
+Architecture: all
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 60
+Depends: lxsession (>= 0.4.1), linaro-artwork, linaro-icon-theme, linaro-lxpanel-icons
+Breaks: 96boards-default-settings (<= 0.2)
+Replaces: 96boards-default-settings (<= 0.2)
+Homepage: https://github.com/96boards/linaro-default-settings
+Priority: optional
+Section: x11
+Filename: pool/main/l/linaro-default-settings/linaro-default-settings_0.3-0linaro1_all.deb
+Size: 8520
+SHA256: e7e4e1ebbee4e2f3a80cb54c3ee49ded3d59bfe71b0097ddc83737cec1870dcd
+SHA1: aecae7e97a27d7654ac50efd45fe1b2c716e1b40
+MD5sum: 350f801c365c7262c3e69b30afb12f14
+Description: default settings for Linaro
+ Various system settings tailored for Linaro.
+
+Package: linaro-icon-theme
+Source: linaro-artwork
+Version: 0.6-0linaro1
+Architecture: all
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 21927
+Depends: hicolor-icon-theme, gnome-icon-theme, gnome-icon-theme-symbolic
+Breaks: 96boards-icon-theme (<= 0.5)
+Replaces: 96boards-icon-theme (<= 0.5)
+Homepage: https://github.com/96boards/linaro-artwork
+Priority: optional
+Section: x11
+Filename: pool/main/l/linaro-artwork/linaro-icon-theme_0.6-0linaro1_all.deb
+Size: 1005732
+SHA256: 1f94087a8500c5fda51a8d961f9c5a63df3be10551dd7921e5394c7aad595dbd
+SHA1: 4e68700236f48f5d248c3bf9a25181793266b99f
+MD5sum: 8351042a8ea82ee8463c164a994e1540
+Description: icon theme for Linaro
+ This package contains a specific icon theme for Linaro.
+
+Package: linaro-lxpanel-icons
+Source: linaro-artwork
+Version: 0.6-0linaro1
+Architecture: all
+Maintainer: Ricardo Salveti <ricardo.salveti@linaro.org>
+Installed-Size: 130
+Breaks: 96boards-lxpanel-icons (<= 0.5)
+Replaces: 96boards-lxpanel-icons (<= 0.5)
+Homepage: https://github.com/96boards/linaro-artwork
+Priority: optional
+Section: x11
+Filename: pool/main/l/linaro-artwork/linaro-lxpanel-icons_0.6-0linaro1_all.deb
+Size: 52698
+SHA256: 1ec3030258a50fb90103bdf7dc739d6cc994c6731cec2c914a7e5536627511fa
+SHA1: 20ad46c76175a8fc1acc103a59db103226b45791
+MD5sum: d3ea6207aa449b0f696405b34ee51d4c
+Description: panel specific icons for Linaro artwork
+ This package contain specific lxpanel icons for Linaro theme.
+
+Package: linaro-overlay-minimal
+Source: linaro-overlay
+Version: 1112.10
+Architecture: all
+Maintainer: Linaro Developers <linaro-dev@lists.linaro.org>
+Installed-Size: 18
+Priority: optional
+Section: utils
+Filename: pool/main/l/linaro-overlay/linaro-overlay-minimal_1112.10_all.deb
+Size: 5186
+SHA256: e4ab5c5535cc8e3cd5e2dceae3f4c42c06adbf4671522a73ca33c8bfad13dfdb
+SHA1: f76c6973b170d7f98475ff726c815c500ab3dadc
+MD5sum: 0206ae75cbca231f57a1404f01059f89
+Description: Linaro Overlay for Linaro headless/minimal images
+ ships a autologinroot systemd conf
+
+Package: mesa-common-dev
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 3074
+Depends: libx11-dev, libdrm-dev (>= 2.4.65)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/m/mesa/mesa-common-dev_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 510618
+SHA256: ab2c2812b8d0d3ef7e72fe5c6c1d91ef33fe45c77887aa6c1ee7f92569c2828e
+SHA1: 0d1ffc672b477737dee654237e618fb961cbd681
+MD5sum: 6b872255ce73bb63849d3e53b6a85c8e
+Description: Developer documentation for Mesa
+ This package includes the specifications for the Mesa-specific OpenGL
+ extensions, the complete set of release notes and the development header
+ files common to all Mesa packages.
+
+Package: mesa-opencl-icd
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 18289
+Depends: libclc-r600 (>= 0.2.0+git20160907), libclc-amdgcn (>= 0.2.0+git20160907), ocl-icd-libopencl1 | libopencl1, libc6 (>= 2.17), libdrm-amdgpu1 (>= 2.4.63), libdrm-freedreno1 (>= 2.4.70), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.66), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc1 (>= 1:3.5), libgcrypt20 (>= 1.7.0), libllvm3.9, libsensors4 (>= 1:3.0.0), libstdc++6 (>= 5.2)
+Breaks: libgl1-mesa-dri (<< 10.3.0-1)
+Replaces: libgl1-mesa-dri (<< 10.3.0-1)
+Provides: opencl-icd
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/mesa-opencl-icd_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 6235604
+SHA256: 979d56f7f5fe31d146e51843855e648a36c87a3d993f28e0c4304269c3baadd3
+SHA1: 627259bae06d1d1e4e6bd0b2bb39a5c7d01667af
+MD5sum: 0574a25ca8127c114318204ef33233d7
+Description: free implementation of the OpenCL API -- ICD runtime
+ This package contains the mesa implementation of the OpenCL (Open Compute
+ Language) library, which is intended for use with an ICD loader. OpenCL
+ provides a standardized interface for computational analysis on graphical
+ processing units.
+
+Package: mesa-opencl-icd-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 35813
+Depends: mesa-opencl-icd (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/mesa-opencl-icd-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 30413448
+SHA256: 6c18afa60f98a1c9a3fd9cb7f7e8b58653c4ec106bd92da4323b193224c20090
+SHA1: 54f60d4f7bebc299db9722664cbb9838bff9ce42
+MD5sum: 474f99402bcc11d7db1ad2b19ac2eaaa
+Description: Debug symbols for mesa-opencl-icd
+Auto-Built-Package: debug-symbols
+Build-Ids: 4432fef378aa9f3d115e1e1fc7cb23f6acf7bbec 62dc5f11c2aa718ad96987e02b60726468e52d68 660d28db06651a931b8a89e650223e51cb348d8e 9696aea9e9ebc5f0aeff8f51dfc27cb6b0669e44 b0cd4f7c08f116f41f0810fd0aebd74abaf08a65 ca8c6ce765d96a76ccdd0e18574e99c5186435bf d67ca44a21357f230bc09cf4091b11c324f68c81 ff735ad5230e0957746cb14932ad49ce553579c8
+
+Package: mesa-va-drivers
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 7947
+Depends: libva1, libc6 (>= 2.17), libdrm-amdgpu1 (>= 2.4.63), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.66), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc1 (>= 1:3.5), libgcrypt20 (>= 1.7.0), libllvm3.9, libsensors4 (>= 1:3.0.0), libstdc++6 (>= 5.2), libx11-6, libx11-xcb1, libxcb-dri2-0 (>= 1.8), libxcb-dri3-0, libxcb-present0, libxcb-sync1, libxcb1 (>= 1.9.2), libxshmfence1
+Enhances: libva1
+Breaks: vdpau-va-driver (<< 0.7.4-5)
+Replaces: vdpau-va-driver (<< 0.7.4-5)
+Provides: va-driver
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/mesa-va-drivers_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 1296244
+SHA256: 51bc73cf92ea5126ffc6efd78b0017de23bdd686f05298ddb70e11b372379f18
+SHA1: a60b13734219415c9fbcad519ebba823e5ed1d72
+MD5sum: da2c8b671235605070ac850986bce41a
+Description: Mesa VA-API video acceleration drivers
+ These libraries provide the Video Acceleration API (VA-API) for Unix.
+ They provide accelerated video playback (incl. H.264) and video
+ post-processing for the supported graphics cards.
+ .
+ This package enables support for VA-API for some gallium drivers.
+
+Package: mesa-va-drivers-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 11370
+Depends: mesa-va-drivers (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/mesa-va-drivers-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 10879998
+SHA256: 9dc288c81cd733057120dac4d3de2815072e0f070021503abca1f312c220a818
+SHA1: 6c09bb859471757a543c3f1f76959d203753ce2d
+MD5sum: a4b0c83791174e96e742a764e41f4751
+Description: Debug symbols for mesa-va-drivers
+Auto-Built-Package: debug-symbols
+Build-Ids: aabc98332cadc55273748f878ea4c250cb376f78 aabc98332cadc55273748f878ea4c250cb376f78 aabc98332cadc55273748f878ea4c250cb376f78
+
+Package: mesa-vdpau-drivers
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 11511
+Depends: libvdpau1, libc6 (>= 2.17), libdrm-amdgpu1 (>= 2.4.63), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.66), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc1 (>= 1:3.5), libgcrypt20 (>= 1.7.0), libllvm3.9, libsensors4 (>= 1:3.0.0), libstdc++6 (>= 5.2), libx11-6, libx11-xcb1, libxcb-dri2-0 (>= 1.8), libxcb-dri3-0, libxcb-present0, libxcb-sync1, libxcb1 (>= 1.9.2), libxshmfence1
+Enhances: libvdpau1
+Provides: vdpau-driver
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/mesa-vdpau-drivers_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 1423746
+SHA256: 33d4cfc613ddb4ac6bf156cde347e01487c8945beb98ecc40ccf7f72f6d51894
+SHA1: ef41769c987afb4e7f18b841d98e4bbcde9b769c
+MD5sum: 4f90a0eee6d349fc53b87f03b15ab0c7
+Description: Mesa VDPAU video acceleration drivers
+ These libraries provide the Video Decode and Presentation API for Unix.
+ They provide accelerated video playback (incl. H.264) and video
+ post-processing for the supported graphics cards.
+ .
+ This package enables support for VDPAU for some gallium drivers.
+
+Package: mesa-vdpau-drivers-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 12040
+Depends: mesa-vdpau-drivers (= 13.0.3-1+linaro1linarostretch1)
+Multi-Arch: same
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/mesa-vdpau-drivers-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 11512940
+SHA256: 62c07251995cc6075e52fbe6763e5c689ed619b5eb7b571499660d8d0593de08
+SHA1: b7b9895036591fe72ce2907e9d3ddb130f8501b7
+MD5sum: 8e42c6904957da5facfcb6eb731250e6
+Description: Debug symbols for mesa-vdpau-drivers
+Auto-Built-Package: debug-symbols
+Build-Ids: adca4e9b472702422b6cb542bcb464a734e69cdb adca4e9b472702422b6cb542bcb464a734e69cdb adca4e9b472702422b6cb542bcb464a734e69cdb adca4e9b472702422b6cb542bcb464a734e69cdb
+
+Package: mesa-vulkan-drivers
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 723
+Depends: libvulkan1, libc6 (>= 2.17), libdrm-amdgpu1 (>= 2.4.63), libdrm2 (>= 2.4.66), libelf1 (>= 0.142), libgcc1 (>= 1:3.5), libgcrypt20 (>= 1.7.0), libllvm3.9, libstdc++6 (>= 4.3.0), libwayland-client0 (>= 1.9.91), libwayland-server0 (>= 1.2.0), libx11-xcb1, libxcb-dri3-0, libxcb-present0, libxcb-sync1, libxcb1 (>= 1.9.2), libxshmfence1
+Homepage: http://mesa3d.org/
+Priority: optional
+Section: libs
+Filename: pool/main/m/mesa/mesa-vulkan-drivers_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 323908
+SHA256: ceb321e35e5d45599979519b0e263f10d803ef85a4ae623e873b556de993a3a1
+SHA1: b31d316752e9fb5204d515c2df2a937411c76f76
+MD5sum: cdb7f63680df83c47eb667f1af7757d0
+Description: Mesa Vulkan graphics drivers
+ Vulkan is a low-overhead 3D graphics and compute API. This package
+ includes Vulkan drivers provided by the Mesa project.
+
+Package: mesa-vulkan-drivers-dbgsym
+Source: mesa
+Version: 13.0.3-1+linaro1linarostretch1
+Architecture: armhf
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2282
+Depends: mesa-vulkan-drivers (= 13.0.3-1+linaro1linarostretch1)
+Homepage: http://mesa3d.org/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mesa/mesa-vulkan-drivers-dbgsym_13.0.3-1+linaro1linarostretch1_armhf.deb
+Size: 2136774
+SHA256: a5a8f4894685aef55440837cf4daa48b3dd66fc19b8113984e010ab020824b0f
+SHA1: fe08b3960595093ec548b6147fc5a350a6c0866c
+MD5sum: 6c50dd220428d6f4f2bccfdc857e1508
+Description: Debug symbols for mesa-vulkan-drivers
+Auto-Built-Package: debug-symbols
+Build-Ids: 65900f3d05e77a0013aac434d30a58466c5a15a5
+
+Package: mraa-doc
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: all
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 3596
+Depends: libjs-jquery, libjs-underscore
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: optional
+Section: doc
+Filename: pool/main/m/mraa/mraa-doc_1.4.0-1linarostretch1_all.deb
+Size: 953146
+SHA256: 3feb145b168834728e6ae783497023cedf98f075c5619c85c6cd3819a833ea9f
+SHA1: 4fb01e926bf33fa8cd796b333b517b1bc44c5c05
+MD5sum: 50b636153e8c564d010ca1bd947cf76d
+Description: documentation for mraa
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains mraa documentation.
+
+Package: mraa-examples
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: all
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 227
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: optional
+Section: doc
+Filename: pool/main/m/mraa/mraa-examples_1.4.0-1linarostretch1_all.deb
+Size: 29622
+SHA256: 6828496ed143e491f09ba40c6cc36be93ae8854d360e38dddabc00ea0f203cca
+SHA1: be60555b506510a0deeb45d299009323a68f967f
+MD5sum: 85ce3f7e26150db3fa9eda485222a96b
+Description: examples for mraa
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains mraa examples.
+
+Package: mraa-gpio
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 25
+Depends: libc6 (>= 2.7), libjson-c3 (>= 0.10), libmraa1 (>= 1.4.0-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: optional
+Section: utils
+Filename: pool/main/m/mraa/mraa-gpio_1.4.0-1linarostretch1_armhf.deb
+Size: 10402
+SHA256: a7d04cb3f6e12f056a3017939dd71bb991fbdffab093c60609674ec892b019c4
+SHA1: b170032048472037a076a721ed0c6d384df0e4d1
+MD5sum: 1e2cba3b8b3aa0a922ccfdfecf2a523d
+Description: userspace I/O GPIO tool
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains mraa GPIO tool.
+
+Package: mraa-gpio-dbg
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 32
+Depends: mraa-gpio (= 1.4.0-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mraa/mraa-gpio-dbg_1.4.0-1linarostretch1_armhf.deb
+Size: 15710
+SHA256: deaa3c266b23f0460d27980708da2ae0aeae64120f85c88f9f0b32972dfa6e7e
+SHA1: 3e8e8beb749f64862dcd1e1c8df6eaaafdf3a0bd
+MD5sum: 73e34809afcde3ae4f8778ff3bbb54db
+Description: debugging symbols for mraa GPIO tool
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains mraa GPIO tool debugging symbols.
+Build-Ids: 2666798c876dd72e1fa4f838e30a890a811b67ba
+
+Package: python-libsoc
+Source: libsoc
+Version: 0.8.2-0linaro1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 32
+Depends: libsoc2 (= 0.8.2-0linaro1linarostretch1), python (<< 2.8), python (>= 2.7~), python:any (<< 2.8), python:any (>= 2.7.5-5~), libc6 (>= 2.4), libpython2.7 (>= 2.7)
+Homepage: https://github.com/jackmitch/libsoc
+Priority: optional
+Section: python
+Filename: pool/main/libs/libsoc/python-libsoc_0.8.2-0linaro1linarostretch1_armhf.deb
+Size: 8194
+SHA256: 64843073185c83ce246722436658e271715a691a866776e1af668cf918ea7164
+SHA1: 78c82e706a9130f314efac24ee3719c6750e8088
+MD5sum: 44e3a2d4da46059a134e225ae1a7ac30
+Description: Python binding for libsoc
+ libsoc is a C library to interface with common peripherals (gpio, i2c, spi,
+ pwm) found in System on Chips (SoC)through generic Linux Kernel interfaces.
+ .
+ This package contains libsoc Python binding.
+
+Package: python-libsoc-dbgsym
+Source: libsoc
+Version: 0.8.2-0linaro1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 24
+Depends: python-libsoc (= 0.8.2-0linaro1linarostretch1)
+Homepage: https://github.com/jackmitch/libsoc
+Priority: extra
+Section: debug
+Filename: pool/main/libs/libsoc/python-libsoc-dbgsym_0.8.2-0linaro1linarostretch1_armhf.deb
+Size: 11358
+SHA256: a03fb6dd3ba0cc4aa0bb6aabc0b643460fa6d0f5c11c6a54493cfc25cee8791a
+SHA1: 2056d54eb141fd71660b5c0cb535838ce24c9c38
+MD5sum: b2e16db009e871637c2e7602f80eb9de
+Description: Debug symbols for python-libsoc
+Auto-Built-Package: debug-symbols
+Build-Ids: bed5f285b6973fd80b3fbb77a02e71f6f786b95d
+
+Package: python-mraa
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 221
+Depends: python (<< 2.8), python (>= 2.7~), python:any (<< 2.8), python:any (>= 2.7.5-5~), libc6 (>= 2.4), libgcc1 (>= 1:3.5), libjson-c3 (>= 0.10), libmraa1 (>= 1.4.0-1linarostretch1), libpython2.7 (>= 2.7), libstdc++6 (>= 5.2)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: optional
+Section: python
+Filename: pool/main/m/mraa/python-mraa_1.4.0-1linarostretch1_armhf.deb
+Size: 50704
+SHA256: b04b27c2f3ee7ba8b7540f5e565bb05250c95518330b777f400b8792736df515
+SHA1: 5207c5bac3ce4165b7dfb45f3f797b7add70f25e
+MD5sum: 143983bc3d976e7ac7f7c03a5c14f8a4
+Description: Python binding for mraa
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains mraa Python binding.
+
+Package: python-mraa-dbg
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 239
+Depends: python-mraa (= 1.4.0-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: extra
+Section: debug
+Filename: pool/main/m/mraa/python-mraa-dbg_1.4.0-1linarostretch1_armhf.deb
+Size: 197116
+SHA256: 4468954b93fbfcd73192eac8bd9f144ca0ae8d1a34d43410c1eec7c2b511ac30
+SHA1: 25cbc5e6d56c6d8cd8e8aa6f6690bd97fb62741c
+MD5sum: dfe40b75daaf1712c90428b4ff84995f
+Description: debugging symbols for mraa Python binding
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains the debugging symbols for mraa Python binding.
+Build-Ids: e9352a4828535622cd716ac69f18bf0610e36fb4
+
+Package: python-mraa-doc
+Source: mraa
+Version: 1.4.0-1linarostretch1
+Architecture: all
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 432
+Homepage: http://iotdk.intel.com/docs/master/mraa/
+Priority: optional
+Section: doc
+Filename: pool/main/m/mraa/python-mraa-doc_1.4.0-1linarostretch1_all.deb
+Size: 56312
+SHA256: 80dfc272792fbcb94a52ac0556bd1069dd6fe5cf171d581258f243ac162e7047
+SHA1: 2af59c5e3c43a2bb0d1ba957740d9d60fbc89c9b
+MD5sum: 661c1c75a40bf4c1c33be984a632a483
+Description: Python binding for mraa (documentation)
+ mraa (libmraa) is library for interacting with userspace I/O on GNU/Linux
+ platforms. The library abstracts platform quirks away from the end user.
+ Currently interfaces supported include GPIO/PWM/I2C/SPI.
+ .
+ This package contains the documentation for mraa Python binding.
+
+Package: python-upm
+Source: upm
+Version: 0.8.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 10498
+Depends: libc6 (>= 2.17), libgcc1 (>= 1:3.5), libjpeg62-turbo (>= 1.3.1), libmraa1 (>= 1.4.0-1linarostretch1), libpython2.7 (>= 2.7), libstdc++6 (>= 5.2), libupm0
+Homepage: http://iotdk.intel.com/docs/master/upm/
+Priority: optional
+Section: python
+Filename: pool/main/u/upm/python-upm_0.8.0-1linarostretch1_armhf.deb
+Size: 1550478
+SHA256: 9132f114002d0381485a067b3b76f7e1dbfc6949eb8adc1e37eca22768a80b3a
+SHA1: 596437bbff050f5a375f7a43f2742a8cbb314d2d
+MD5sum: a27435c7e187ebed4112fcda35b0e7eb
+Description: Python binding for UPM
+ UPM is a high level repository for sensors that use MRAA. Each sensor
+ links to MRAA and are not meant to be interlinked although some
+ groups of sensors may be.
+ .
+ This package contains UPM Python binding.
+
+Package: python-upm-dbg
+Source: upm
+Version: 0.8.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 19912
+Depends: python-upm (= 0.8.0-1linarostretch1)
+Homepage: http://iotdk.intel.com/docs/master/upm/
+Priority: extra
+Section: debug
+Filename: pool/main/u/upm/python-upm-dbg_0.8.0-1linarostretch1_armhf.deb
+Size: 17166418
+SHA256: 8d16715c5f86bd33c04a2d938dc8d08e7b5699a773797d956ec6483843388b82
+SHA1: 3fc3cb361b8ecd16134dd6f31872f975b697aea7
+MD5sum: df8be6da4dda71239ed5b8bf7cea4bc5
+Description: debugging symbols for MRAA Python binding
+ UPM is a high level repository for sensors that use MRAA. Each sensor
+ links to MRAA and are not meant to be interlinked although some
+ groups of sensors may be.
+ .
+ This package contains the debugging symbols for UPM Python binding.
+Build-Ids: 02f620814c6f5161a510cce7bff516481ccf66d1 0622ffb2b74d130166ec1d3b378a80901219e84b 0769d3b208803c2b953947e75325c73489a1f271 08595ecdcd535c1497e8b4d5528183583e496475 092d80ece90140763011b81a35a2dabc6c32343d 0b76f7977e4ff9b6d8ca67af5b70f5663e66c795 0b9a4e48bd0fb3b848e89a8336bc68d20de1af56 0ddccfeb05cec8022abe05e57ab4af693ef45844 0e95822708eb6f00d50e018ca0aaba71fdd98d46 0fc191266091c7c040e2123b06987ba0f555da54 112532782513452af7abf112a60d44f654e962f5 12d1951528c890384c1f53aea867ada47716bfb3 14e1ad1e2f64df3d859f58948ee74e2bc113aca1 178c38b2fd34cf6e970a185229f82ecb2a060937 192f9fe7f50d32287b228734a238c9c095145ef9 195e0087cc47903d2168baa507b931fcfa4e0fc3 19e7109c88e2083fcac32f3d8718f854c2663b71 19fbb8ccaf0a04931ab52ef5fd03a7d921d1e0b9 1b0f77bd86488effcf105db566bf19e5069350cb 1e6c4027b2b0e3cae79077e2a2c1752f721cbb62 2076206a5418d629fc2c62d4d0cc6fec5012763d 26a21867509e50156a4ecad74af54a445f8fa149 2bb4b2fec1eafcc33a944fa05a33572b77922ed4 2e3ccd9ed085c044bea5b87eb00342761e95a8c3 2e647ade6a80ec19ad7fe2fb9c240727d735b97b 3157c257dcf04f52b9098c0b4452c68728407ab9 3160c51a2f0fac5d4e00222040677072f48b2207 3493e0149e661648c1dec889360429ab648630a9 3624fa61c979c8ea05596f29042848ac4c685526 362547cf90062716b87c9966e9435343fe85a64f 363093c938972c834335000ecaeed49995638910 375edaf1e820fbde930b23cc88d558c14538769c 3784fcb6120f4011a443e8001c72a19c3dbd739a 3a18f7ba8018156c156c6c1e405a7dceb33c29e4 3ae10c820d9cfe480b7c1fc9aaabd9ac266f4fd8 3d076480902932db70d1c6226eb5722e07695245 3ee87515c88a2c90f1c4f34e3e19d3e85aed10b0 3f60bce88a8c31955501b0f03ed957cea9b0cda5 4106aeb3599b3b7f599506c03c96aa8d0796b58d 44f0040bac6431ce34240870c26b711e4f58972c 46b67fff184e3bc2d599b2d73eb1abcc0d2d4c74 46c5882e1a30de83feb09c224a67db12e213343a 49b2110fb79930880985e86f8e0d0de95294474f 4a8a97fdb017425e0719ff06173413c48616fe62 4b1e6c67e2a01b02d28e188028529b8fd49b0df4 4bb634fe2e8897fa885f399303bebc87398f2f10 52d92a5fab718879ad4ed483dcac21c76d7f5d37 54fa08cb5f2e0a157da79e488242d44af1d22239 55ce709eed6b4810e56ed1ef12a9a00b0ca78341 585894fdd236266b7bd60dc74f4b3b08b0acb076 5899d68137aacda3c3c23ee9215a78ff220ff55e 5a1378907d035c1d34249da90211991b11002152 5a86432c139564fd1c8ac6c1a92c7c42c2846ec6 5a9ca27b92d619075b203c0fe5a185fc14f4755e 5b537dd85ce3d154329b68049193fc3dac572899 5c696a84fdc0d97b6b44d61b9cde0c6d0e74c81c 5df9f31b511e70e8152c1c27cfc7f5aa3cf763aa 5e03bcdfe737dae7185647d342ad00fc6283f671 621e88510a8f5bc5a9b15c2e219de116bb879347 6267419f78013970e818c4a5ac71c11404c61506 6605872358e869c252b4c8ddac5256baa57bf290 668fa5a64368f4fdce8a8b8c61337b5fc2fce09d 671703b959460e53778e8918be6215928002aa79 67f638e3f432ebd7bac461e1333271ab039bf0a1 681acc40667d1aa6d46c393e78a8f01d71f26bb8 694b95ea645d7de1bbe1b99545a0959e6239723a 6ae88f3b6ff26ad561a4b077b9d9a758b8863af3 6b07d91129ace371f0e34e8cb9eb3884e7a04588 71b96592b66ec5a26e5b19141dfbf4430da180c7 744f2f47d621502e342dfedc712f62e97826f625 774ceac6df5355cd9d732a11df8348c5d614d426 7a8cf40c5fe79f36517843b62d64aa112459cb7e 7e551db866e5747a2dc1316ee7886395240078af 8006d01048047d4837355af38f57ad72ba14f67c 851061ab2184cc50a6f8ce168f6e597d3961e2dd 856af65b296f640d2d12089edf6c69356b61f639 86947bb623aa14ceb799f6649bbeeb2d8b6d1bb9 86e2f4f5d6c40235fd98d65d1d2d05dad2acf9d4 889fc4a32c8d3f68252e73533b3d209d1af7dfe0 89eae75d74da82431e527890c4b6f2ab51431b13 8b177f91ed5585358f524248bc49c03cbcb0efdd 8eb52ccdadab5eda47b39485d97f43b6161b789e 8ee6b127ec75de904655a5b6a4bd39e1d032c174 8ff1692dfcf18cf78e596e1825b3fd4a26755e92 90df92a31371ed4212682b5bd8495763cebc0dfc 90f24ccbcaabc73078d9c7f74f7fcf5b62b22d33 91ff64088d1f227a67e558e0f2e7bcff2c38b603 96eb61875447ade148a72ef2ba381d426c278061 9b2817732806dd84a7b3dbc424c79b576c2ce289 9def63332f3080e5e8404a95d5ac8abb4ce8a92d a041da1fbe5603909ef0612c07b58f976cf52b68 a38010bd54e236900ec9e92125a3658e2608bfef a3842c95c02fb9f3d49d0af61889b5c067f0e691 a606c7732e829cda0536b1f6e7706db306cc858c a793b20b06ae728fc2d458eac93eccb214f89426 a859ef6e419732ec6184a24c80efd2d21c788019 a8b9a78092938eaad2d4e17acf9c9170c2736017 aa08210b1a2a9434dbb012cc6fa5a62ce3778d7a ab7aed3f74581cb37fd7b3572091c8507afe4a20 accc8b1c27b63d1a220da9234d115d40f1c3dc71 ae6a414aa6b2b7c557ad827f5766cd60f44b7d36 b5651edf904b30631d351f58b4ad5de2566f68de b6dd04b6d30188819b80ab9ac49b38f18cde2eb7 ba7a4f821f4f07c0717d25d75c5ba7ebd044855c bba63704b1d1a64e44317436348c74e5fd69021a bbe41969e4f2769cb099d4287b6995b67cdb2ffb bcf7e75767f204bec0080f0ca58104d1134ba798 bd6815b60b78355c130df490b07a06545dc2ca04 bd818c3fc88fbb1fd4520687e268bc709a55faa5 be7453c8f7369295cf01339095aa5e8526e7f3e8 c05ff20d3fc831e2ecfa4117e3547bc7d1e28fab c2f9c555cdc67fb74ae2794ba7b18cc970eb54e9 c6e444c7b1bc27dfd7a6a4ac5a0f72d1ab937d42 c72f247cb8aa4e6f15be97bb3ccd8ce670957821 c983a606c850cc223ec18fe00495e5274accc620 cbedc8eb82a21692e6d7ab3d5ad7c8bc16b29e76 d20f1746c92bf31e92e6084a038a320f2d57c962 d2659a01a18ffc3432cd97681f359b3dd5446872 d5b51efc41a2ace101052a486274d55f616d7eb9 d6c61330ace6e30f2c2df3fd6f4e736d7ab343da d7954c266cb07c9b1e6da4b46bb7de22c456dd30 d99c8c2500c0050bce1fce04c35066a36d4f2f68 de11854dd1bfee6c4ea6391d45a95ef7d17c2e57 e03592ff2ec1946e315513473d75f021d8beec82 e0ad8247307a5b6da900ad19c5ba425674525417 e1491e4cdcf7639634220190d926f3aa77bd3b0f e1a3edb5603863cb65a2c426eecb61b69eb6cf7a e1bf071d60fd8c79ec9a8b04249a7c822f864511 e3fa8fa2f6183e5e996afb5e6ca05f1a26cb98a2 e6b0bb2bca7379e86304f5fa1646862207c682e2 e79241c548fcd6ec9f931c6c48658d07c5bd544c e8630065149c324beb2525c9566ee4c24a2d76df e8cd805d73ad39893c905ec004b22b3dc9302e60 eb058077563845abb4a9a17a8811a762956a95f8 ebfce824e5da3cb9effaade721d52e3050fef94b ed1e50b87ed051f245191e9ff3a24d06d3fe8347 eefeadebe650b0d3e248b2213fcc767db1c3be23 efa09bb0d9bc022d13dde9d3da24f854cd6d3f83 f151bb62b34a5908629175486ef51474b613737b f3c4924586685400a6227000867be13b1e701c5e f515572db3fef80c920925311048ac6be17815d0 f754e6489b731230248bdff1d94d2b4e0db97efa f81d415545e3b15bd0940e0f11732c56df6aa6c6 fb82414145357e109bb28092bd26abd0442d3f2c fd0391e8817601430f03ef0162f1f5df378bb07e fe737961f90d65d85664811daf7c4edcaf3c8206 ff4f2c3e77de1854700451cb5e394083eb5b7c4d ffc22e739bf90b71dd2a011898b768b8a51f7f87
+
+Package: qdsp-start
+Source: qdsp-config
+Version: 1.1linarostretch1
+Architecture: all
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 19
+Depends: rmtfs
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qdsp-config.git
+Priority: optional
+Section: utils
+Filename: pool/main/q/qdsp-config/qdsp-start_1.1linarostretch1_all.deb
+Size: 3358
+SHA256: de781bb48d0407479509387e424390c2cfd18c30b404a57a65b6882fd202bac3
+SHA1: 97a39eb852b3de09975faeb0ad50922f090f4c45
+MD5sum: ba69de0ceca7a89f878cc5d3f76f8fe1
+Description: Start Hexagon QDSP on Qualcomm chipset.
+
+Package: qmi-gps-proxy
+Version: 0.0+0+df3b976-4linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 36
+Depends: libc6 (>= 2.4), libqrtr1, qdsp-start
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qmi_loc2.git
+Priority: optional
+Section: utils
+Filename: pool/main/q/qmi-gps-proxy/qmi-gps-proxy_0.0+0+df3b976-4linarostretch1_armhf.deb
+Size: 8430
+SHA256: 0e23ff199184db3be1e8c56bfe80387862397500d9b34b7ccd6b820ba46f05fc
+SHA1: dce9916fd04a2a016f7d206c983e78e79aeb63d4
+MD5sum: 20dc67fac31a2cbe6eeb8b40be24beb5
+Description: QCOM GPS proxy daemon.
+
+Package: qmi-gps-proxy-dbgsym
+Source: qmi-gps-proxy
+Version: 0.0+0+df3b976-4linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 28
+Depends: qmi-gps-proxy (= 0.0+0+df3b976-4linarostretch1)
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/pkg/qmi_loc2.git
+Priority: extra
+Section: debug
+Filename: pool/main/q/qmi-gps-proxy/qmi-gps-proxy-dbgsym_0.0+0+df3b976-4linarostretch1_armhf.deb
+Size: 11896
+SHA256: 6211eb56ff9968eb016a43eba3906260346b5bbbd23873aed7477179ca24f948
+SHA1: e4e45d60f933e7d9a2897665e9e6251793b76432
+MD5sum: 317b5b0493d952523a886d313c470c22
+Description: Debug symbols for qmi-gps-proxy
+Auto-Built-Package: debug-symbols
+Build-Ids: 4b889abfe5189778b7f854ab0259f8da1792f5a2
+
+Package: qmic
+Version: 0.0+0+1c036374-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 24
+Depends: libc6 (>= 2.4)
+Homepage: https://github.com/andersson/qmic.git
+Priority: optional
+Section: utils
+Filename: pool/main/q/qmic/qmic_0.0+0+1c036374-1linarostretch1_armhf.deb
+Size: 7616
+SHA256: e719b8da540380b3f85fde223ee0a701957d9516a0ef2420c148c1aaa377b469
+SHA1: f02dc7d41c0c3281a7119fae79a9b3b21925599a
+MD5sum: bd24dc7b77984e62ecb6d37e402f2567
+Description: QMI Compiler
+ QMI compiler.
+
+Package: qmic-dbgsym
+Source: qmic
+Version: 0.0+0+1c036374-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 30
+Depends: qmic (= 0.0+0+1c036374-1linarostretch1)
+Homepage: https://github.com/andersson/qmic.git
+Priority: extra
+Section: debug
+Filename: pool/main/q/qmic/qmic-dbgsym_0.0+0+1c036374-1linarostretch1_armhf.deb
+Size: 15682
+SHA256: f214ae1cdd9984d35855444d57c0f340a79bbc01bbd3720b1c161552e1fe638f
+SHA1: ed3cac387844bac6628973978ff7a7d5ca3c24d8
+MD5sum: 43bb5d119508ca7fd21ddc019c66e966
+Description: Debug symbols for qmic
+Auto-Built-Package: debug-symbols
+Build-Ids: ec70932af72380d19bb920cc57a4f6baf39976e3
+
+Package: qrtr
+Version: 0.0+0+9c85f35a-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 1119
+Homepage: https://github.com/andersson/qrtr.git
+Priority: optional
+Section: utils
+Filename: pool/main/q/qrtr/qrtr_0.0+0+9c85f35a-1linarostretch1_armhf.deb
+Size: 230254
+SHA256: 13f9f7e842f44c41d0e7fa534f2f78c112b5fa7bd8f772f332d907f108106907
+SHA1: f279db92c95643b800e33eb2086035f2ead33814
+MD5sum: d55c6c7ad839f246d53b5326832ffd5a
+Description: QRTR applications
+ QRTR applications.
+
+Package: qrtr-dbgsym
+Source: qrtr
+Version: 0.0+0+9c85f35a-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 273
+Depends: qrtr (= 0.0+0+9c85f35a-1linarostretch1)
+Homepage: https://github.com/andersson/qrtr.git
+Priority: extra
+Section: debug
+Filename: pool/main/q/qrtr/qrtr-dbgsym_0.0+0+9c85f35a-1linarostretch1_armhf.deb
+Size: 62038
+SHA256: 04269f2ceeafad88df7395776e5764d25c595b05c0ccf97640d0d2211340e744
+SHA1: a898405f3fd088a8dc751366b3d10e2fb35f8ce4
+MD5sum: 05773780a2ef4f7787ce8d7c411c695a
+Description: Debug symbols for qrtr
+Auto-Built-Package: debug-symbols
+Build-Ids: 1040fbc9248c9fe00677525d43c9250df19ed915 790b4e37c8207322d5f9184f9643a4443a0f45f9 892aa87a8856cb2b8b6d1eec4ab3d9ae96b040f5
+
+Package: rmtfs
+Version: 0.0+1+8c799599-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 35
+Depends: libc6 (>= 2.15), libqrtr1, qrtr
+Homepage: https://github.com/andersson/rmtfs.git
+Priority: optional
+Section: utils
+Filename: pool/main/r/rmtfs/rmtfs_0.0+1+8c799599-1linarostretch1_armhf.deb
+Size: 9840
+SHA256: 46dc8d44f9108bd3edccfe30a2adc8f26ef2b5d5369d188d8b8c97c72b9d4616
+SHA1: e3564c1b87077111045cf20e5f6a09caa0f9dbe5
+MD5sum: 3ffe820d2ff9d15d7951a2defc19b3e1
+Description: RMTFS QMI service
+ The QDSP firmware requires access to storage, through the RMTFS QMI service.
+ Implement this service to allow for us to load the QDSP firmware on relevant
+ Qualcomm SoC.
+
+Package: rmtfs-dbgsym
+Source: rmtfs
+Version: 0.0+1+8c799599-1linarostretch1
+Architecture: armhf
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 46
+Depends: rmtfs (= 0.0+1+8c799599-1linarostretch1)
+Homepage: https://github.com/andersson/rmtfs.git
+Priority: extra
+Section: debug
+Filename: pool/main/r/rmtfs/rmtfs-dbgsym_0.0+1+8c799599-1linarostretch1_armhf.deb
+Size: 29072
+SHA256: 766d48adbc2ca22dc815b86b8e127dc022c969cbfa59d42c36255a974e1d1607
+SHA1: 695d2cb0c34f643d0a0701b2e4f2aefa0787317d
+MD5sum: 9ec4301bf43994e5bb2ac2e4f2c75f7f
+Description: Debug symbols for rmtfs
+Auto-Built-Package: debug-symbols
+Build-Ids: 842f82eb541ecf76887f968f366e4f380c9de9ad
+
+Package: sysbench
+Version: 0.4.12-1.2
+Architecture: armhf
+Maintainer: Hendrik Frenzel <hfrenzel@scunc.net>
+Installed-Size: 107
+Depends: libc6 (>= 2.17), libmariadbclient18 (>= 5.5.36)
+Homepage: http://sourceforge.net/projects/sysbench
+Priority: extra
+Section: misc
+Filename: pool/main/s/sysbench/sysbench_0.4.12-1.2_armhf.deb
+Size: 59000
+SHA256: 7c1764811cf54c1bdae5ef4fbefd31853dbdf937a031cfedb60dccbd4e12effd
+SHA1: dba3d2cd4ba1cf100e11f4176ec0ed70a8aae2de
+MD5sum: 91fe0afa272a0986d619b03c2708afe0
+Description: Cross-platform and multi-threaded benchmark tool
+ SysBench is a modular, cross-platform and multi-threaded benchmark tool for
+ evaluating OS parameters that are important for a system running a database
+ under intensive load.
+ .
+ The idea of this benchmark suite is to quickly get an impression about system
+ performance without setting up complex database benchmarks or even without
+ installing a database at all.
+ .
+ Current features allow to test the following system parameters:
+ .
+  * file I/O performance
+  * scheduler performance
+  * memory allocation and transfer speed
+  * POSIX threads implementation performance
+  * database server performance (OLTP benchmark)
+ .
+ Primarily written for MySQL server benchmarking, SysBench will be further
+ extended to support multiple database backends, distributed benchmarks and
+ third-party plug-in modules.
+
+Package: sysbench-dbgsym
+Source: sysbench
+Version: 0.4.12-1.2
+Architecture: armhf
+Maintainer: Hendrik Frenzel <hfrenzel@scunc.net>
+Installed-Size: 123
+Depends: sysbench (= 0.4.12-1.2)
+Homepage: http://sourceforge.net/projects/sysbench
+Priority: extra
+Section: debug
+Filename: pool/main/s/sysbench/sysbench-dbgsym_0.4.12-1.2_armhf.deb
+Size: 97604
+SHA256: 69a77ffc0082be047da6c9687276c6e6e6ac227e98860a37cc306a2e411ae255
+SHA1: f65049f8fa93fdb1bbef11f8709bca48dab75ffa
+MD5sum: 62ad6117fbdcdd3b0c462f86bbf27494
+Description: Debug symbols for sysbench
+Auto-Built-Package: debug-symbols
+Build-Ids: c78854bd934cc892967c9937ecd1fdc3de07dd56
+
+Package: tee-supplicant
+Source: optee-client
+Version: 2.2.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 169
+Depends: init-system-helpers (>= 1.18~), libc6 (>= 2.4), libteec1.0
+Homepage: https://github.com/OP-TEE/optee_client
+Priority: optional
+Section: utils
+Filename: pool/main/o/optee-client/tee-supplicant_2.2.0-1linarostretch1_armhf.deb
+Size: 12058
+SHA256: fb32b57c5ff24a9d103a8383204e215191a5328163fe83ed7be0932722cbd99e
+SHA1: 521ef401a250dd96ddd38fbe1e068095a4c4da3b
+MD5sum: 3c2afbf42d9ca8bdb83c1e98863314ba
+Description: OP-TEE client daemon
+ This package contains a daemon serving the Trusted OS in secure world with
+ miscellaneous features, such as file system access.
+
+Package: tee-supplicant-dbgsym
+Source: optee-client
+Version: 2.2.0-1linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 21
+Depends: tee-supplicant (= 2.2.0-1linarostretch1)
+Homepage: https://github.com/OP-TEE/optee_client
+Priority: extra
+Section: debug
+Filename: pool/main/o/optee-client/tee-supplicant-dbgsym_2.2.0-1linarostretch1_armhf.deb
+Size: 4204
+SHA256: 9c3f6b5a0d81e58be7bcdf270a7190f6403ceec2a0a2c8c6aa4b8bcc31c7b3c7
+SHA1: 5a232d141676514a1ee6db177ae6f19ad8c98bed
+MD5sum: 69fc68a2da6849f745c6d982861f4f93
+Description: Debug symbols for tee-supplicant
+Auto-Built-Package: debug-symbols
+Build-Ids: f575588744cf1d04baa553cd9e10870bfab4b23a
+
+Package: ti-calibrator
+Source: ti-utils
+Version: 0.80+git8.5.4+d1def45-2linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 74
+Depends: libc6 (>= 2.7), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7)
+Priority: optional
+Section: utils
+Filename: pool/main/t/ti-utils/ti-calibrator_0.80+git8.5.4+d1def45-2linarostretch1_armhf.deb
+Size: 26598
+SHA256: 4d49a68561db2178b198fea88219337ac7704bdbf629f5fccd3e44e5073ec463
+SHA1: ac83e10a790a2a0a0f4432b6e4a9909d4ce55a92
+MD5sum: b34759c3894a71b62f4009dc58cac0c3
+Description: TI calibrator utility
+ Calibration is a process in which specific radio configuration parameters are
+ generated and saved into the NVS file, later to be used by the wl12xx/wl18xx
+ driver upon initialization.
+ .
+ These configuration parameters are specific to the chip on the specific
+ design and therefore are sent back to the driver to store in non-volatile
+ memory for later use. Upon initialization, the driver will load an NVS file
+ where it expects to read those parameters and send them to the chip.
+ .
+ TI's calibrator utility allows to manipulate the NVS file and various
+ parameters.
+
+Package: ti-calibrator-dbgsym
+Source: ti-utils
+Version: 0.80+git8.5.4+d1def45-2linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 28
+Depends: ti-calibrator (= 0.80+git8.5.4+d1def45-2linarostretch1)
+Priority: extra
+Section: debug
+Filename: pool/main/t/ti-utils/ti-calibrator-dbgsym_0.80+git8.5.4+d1def45-2linarostretch1_armhf.deb
+Size: 5692
+SHA256: 4e4cf8b1f1d3ca16dbf5f7573cf7b2d1926374b6497876f7a904e2dbf322afb6
+SHA1: 84589699b0c0d74a8d7bed28bddaf45fb09fab06
+MD5sum: 82ff0998ea80e80b02b7d69e3560f2c1
+Description: Debug symbols for ti-calibrator
+Auto-Built-Package: debug-symbols
+Build-Ids: c17c979667b63e91ac90df4e94f329cf73577633
+
+Package: ti-uim
+Version: 0.0+git20110201+c738944-1linaro10linarostretch1
+Architecture: armhf
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Installed-Size: 32
+Depends: libc6 (>= 2.7)
+Homepage: http://gitorious.org/uim/uim
+Priority: optional
+Section: misc
+Filename: pool/main/t/ti-uim/ti-uim_0.0+git20110201+c738944-1linaro10linarostretch1_armhf.deb
+Size: 7442
+SHA256: 135eb924fdcb167503cb6485b32b8d7fd5b62cc34a30792f7b45240f40debdab
+SHA1: 5f4918e5a61c47fe2d604ba91df6b4d4d7e7748d
+MD5sum: e540475f9f2e62df53ef47461ec4ea57
+Description: User Mode Init Manager for TI shared transport
+ User Mode Init Manager is needed to properly initializate the
+ bluetooth support at TI related devices, like Pandaboard.
+
+Package: ti-uim-dbgsym
+Source: ti-uim
+Version: 0.0+git20110201+c738944-1linaro10linarostretch1
+Architecture: armhf
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Installed-Size: 24
+Depends: ti-uim (= 0.0+git20110201+c738944-1linaro10linarostretch1)
+Homepage: http://gitorious.org/uim/uim
+Priority: extra
+Section: debug
+Filename: pool/main/t/ti-uim/ti-uim-dbgsym_0.0+git20110201+c738944-1linaro10linarostretch1_armhf.deb
+Size: 10260
+SHA256: 95670d91986956391321403286b863774c24420a310e11d9ac8e1da3fc644ce5
+SHA1: d3bc52ed0dd4921498a25608978c70dde24a4f05
+MD5sum: c40b5118bf3b0dc143d002d2de3e3cd9
+Description: Debug symbols for ti-uim
+Auto-Built-Package: debug-symbols
+Build-Ids: 6daa898769f891cd49acde4df450987029fdf9ec
+
+Package: ti-wlconf
+Source: ti-utils
+Version: 0.80+git8.5.4+d1def45-2linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 151
+Depends: libc6 (>= 2.4)
+Priority: optional
+Section: utils
+Filename: pool/main/t/ti-utils/ti-wlconf_0.80+git8.5.4+d1def45-2linarostretch1_armhf.deb
+Size: 22766
+SHA256: 364b762c0479a798eac927578ec9f1069c2ab1a5bb8a2b249d1b5999b9920c39
+SHA1: ed6f2384861abf71b5281e01019d4a04fe16c180
+MD5sum: e13f56021e2411addded48409d434a73
+Description: TI wireless configuration utility (wlconf)
+ TI's wlconf utility allows to manipulate the wl18xx-conf.bin file and various
+ parameters.
+
+Package: ti-wlconf-dbgsym
+Source: ti-utils
+Version: 0.80+git8.5.4+d1def45-2linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 17
+Depends: ti-wlconf (= 0.80+git8.5.4+d1def45-2linarostretch1)
+Priority: extra
+Section: debug
+Filename: pool/main/t/ti-utils/ti-wlconf-dbgsym_0.80+git8.5.4+d1def45-2linarostretch1_armhf.deb
+Size: 2998
+SHA256: 758e0a9db008bece7ec2e52ef928dd3ed62edfc4a5044dfb637274855a2e9566
+SHA1: 92d8e65070f106bd47a5376c3027fec83ff60cc8
+MD5sum: aaf3ed1b54ebe39a329daa5e5c0821b6
+Description: Debug symbols for ti-wlconf
+Auto-Built-Package: debug-symbols
+Build-Ids: 6ff634e83fce09d6f40fbd994102747ec960e0a4
+
+Package: upm-doc
+Source: upm
+Version: 0.8.0-1linarostretch1
+Architecture: all
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 78482
+Depends: libjs-jquery, libjs-underscore
+Homepage: http://iotdk.intel.com/docs/master/upm/
+Priority: optional
+Section: doc
+Filename: pool/main/u/upm/upm-doc_0.8.0-1linarostretch1_all.deb
+Size: 39903966
+SHA256: c7efec69513d9a7248437738626a5279dce8c298a04f96c90872f4da046748d4
+SHA1: 95a4c194bcfb4c9bb2bdb0219619fe56e455e56c
+MD5sum: 3c53af319b2f0850364fb9dd2b94689b
+Description: documentation for UPM
+ UPM is a high level repository for sensors that use MRAA. Each sensor
+ links to MRAA and are not meant to be interlinked although some
+ groups of sensors may be.
+ .
+ This package contains UPM documentation.
+
+Package: upm-examples
+Source: upm
+Version: 0.8.0-1linarostretch1
+Architecture: all
+Maintainer: Fathi Boudra <fabo@debian.org>
+Installed-Size: 1921
+Homepage: http://iotdk.intel.com/docs/master/upm/
+Priority: optional
+Section: doc
+Filename: pool/main/u/upm/upm-examples_0.8.0-1linarostretch1_all.deb
+Size: 144286
+SHA256: 4f638c3a95af222a61b2685cefe05762de0ed1efa5abb171bcfa8b0fdbd206bc
+SHA1: 9e3f382b10a27ec7b32c01784446e99a61e8057b
+MD5sum: 1f96c520ee1c8676e2adc2e71a775f13
+Description: examples for UPM
+ UPM is a high level repository for sensors that use MRAA. Each sensor
+ links to MRAA and are not meant to be interlinked although some
+ groups of sensors may be.
+ .
+ This package contains UPM examples.
+
+Package: wcnss-bt
+Source: wcnss-config
+Version: 1.11.2linarostretch1
+Architecture: all
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 20
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/wcnss-config.git
+Priority: optional
+Section: utils
+Filename: pool/main/w/wcnss-config/wcnss-bt_1.11.2linarostretch1_all.deb
+Size: 3990
+SHA256: 13146b3af91b86d94ab733a93b88a9bf314b1ea28b6ee1bf6d87604f2522352a
+SHA1: 742fa690760d9cc324402205dbdd8e35f1fd712e
+MD5sum: 41faba7e5c9ab5f0b38ce1d3684d3cbe
+Description: BT configuration files for WCN
+ WCN is the integrated core in many QCOM devices that provides  BT
+ functionalities.
+
+Package: wcnss-start
+Source: wcnss-config
+Version: 1.13linarostretch1
+Architecture: all
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 20
+Depends: init-system-helpers (>= 1.18~)
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/wcnss-config.git
+Priority: optional
+Section: utils
+Filename: pool/main/w/wcnss-config/wcnss-start_1.13linarostretch1_all.deb
+Size: 4562
+SHA256: 9ba0ec3e37c1cf139522f11994a4394d41cfaccd5d1e030c6e2d5fe825977324
+SHA1: 256558dba5aaaaa129d458cfaa6c3d4babfa14f6
+MD5sum: c14ca0fd7866da65f415b13b5f506edb
+Description: Start WCN core on Qualcomm chipset
+ WCN is the integrated core in many QCOM devices that provides WLAN
+ functionalities.
+
+Package: wcnss-wlan
+Source: wcnss-config
+Version: 1.11.2linarostretch1
+Architecture: all
+Maintainer: Nicolas Dechesne <nicolas.dechesne@linaro.org>
+Installed-Size: 23
+Depends: wcnss-start
+Homepage: https://git.linaro.org/landing-teams/working/qualcomm/wcnss-config.git
+Priority: optional
+Section: utils
+Filename: pool/main/w/wcnss-config/wcnss-wlan_1.11.2linarostretch1_all.deb
+Size: 4682
+SHA256: a1c6f4801b84201280b9ccf610398bbb26e9b13a4f13218c174a8d25f3fe5c4e
+SHA1: 04d47721e3aad6f24ea43bc3e3685c2b91837fae
+MD5sum: 691d0d053385485d82e1f83e41985b48
+Description: WLAN configuration files for WCN
+ WCN is the integrated core in many QCOM devices that provides WLAN
+ functionalities.
+
+Package: xserver-xorg-video-armsoc
+Source: xf86-video-armsoc
+Version: 1.4.0-0linaro2linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fathi.boudra@linaro.org>
+Installed-Size: 75
+Depends: libc6 (>= 2.4), libdrm2 (>= 2.4.36), libpixman-1-0, xorg-video-abi-20, xserver-xorg-core (>= 2:1.17.99.902)
+Provides: xorg-driver-video
+Priority: optional
+Section: x11
+Filename: pool/main/x/xf86-video-armsoc/xserver-xorg-video-armsoc_1.4.0-0linaro2linarostretch1_armhf.deb
+Size: 30112
+SHA256: 07cd70467b5e5d16d1a6504976efb915a2d2fb5d6d1935dd16c3220c03d4b14c
+SHA1: 02272101ef5e18d380866caaf56470f7d8937b63
+MD5sum: aa6bd350b24eb7e8ebe1d22fd3335644
+Description: X.Org X server -- ARM SoC display driver for Exynos/PL111/HiSi DRM
+ This driver for the X.Org X server provides support for Exynos, PL111 and HiSi.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package contains the armsoc driver for the Exynos/PL111/HiSi DRM driver.
+
+Package: xserver-xorg-video-armsoc-dbg
+Source: xf86-video-armsoc
+Version: 1.4.0-0linaro2linarostretch1
+Architecture: armhf
+Maintainer: Fathi Boudra <fathi.boudra@linaro.org>
+Installed-Size: 463
+Depends: xserver-xorg-video-armsoc (= 1.4.0-0linaro2linarostretch1)
+Priority: extra
+Section: debug
+Filename: pool/main/x/xf86-video-armsoc/xserver-xorg-video-armsoc-dbg_1.4.0-0linaro2linarostretch1_armhf.deb
+Size: 135714
+SHA256: 0463107154da1a90cbbbc8964c65db760a12870632bf26ecfed51c7a44545b97
+SHA1: 9b89fd4fc8708a74a42d75f1868666915dfb67fb
+MD5sum: b8d1cbd2f431c1a7ca1ec81c24ef971d
+Description: X.Org X server -- ARM SoC display driver for Exynos/PL111/HiSi DRM (debug symbols)
+ This driver for the X.Org X server provides support for Exynos, PL111 and HiSi.
+ .
+ This package provides debugging symbols for xserver-xorg-video-armsoc.
+

@@ -1,0 +1,32 @@
+ttf-unfonts for Debian
+======================
+
+GPL and font embedding
+----------------------
+
+These fonts are under the (pure) GNU General Public License, with no
+exception about embedding in a document. So you should take care
+about the license influence when your non-GPLed document embeds one of
+these fonts.
+
+This licensing problem has already been reported to the upstream years
+ago but the upstream was not active on this discussion. Currently the
+upstream looks dead.
+
+For your information about this issue:
+
+* The font embedding exception which FSF suggests:
+  http://www.fsf.org/licensing/licenses/gpl-faq.html#FontException
+* Fedora wiki page about font licensing:
+  http://fedoraproject.org/wiki/SIGs/Fonts/Legal
+
+
+More information
+----------------
+
+More upstream information (in Korean):
+
+  http://faq.ktug.or.kr/faq/%C0%BA%B1%DB%B2%C3
+
+
+ -- Changwoo Ryu <cwryu@debian.org>, Wed, 30 May 2012 01:36:35 +0900
