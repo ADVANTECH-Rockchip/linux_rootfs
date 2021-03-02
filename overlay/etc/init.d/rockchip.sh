@@ -97,6 +97,9 @@ then
     # The base target does not come with lightdm
     systemctl restart lightdm.service || true
 
+    # disable hostapd.service
+    systemctl disable hostapd.service
+
     touch /usr/local/first_boot_flag
 fi
 
