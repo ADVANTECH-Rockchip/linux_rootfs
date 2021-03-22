@@ -3,6 +3,12 @@
 # Directory contains the target rootfs
 TARGET_ROOTFS_DIR="binary"
 
+echo "BUILD_IN_DOCKER : $BUILD_IN_DOCKER"
+
+if [ -e $TARGET_ROOTFS_DIR ]; then
+	sudo rm -rf $TARGET_ROOTFS_DIR
+fi
+
 if [ "$ARCH" == "armhf" ]; then
 	ARCH='armhf'
 elif [ "$ARCH" == "arm64" ]; then
@@ -36,6 +42,12 @@ sudo cp -rf packages/$ARCH/* $TARGET_ROOTFS_DIR/packages
 sudo cp -rf overlay/etc $TARGET_ROOTFS_DIR/
 sudo cp -rf overlay/lib $TARGET_ROOTFS_DIR/usr/
 sudo cp -rf overlay/usr $TARGET_ROOTFS_DIR/
+
+if [ "$BUILD_IN_DOCKER" == "TRUE" ]; then
+	# network
+	sudo mv $TARGET_ROOTFS_DIR/etc/resolv.conf $TARGET_ROOTFS_DIR/etc/resolv.conf_back
+	sudo cp -b /etc/resolv.conf $TARGET_ROOTFS_DIR/etc/resolv.conf
+fi
 
 if [ "$ARCH" == "armhf"  ]; then
     sudo cp overlay-firmware/usr/bin/brcm_patchram_plus1_32 $TARGET_ROOTFS_DIR/usr/bin/brcm_patchram_plus1
