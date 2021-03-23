@@ -3,6 +3,8 @@
 # Directory contains the target rootfs
 TARGET_ROOTFS_DIR="binary"
 
+echo "BUILD_IN_DOCKER : $BUILD_IN_DOCKER"
+
 if [ -e $TARGET_ROOTFS_DIR ]; then
 	sudo rm -rf $TARGET_ROOTFS_DIR
 fi
@@ -54,6 +56,13 @@ if [ "$ARCH" == "armhf" ] && [ "$VERSION" == "debug" ]; then
 	sudo cp -rf overlay-debug/usr/local/share/adb/adbd-32 $TARGET_ROOTFS_DIR/usr/local/bin/adbd
 elif [ "$ARCH" == "arm64"  ]; then
 	sudo cp -rf overlay-debug/usr/local/share/adb/adbd-64 $TARGET_ROOTFS_DIR/usr/local/bin/adbd
+fi
+
+
+if [ "$BUILD_IN_DOCKER" == "TRUE" ]; then
+	# network
+	sudo mv $TARGET_ROOTFS_DIR/etc/resolv.conf $TARGET_ROOTFS_DIR/etc/resolv.conf_back
+	sudo cp -b /etc/resolv.conf $TARGET_ROOTFS_DIR/etc/resolv.conf
 fi
 
 # bt/wifi firmware
