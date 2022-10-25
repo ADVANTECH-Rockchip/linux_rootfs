@@ -111,8 +111,8 @@ chmod o+x /usr/lib/dbus-1.0/dbus-daemon-launch-helper
 chmod +x /etc/rc.local
 
 #---------------power management --------------
-apt-get install -y busybox pm-utils triggerhappy
-cp /etc/Powermanager/triggerhappy.service  /lib/systemd/system/triggerhappy.service
+apt-get install -y busybox pm-utils
+# cp /etc/Powermanager/triggerhappy.service  /lib/systemd/system/triggerhappy.service
 
 #---------------system--------------
 apt-get install -y git fakeroot devscripts cmake binfmt-support dh-make dh-exec pkg-kde-tools device-tree-compiler \
