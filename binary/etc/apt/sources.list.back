@@ -1,0 +1,6 @@
+deb http://archive.debian.org/debian-archive/debian/ buster main contrib non-free
+deb-src http://archive.debian.org/debian-archive/debian/ buster main contrib non-free
+deb http://archive.debian.org/debian-archive/debian-security/ buster/updates main contrib non-free
+deb-src http://archive.debian.org/debian-archive/debian-security/ buster/updates main contrib non-free
+deb http://archive.debian.org/debian-archive/debian/ buster-updates main contrib non-free
+deb-src http://archive.debian.org/debian-archive/debian/ buster-updates main contrib non-free

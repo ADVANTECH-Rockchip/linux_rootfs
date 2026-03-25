@@ -11,11 +11,11 @@ set -e
 echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg"
 lb config \
-  --mirror-bootstrap "https://mirrors.tuna.tsinghua.edu.cn/debian" \
-  --mirror-chroot "https://mirrors.tuna.tsinghua.edu.cn/debian" \
-  --mirror-chroot-security "https://mirrors.tuna.tsinghua.edu.cn/debian-security" \
-  --mirror-binary "https://mirrors.tuna.tsinghua.edu.cn/debian" \
-  --mirror-binary-security "https://mirrors.tuna.tsinghua.edu.cn/debian-security" \
+ --mirror-bootstrap "http://archive.debian.org/debian-archive/debian/" \
+ --mirror-chroot "http://archive.debian.org/debian-archive/debian/" \
+ --mirror-chroot-security "http://archive.debian.org/debian-archive/debian-security/" \
+ --mirror-binary "http://archive.debian.org/debian-archive/debian/" \
+ --mirror-binary-security "http://archive.debian.org/debian-archive/debian-security/" \
  --apt-indices false \
  --apt-recommends false \
  --apt-secure false \
@@ -31,7 +31,7 @@ lb config \
  --chroot-filesystem none \
  --compression gzip \
  --debootstrap-options "--variant=minbase --include=apt-transport-https,gnupg" \
- --distribution buster \
+ --distribution buster --archive-areas 'main contrib non-free' \
  --gzip-options '-9 --rsyncable' \
  --iso-publisher 'Linaro; http://www.linaro.org/; linaro-dev@lists.linaro.org' \
  --iso-volume 'Linaro Buster $(date +%Y%m%d-%H:%M)' \
